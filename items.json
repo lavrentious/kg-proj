@@ -1,0 +1,2528 @@
+{
+    "Enchanted Mango": {
+        "name": "Enchanted Mango",
+        "cost": 65,
+        "image": "https://dota2.ru/img/items/enchanted_mango.jpg",
+        "url": "https://dota2.ru/items/enchanted-mango/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health_regen": 0.4
+        }
+    },
+    "Smoke of Deceit": {
+        "name": "Smoke of Deceit",
+        "cost": 50,
+        "image": "https://dota2.ru/img/items/smoke_of_deceit.jpg",
+        "url": "https://dota2.ru/items/smoke-of-deceit/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Faerie Fire": {
+        "name": "Faerie Fire",
+        "cost": 65,
+        "image": "https://dota2.ru/img/items/faerie_fire.jpg",
+        "url": "https://dota2.ru/items/faerie-fire/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "damage": 2.0
+        }
+    },
+    "Town Portal Scroll": {
+        "name": "Town Portal Scroll",
+        "cost": 100,
+        "image": "https://dota2.ru/img/items/town_portal_scroll.jpg",
+        "url": "https://dota2.ru/items/town-portal-scroll/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Sentry Ward": {
+        "name": "Sentry Ward",
+        "cost": 50,
+        "image": "https://dota2.ru/img/items/sentry_ward.jpg",
+        "url": "https://dota2.ru/items/sentry-ward/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Observer Ward": {
+        "name": "Observer Ward",
+        "cost": 0,
+        "image": "https://dota2.ru/img/items/observer_ward.jpg",
+        "url": "https://dota2.ru/items/observer-ward/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Healing Salve": {
+        "name": "Healing Salve",
+        "cost": 100,
+        "image": "https://dota2.ru/img/items/healing_salve.jpg",
+        "url": "https://dota2.ru/items/healing-salve/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Clarity": {
+        "name": "Clarity",
+        "cost": 50,
+        "image": "https://dota2.ru/img/items/clarity.jpg",
+        "url": "https://dota2.ru/items/clarity/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Tango": {
+        "name": "Tango",
+        "cost": 90,
+        "image": "https://dota2.ru/img/items/tango.jpg",
+        "url": "https://dota2.ru/items/tango/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Blood Grenade": {
+        "name": "Blood Grenade",
+        "cost": 50,
+        "image": "https://dota2.ru/img/items/blood_grenade.jpg",
+        "url": "https://dota2.ru/items/blood-grenade/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health": 50.0
+        }
+    },
+    "Bottle": {
+        "name": "Bottle",
+        "cost": 675,
+        "image": "https://dota2.ru/img/items/bottle.jpg",
+        "url": "https://dota2.ru/items/bottle/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Dust of Appearance": {
+        "name": "Dust of Appearance",
+        "cost": 80,
+        "image": "https://dota2.ru/img/items/dust_of_appearance.jpg",
+        "url": "https://dota2.ru/items/dust-of-appearance/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Aghanim's Shard": {
+        "name": "Aghanim's Shard",
+        "cost": 1400,
+        "image": "https://dota2.ru/img/items/aghanims_shard.jpg",
+        "url": "https://dota2.ru/items/aghanims-shard/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Gauntlets of Strength": {
+        "name": "Gauntlets of Strength",
+        "cost": 140,
+        "image": "https://dota2.ru/img/items/gauntlets_of_strength.jpg",
+        "url": "https://dota2.ru/items/gauntlets-of-strength/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "strength": 3.0
+        }
+    },
+    "Iron Branch": {
+        "name": "Iron Branch",
+        "cost": 50,
+        "image": "https://dota2.ru/img/items/iron_branch.jpg",
+        "url": "https://dota2.ru/items/iron-branch/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "all_attributes": 1.0
+        }
+    },
+    "Slippers of Agility": {
+        "name": "Slippers of Agility",
+        "cost": 140,
+        "image": "https://dota2.ru/img/items/slippers_of_agility.jpg",
+        "url": "https://dota2.ru/items/slippers-of-agility/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "agility": 3.0
+        }
+    },
+    "Mantle of Intelligence": {
+        "name": "Mantle of Intelligence",
+        "cost": 140,
+        "image": "https://dota2.ru/img/items/mantle_of_intelligence.jpg",
+        "url": "https://dota2.ru/items/mantle-of-intelligence/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "intelligence": 3.0
+        }
+    },
+    "Circlet": {
+        "name": "Circlet",
+        "cost": 155,
+        "image": "https://dota2.ru/img/items/circlet.jpg",
+        "url": "https://dota2.ru/items/circlet/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "all_attributes": 2.0
+        }
+    },
+    "Robe of the Magi": {
+        "name": "Robe of the Magi",
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/robe_of_the_magi.jpg",
+        "url": "https://dota2.ru/items/robe-of-the-magi/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "intelligence": 6.0
+        }
+    },
+    "Crown": {
+        "name": "Crown",
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/crown.jpg",
+        "url": "https://dota2.ru/items/crown/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "all_attributes": 4.0
+        }
+    },
+    "Belt of Strength": {
+        "name": "Belt of Strength",
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/belt_of_strength.jpg",
+        "url": "https://dota2.ru/items/belt-of-strength/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "strength": 6.0
+        }
+    },
+    "Band of Elvenskin": {
+        "name": "Band of Elvenskin",
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/band_of_elvenskin.jpg",
+        "url": "https://dota2.ru/items/band-of-elvenskin/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "agility": 6.0
+        }
+    },
+    "Aghanim's Blessing": {
+        "name": "Aghanim's Blessing",
+        "cost": 5800,
+        "image": "https://dota2.ru/img/items/aghanims_blessing.jpg",
+        "url": "https://dota2.ru/items/aghanims-blessing/",
+        "recipe": [
+            "Aghanim's Scepter",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {}
+    },
+    "Ogre Axe": {
+        "name": "Ogre Axe",
+        "cost": 1000,
+        "image": "https://dota2.ru/img/items/ogre_axe.jpg",
+        "url": "https://dota2.ru/items/ogre-axe/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "strength": 10.0
+        }
+    },
+    "Staff of Wizardry": {
+        "name": "Staff of Wizardry",
+        "cost": 1000,
+        "image": "https://dota2.ru/img/items/staff_of_wizardry.jpg",
+        "url": "https://dota2.ru/items/staff-of-wizardry/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "intelligence": 10.0
+        }
+    },
+    "Blade of Alacrity": {
+        "name": "Blade of Alacrity",
+        "cost": 1000,
+        "image": "https://dota2.ru/img/items/blade_of_alacrity.jpg",
+        "url": "https://dota2.ru/items/blade-of-alacrity/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "agility": 10.0
+        }
+    },
+    "Observer and Sentry Wards": {
+        "name": "Observer and Sentry Wards",
+        "cost": 0,
+        "image": "https://dota2.ru/img/items/observer_and_sentry_wards.jpg",
+        "url": "https://dota2.ru/items/observer-and-sentry-wards/",
+        "recipe": [
+            "Sentry Ward",
+            "Observer Ward"
+        ],
+        "order": 2,
+        "buffs": {}
+    },
+    "Ring of Protection": {
+        "name": "Ring of Protection",
+        "cost": 175,
+        "image": "https://dota2.ru/img/items/ring_of_protection.jpg",
+        "url": "https://dota2.ru/items/ring-of-protection/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "armor": 2.0
+        }
+    },
+    "Quelling Blade": {
+        "name": "Quelling Blade",
+        "cost": 100,
+        "image": "https://dota2.ru/img/items/quelling_blade.jpg",
+        "url": "https://dota2.ru/items/quelling-blade/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Diadem": {
+        "name": "Diadem",
+        "cost": 1000,
+        "image": "https://dota2.ru/img/items/diadem.jpg",
+        "url": "https://dota2.ru/items/diadem/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "all_attributes": 6.0
+        }
+    },
+    "Orb of Venom": {
+        "name": "Orb of Venom",
+        "cost": 350,
+        "image": "https://dota2.ru/img/items/orb_of_venom.jpg",
+        "url": "https://dota2.ru/items/orb-of-venom/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Infused Raindrops": {
+        "name": "Infused Raindrops",
+        "cost": 225,
+        "image": "https://dota2.ru/img/items/infused_raindrops.jpg",
+        "url": "https://dota2.ru/items/infused-raindrops/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "mana_regen": 0.8
+        }
+    },
+    "Orb of Frost": {
+        "name": "Orb of Frost",
+        "cost": 300,
+        "image": "https://dota2.ru/img/items/orb_of_frost.jpg",
+        "url": "https://dota2.ru/items/orb-of-frost/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Blades of Attack": {
+        "name": "Blades of Attack",
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/blades_of_attack.jpg",
+        "url": "https://dota2.ru/items/blades-of-attack/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "damage": 9.0
+        }
+    },
+    "Gloves of Haste": {
+        "name": "Gloves of Haste",
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/gloves_of_haste.jpg",
+        "url": "https://dota2.ru/items/gloves-of-haste/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "attack_speed": 20.0
+        }
+    },
+    "Blitz Knuckles": {
+        "name": "Blitz Knuckles",
+        "cost": 1000,
+        "image": "https://dota2.ru/img/items/blitz_knuckles.jpg",
+        "url": "https://dota2.ru/items/blitz-knuckles/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "attack_speed": 35.0
+        }
+    },
+    "Orb of Blight": {
+        "name": "Orb of Blight",
+        "cost": 300,
+        "image": "https://dota2.ru/img/items/orb_of_blight.jpg",
+        "url": "https://dota2.ru/items/orb-of-blight/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Broadsword": {
+        "name": "Broadsword",
+        "cost": 1000,
+        "image": "https://dota2.ru/img/items/broadsword.jpg",
+        "url": "https://dota2.ru/items/broadsword/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "damage": 15.0
+        }
+    },
+    "Helm of Iron Will": {
+        "name": "Helm of Iron Will",
+        "cost": 975,
+        "image": "https://dota2.ru/img/items/helm_of_iron_will.jpg",
+        "url": "https://dota2.ru/items/helm-of-iron-will/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health_regen": 4.0,
+            "armor": 4.0
+        }
+    },
+    "Chainmail": {
+        "name": "Chainmail",
+        "cost": 550,
+        "image": "https://dota2.ru/img/items/chainmail.jpg",
+        "url": "https://dota2.ru/items/chainmail/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "armor": 4.0
+        }
+    },
+    "Mithril Hammer": {
+        "name": "Mithril Hammer",
+        "cost": 1600,
+        "image": "https://dota2.ru/img/items/mithril_hammer.jpg",
+        "url": "https://dota2.ru/items/mithril-hammer/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "damage": 24.0
+        }
+    },
+    "Claymore": {
+        "name": "Claymore",
+        "cost": 1350,
+        "image": "https://dota2.ru/img/items/claymore.jpg",
+        "url": "https://dota2.ru/items/claymore/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "damage": 20.0
+        }
+    },
+    "Sage's Mask": {
+        "name": "Sage's Mask",
+        "cost": 175,
+        "image": "https://dota2.ru/img/items/sages_mask.jpg",
+        "url": "https://dota2.ru/items/sages-mask/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "mana_regen": 0.7
+        }
+    },
+    "Javelin": {
+        "name": "Javelin",
+        "cost": 900,
+        "image": "https://dota2.ru/img/items/javelin.jpg",
+        "url": "https://dota2.ru/items/javelin/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Wind Lace": {
+        "name": "Wind Lace",
+        "cost": 225,
+        "image": "https://dota2.ru/img/items/wind_lace.jpg",
+        "url": "https://dota2.ru/items/wind-lace/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "move_speed": 15.0
+        }
+    },
+    "Magic Stick": {
+        "name": "Magic Stick",
+        "cost": 200,
+        "image": "https://dota2.ru/img/items/magic_stick.jpg",
+        "url": "https://dota2.ru/items/magic-stick/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Fluffy Hat": {
+        "name": "Fluffy Hat",
+        "cost": 250,
+        "image": "https://dota2.ru/img/items/fluffy_hat.jpg",
+        "url": "https://dota2.ru/items/fluffy-hat/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health": 125.0
+        }
+    },
+    "Ring of Regen": {
+        "name": "Ring of Regen",
+        "cost": 175,
+        "image": "https://dota2.ru/img/items/ring_of_regen.jpg",
+        "url": "https://dota2.ru/items/ring-of-regen/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health_regen": 1.25
+        }
+    },
+    "Cloak": {
+        "name": "Cloak",
+        "cost": 800,
+        "image": "https://dota2.ru/img/items/cloak.jpg",
+        "url": "https://dota2.ru/items/cloak/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "magic_resist": 20.0
+        }
+    },
+    "Boots of Speed": {
+        "name": "Boots of Speed",
+        "cost": 500,
+        "image": "https://dota2.ru/img/items/boots_of_speed.jpg",
+        "url": "https://dota2.ru/items/boots-of-speed/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "move_speed": 45.0
+        }
+    },
+    "Voodoo Mask": {
+        "name": "Voodoo Mask",
+        "cost": 700,
+        "image": "https://dota2.ru/img/items/voodoo_mask.jpg",
+        "url": "https://dota2.ru/items/voodoo-mask/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Morbid Mask": {
+        "name": "Morbid Mask",
+        "cost": 900,
+        "image": "https://dota2.ru/img/items/morbid_mask.jpg",
+        "url": "https://dota2.ru/items/morbid-mask/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "lifesteal": 18.0
+        }
+    },
+    "Shadow Amulet": {
+        "name": "Shadow Amulet",
+        "cost": 1000,
+        "image": "https://dota2.ru/img/items/shadow_amulet.jpg",
+        "url": "https://dota2.ru/items/shadow-amulet/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Ghost Scepter": {
+        "name": "Ghost Scepter",
+        "cost": 1500,
+        "image": "https://dota2.ru/img/items/ghost_scepter.jpg",
+        "url": "https://dota2.ru/items/ghost-scepter/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "all_attributes": 5.0
+        }
+    },
+    "Blink Dagger": {
+        "name": "Blink Dagger",
+        "cost": 2250,
+        "image": "https://dota2.ru/img/items/blink_dagger.jpg",
+        "url": "https://dota2.ru/items/blink-dagger/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Gem of True Sight": {
+        "name": "Gem of True Sight",
+        "cost": 900,
+        "image": "https://dota2.ru/img/items/gem_of_true_sight.jpg",
+        "url": "https://dota2.ru/items/gem-of-true-sight/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {}
+    },
+    "Ring of Health": {
+        "name": "Ring of Health",
+        "cost": 700,
+        "image": "https://dota2.ru/img/items/ring_of_health.jpg",
+        "url": "https://dota2.ru/items/ring-of-health/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health_regen": 4.5
+        }
+    },
+    "Void Stone": {
+        "name": "Void Stone",
+        "cost": 700,
+        "image": "https://dota2.ru/img/items/void_stone.jpg",
+        "url": "https://dota2.ru/items/void-stone/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "mana_regen": 1.75
+        }
+    },
+    "Soul Ring": {
+        "name": "Soul Ring",
+        "cost": 805,
+        "image": "https://dota2.ru/img/items/soul_ring.jpg",
+        "url": "https://dota2.ru/items/soul-ring/",
+        "recipe": [
+            "Ring of Protection",
+            "Gauntlets of Strength",
+            "Gauntlets of Strength",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 6.0,
+            "armor": 2.0
+        }
+    },
+    "Magic Wand": {
+        "name": "Magic Wand",
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/magic_wand.jpg",
+        "url": "https://dota2.ru/items/magic-wand/",
+        "recipe": [
+            "Iron Branch",
+            "Iron Branch",
+            "Magic Stick",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "all_attributes": 3.0
+        }
+    },
+    "Null Talisman": {
+        "name": "Null Talisman",
+        "cost": 505,
+        "image": "https://dota2.ru/img/items/null_talisman.jpg",
+        "url": "https://dota2.ru/items/null-talisman/",
+        "recipe": [
+            "Mantle of Intelligence",
+            "Circlet",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 2.0,
+            "agility": 2.0,
+            "intelligence": 5.0,
+            "mana": 3.0,
+            "mana_regen": 1.0
+        }
+    },
+    "Bracer": {
+        "name": "Bracer",
+        "cost": 505,
+        "image": "https://dota2.ru/img/items/bracer.jpg",
+        "url": "https://dota2.ru/items/bracer/",
+        "recipe": [
+            "Gauntlets of Strength",
+            "Circlet",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 5.0,
+            "agility": 2.0,
+            "intelligence": 2.0,
+            "health": 50.0,
+            "health_regen": 0.75
+        }
+    },
+    "Wraith Band": {
+        "name": "Wraith Band",
+        "cost": 505,
+        "image": "https://dota2.ru/img/items/wraith_band.jpg",
+        "url": "https://dota2.ru/items/wraith-band/",
+        "recipe": [
+            "Slippers of Agility",
+            "Circlet",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 2.0,
+            "agility": 5.0,
+            "intelligence": 2.0,
+            "attack_speed": 5.0,
+            "armor": 1.75
+        }
+    },
+    "Orb of Corrosion": {
+        "name": "Orb of Corrosion",
+        "cost": 1050,
+        "image": "https://dota2.ru/img/items/orb_of_corrosion.jpg",
+        "url": "https://dota2.ru/items/orb-of-corrosion/",
+        "recipe": [
+            "Orb of Frost",
+            "Orb of Blight",
+            "Band of Elvenskin"
+        ],
+        "order": 2,
+        "buffs": {
+            "agility": 7.0
+        }
+    },
+    "Hand of Midas": {
+        "name": "Hand of Midas",
+        "cost": 2200,
+        "image": "https://dota2.ru/img/items/hand_of_midas.jpg",
+        "url": "https://dota2.ru/items/hand-of-midas/",
+        "recipe": [
+            "Gloves of Haste",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "attack_speed": 35.0
+        }
+    },
+    "Falcon Blade": {
+        "name": "Falcon Blade",
+        "cost": 1125,
+        "image": "https://dota2.ru/img/items/falcon_blade.jpg",
+        "url": "https://dota2.ru/items/falcon-blade/",
+        "recipe": [
+            "Fluffy Hat",
+            "Sage's Mask",
+            "Blades of Attack",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "health": 200.0,
+            "mana_regen": 1.8,
+            "spell_damage": 14.0
+        }
+    },
+    "Power Treads": {
+        "name": "Power Treads",
+        "cost": 1400,
+        "image": "https://dota2.ru/img/items/power_treads.jpg",
+        "url": "https://dota2.ru/items/power-treads/",
+        "recipe": [
+            "Belt of Strength",
+            "Gloves of Haste",
+            "Boots of Speed"
+        ],
+        "order": 2,
+        "buffs": {
+            "move_speed_melee": 55.0,
+            "move_speed_ranged": 45.0,
+            "attack_speed": 25.0
+        }
+    },
+    "Boots of Travel": {
+        "name": "Boots of Travel",
+        "cost": 2500,
+        "image": "https://dota2.ru/img/items/boots_of_travel.jpg",
+        "url": "https://dota2.ru/items/boots-of-travel/",
+        "recipe": [
+            "Boots of Speed",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "move_speed": 90.0
+        }
+    },
+    "Phase Boots": {
+        "name": "Phase Boots",
+        "cost": 1500,
+        "image": "https://dota2.ru/img/items/phase_boots.jpg",
+        "url": "https://dota2.ru/items/phase-boots/",
+        "recipe": [
+            "Boots of Speed",
+            "Chainmail",
+            "Blades of Attack"
+        ],
+        "order": 2,
+        "buffs": {
+            "move_speed": 50.0,
+            "damage_melee": 18.0,
+            "damage_ranged": 12.0,
+            "armor": 4.0
+        }
+    },
+    "Mask of Madness": {
+        "name": "Mask of Madness",
+        "cost": 1900,
+        "image": "https://dota2.ru/img/items/mask_of_madness.jpg",
+        "url": "https://dota2.ru/items/mask-of-madness/",
+        "recipe": [
+            "Morbid Mask",
+            "Broadsword"
+        ],
+        "order": 2,
+        "buffs": {
+            "damage": 20.0
+        }
+    },
+    "Buckler": {
+        "name": "Buckler",
+        "cost": 425,
+        "image": "https://dota2.ru/img/items/buckler.jpg",
+        "url": "https://dota2.ru/items/buckler/",
+        "recipe": [
+            "Ring of Protection",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "armor": 1.0
+        }
+    },
+    "Moon Shard": {
+        "name": "Moon Shard",
+        "cost": 4000,
+        "image": "https://dota2.ru/img/items/moon_shard.jpg",
+        "url": "https://dota2.ru/items/moon-shard/",
+        "recipe": [
+            "Hyperstone",
+            "Hyperstone"
+        ],
+        "order": 2,
+        "buffs": {
+            "attack_speed": 140.0
+        }
+    },
+    "Perseverance": {
+        "name": "Perseverance",
+        "cost": 1400,
+        "image": "https://dota2.ru/img/items/perseverance.jpg",
+        "url": "https://dota2.ru/items/perseverance/",
+        "recipe": [
+            "Ring of Health",
+            "Void Stone"
+        ],
+        "order": 2,
+        "buffs": {
+            "health_regen": 6.5,
+            "mana_regen": 2.25
+        }
+    },
+    "Oblivion Staff": {
+        "name": "Oblivion Staff",
+        "cost": 1625,
+        "image": "https://dota2.ru/img/items/oblivion_staff.jpg",
+        "url": "https://dota2.ru/items/oblivion-staff/",
+        "recipe": [
+            "Blitz Knuckles",
+            "Sage's Mask",
+            "Robe of the Magi"
+        ],
+        "order": 2,
+        "buffs": {
+            "intelligence": 10.0,
+            "mana_regen": 1.0,
+            "attack_speed": 35.0
+        }
+    },
+    "Ring of Basilius": {
+        "name": "Ring of Basilius",
+        "cost": 425,
+        "image": "https://dota2.ru/img/items/ring_of_basilius.jpg",
+        "url": "https://dota2.ru/items/ring-of-basilius/",
+        "recipe": [
+            "Sage's Mask",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "mana_regen": 0.25
+        }
+    },
+    "Urn of Shadows": {
+        "name": "Urn of Shadows",
+        "cost": 825,
+        "image": "https://dota2.ru/img/items/urn_of_shadows.jpg",
+        "url": "https://dota2.ru/items/urn-of-shadows/",
+        "recipe": [
+            "Sage's Mask",
+            "Circlet",
+            "Ring of Protection",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "all_attributes": 2.0,
+            "mana_regen": 1.4,
+            "armor": 2.0
+        }
+    },
+    "Helm of the Dominator": {
+        "name": "Helm of the Dominator",
+        "cost": 2550,
+        "image": "https://dota2.ru/img/items/helm_of_the_dominator.jpg",
+        "url": "https://dota2.ru/items/helm-of-the-dominator/",
+        "recipe": [
+            "Helm of Iron Will",
+            "Crown",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "all_attributes": 6.0,
+            "health_regen": 6.0,
+            "armor": 6.0
+        }
+    },
+    "Boots of Travel 2": {
+        "name": "Boots of Travel 2",
+        "cost": 4500,
+        "image": "https://dota2.ru/img/items/boots_of_travel_2.jpg",
+        "url": "https://dota2.ru/items/boots-of-travel-2/",
+        "recipe": [
+            "Boots of Travel",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "move_speed": 110.0
+        }
+    },
+    "Headdress": {
+        "name": "Headdress",
+        "cost": 425,
+        "image": "https://dota2.ru/img/items/headdress.jpg",
+        "url": "https://dota2.ru/items/headdress/",
+        "recipe": [
+            "Ring of Regen",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "health_regen": 0.5
+        }
+    },
+    "Tranquil Boots": {
+        "name": "Tranquil Boots",
+        "cost": 900,
+        "image": "https://dota2.ru/img/items/tranquil_boots.jpg",
+        "url": "https://dota2.ru/items/tranquil-boots/",
+        "recipe": [
+            "Boots of Speed",
+            "Wind Lace",
+            "Ring of Regen"
+        ],
+        "order": 2,
+        "buffs": {
+            "health_regen": 14.0,
+            "move_speed": 65.0
+        }
+    },
+    "Pavise": {
+        "name": "Pavise",
+        "cost": 1400,
+        "image": "https://dota2.ru/img/items/pavise.jpg",
+        "url": "https://dota2.ru/items/pavise/",
+        "recipe": [
+            "Energy Booster",
+            "Ring of Protection",
+            "Fluffy Hat",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "health": 175.0,
+            "mana": 250.0,
+            "armor": 2.0
+        }
+    },
+    "Drum of Endurance": {
+        "name": "Drum of Endurance",
+        "cost": 1625,
+        "image": "https://dota2.ru/img/items/drum_of_endurance.jpg",
+        "url": "https://dota2.ru/items/drum-of-endurance/",
+        "recipe": [
+            "Robe of the Magi",
+            "Belt of Strength",
+            "Wind Lace",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 7.0,
+            "intelligence": 7.0
+        }
+    },
+    "Arcane Boots": {
+        "name": "Arcane Boots",
+        "cost": 1400,
+        "image": "https://dota2.ru/img/items/arcane_boots.jpg",
+        "url": "https://dota2.ru/items/arcane-boots/",
+        "recipe": [
+            "Boots of Speed",
+            "Ring of Basilius",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "mana_regen": 0.25,
+            "move_speed": 45.0
+        }
+    },
+    "Mekansm": {
+        "name": "Mekansm",
+        "cost": 1775,
+        "image": "https://dota2.ru/img/items/mekansm.jpg",
+        "url": "https://dota2.ru/items/mekansm/",
+        "recipe": [
+            "Headdress",
+            "Chainmail",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "armor": 4.0
+        }
+    },
+    "Vladmir's Offering": {
+        "name": "Vladmir's Offering",
+        "cost": 2200,
+        "image": "https://dota2.ru/img/items/vladmirs_offering.jpg",
+        "url": "https://dota2.ru/items/vladmirs-offering/",
+        "recipe": [
+            "Buckler",
+            "Ring of Basilius",
+            "Morbid Mask",
+            "Blades of Attack"
+        ],
+        "order": 3,
+        "buffs": {
+            "mana_regen": 0.75,
+            "armor": 1.0
+        }
+    },
+    "Veil of Discord": {
+        "name": "Veil of Discord",
+        "cost": 1725,
+        "image": "https://dota2.ru/img/items/veil_of_discord.jpg",
+        "url": "https://dota2.ru/items/veil-of-discord/",
+        "recipe": [
+            "Helm of Iron Will",
+            "Crown",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "all_attributes": 4.0,
+            "health_regen": 4.0,
+            "armor": 4.0
+        }
+    },
+    "Spirit Vessel": {
+        "name": "Spirit Vessel",
+        "cost": 2725,
+        "image": "https://dota2.ru/img/items/spirit_vessel.jpg",
+        "url": "https://dota2.ru/items/spirit-vessel/",
+        "recipe": [
+            "Urn of Shadows",
+            "Diadem",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "all_attributes": 10.0,
+            "mana_regen": 1.75,
+            "armor": 2.0
+        }
+    },
+    "Holy Locket": {
+        "name": "Holy Locket",
+        "cost": 2250,
+        "image": "https://dota2.ru/img/items/holy_locket.jpg",
+        "url": "https://dota2.ru/items/holy-locket/",
+        "recipe": [
+            "Diadem",
+            "Magic Wand",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "all_attributes": 9.0
+        }
+    },
+    "Aether Lens": {
+        "name": "Aether Lens",
+        "cost": 2275,
+        "image": "https://dota2.ru/img/items/aether_lens.jpg",
+        "url": "https://dota2.ru/items/aether-lens/",
+        "recipe": [
+            "Void Stone",
+            "Energy Booster",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "mana": 0.0,
+            "mana_regen": 2.5
+        }
+    },
+    "Guardian Greaves": {
+        "name": "Guardian Greaves",
+        "cost": 5050,
+        "image": "https://dota2.ru/img/items/guardian_greaves.jpg",
+        "url": "https://dota2.ru/items/guardian-greaves/",
+        "recipe": [
+            "Mekansm",
+            "Arcane Boots",
+            "Buckler",
+            "Recipe"
+        ],
+        "order": 4,
+        "buffs": {
+            "mana_regen": 1.5,
+            "move_speed": 50.0,
+            "armor": 4.0
+        }
+    },
+    "Force Staff": {
+        "name": "Force Staff",
+        "cost": 2200,
+        "image": "https://dota2.ru/img/items/force_staff.jpg",
+        "url": "https://dota2.ru/items/force-staff/",
+        "recipe": [
+            "Staff of Wizardry",
+            "Fluffy Hat",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "intelligence": 10.0,
+            "health": 175.0
+        }
+    },
+    "Parasma": {
+        "name": "Parasma",
+        "cost": 5975,
+        "image": "https://dota2.ru/img/items/parasma.jpg",
+        "url": "https://dota2.ru/items/parasma/",
+        "recipe": [
+            "Witch Blade",
+            "Mystic Staff",
+            "Recipe"
+        ],
+        "order": 4,
+        "buffs": {
+            "intelligence": 40.0,
+            "mana_regen": 1.5,
+            "attack_speed": 40.0,
+            "projectile_speed": 300.0,
+            "armor": 7.0
+        }
+    },
+    "Glimmer Cape": {
+        "name": "Glimmer Cape",
+        "cost": 2150,
+        "image": "https://dota2.ru/img/items/glimmer_cape.jpg",
+        "url": "https://dota2.ru/items/glimmer-cape/",
+        "recipe": [
+            "Shadow Amulet",
+            "Cloak",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "magic_resist": 20.0
+        }
+    },
+    "Pipe of Insight": {
+        "name": "Pipe of Insight",
+        "cost": 3725,
+        "image": "https://dota2.ru/img/items/pipe_of_insight.jpg",
+        "url": "https://dota2.ru/items/pipe-of-insight/",
+        "recipe": [
+            "Cloak",
+            "Headdress",
+            "Ring of Tarrasque",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "health_regen": 14.0,
+            "magic_resist": 20.0
+        }
+    },
+    "Boots of Bearing": {
+        "name": "Boots of Bearing",
+        "cost": 4225,
+        "image": "https://dota2.ru/img/items/boots_of_bearing.jpg",
+        "url": "https://dota2.ru/items/boots-of-bearing/",
+        "recipe": [
+            "Drum of Endurance",
+            "Tranquil Boots",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "strength": 8.0,
+            "intelligence": 8.0,
+            "health_regen": 15.0,
+            "move_speed": 65.0
+        }
+    },
+    "Eul's Scepter of Divinity": {
+        "name": "Eul's Scepter of Divinity",
+        "cost": 2600,
+        "image": "https://dota2.ru/img/items/euls_scepter_of_divinity.jpg",
+        "url": "https://dota2.ru/items/euls-scepter-of-divinity/",
+        "recipe": [
+            "Staff of Wizardry",
+            "Void Stone",
+            "Wind Lace",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "intelligence": 10.0,
+            "mana_regen": 2.5,
+            "move_speed": 20.0
+        }
+    },
+    "Rod of Atos": {
+        "name": "Rod of Atos",
+        "cost": 2250,
+        "image": "https://dota2.ru/img/items/rod_of_atos.jpg",
+        "url": "https://dota2.ru/items/rod-of-atos/",
+        "recipe": [
+            "Staff of Wizardry",
+            "Vitality Booster",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "intelligence": 12.0,
+            "health": 275.0
+        }
+    },
+    "Witch Blade": {
+        "name": "Witch Blade",
+        "cost": 2775,
+        "image": "https://dota2.ru/img/items/witch_blade.jpg",
+        "url": "https://dota2.ru/items/witch-blade/",
+        "recipe": [
+            "Oblivion Staff",
+            "Orb of Venom",
+            "Chainmail",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "intelligence": 12.0,
+            "mana_regen": 1.5,
+            "attack_speed": 40.0,
+            "projectile_speed": 300.0,
+            "armor": 5.0
+        }
+    },
+    "Dagon": {
+        "name": "Dagon",
+        "cost": 2850,
+        "image": "https://dota2.ru/img/items/dagon.jpg",
+        "url": "https://dota2.ru/items/dagon/",
+        "recipe": [
+            "Diadem",
+            "Voodoo Mask",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "all_attributes": 15.0,
+            "spell_lifesteal_heroes": 19.0,
+            "spell_lifesteal_creeps": 3.8
+        }
+    },
+    "Solar Crest": {
+        "name": "Solar Crest",
+        "cost": 2575,
+        "image": "https://dota2.ru/img/items/solar_crest.jpg",
+        "url": "https://dota2.ru/items/solar-crest/",
+        "recipe": [
+            "Pavise",
+            "Crown",
+            "Wind Lace",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "all_attributes": 4.0,
+            "health": 175.0,
+            "mana": 300.0,
+            "move_speed": 25.0,
+            "armor": 4.0
+        }
+    },
+    "Orchid Malevolence": {
+        "name": "Orchid Malevolence",
+        "cost": 3275,
+        "image": "https://dota2.ru/img/items/orchid_malevolence.jpg",
+        "url": "https://dota2.ru/items/orchid-malevolence/",
+        "recipe": [
+            "Oblivion Staff",
+            "Cornucopia",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "intelligence": 10.0,
+            "health_regen": 6.0,
+            "mana_regen": 3.0,
+            "attack_speed": 35.0,
+            "spell_damage": 10.0
+        }
+    },
+    "Refresher Orb": {
+        "name": "Refresher Orb",
+        "cost": 5000,
+        "image": "https://dota2.ru/img/items/refresher_orb.jpg",
+        "url": "https://dota2.ru/items/refresher-orb/",
+        "recipe": [
+            "Cornucopia",
+            "Ring of Tarrasque",
+            "Tiara of Selemene",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "health_regen": 18.0,
+            "mana_regen": 8.0,
+            "damage": 10.0
+        }
+    },
+    "Octarine Core": {
+        "name": "Octarine Core",
+        "cost": 4800,
+        "image": "https://dota2.ru/img/items/octarine_core.jpg",
+        "url": "https://dota2.ru/items/octarine-core/",
+        "recipe": [
+            "Tiara of Selemene",
+            "Soul Booster"
+        ],
+        "order": 3,
+        "buffs": {
+            "health": 450.0,
+            "mana": 450.0,
+            "mana_regen": 6.0
+        }
+    },
+    "Scythe of Vyse": {
+        "name": "Scythe of Vyse",
+        "cost": 5200,
+        "image": "https://dota2.ru/img/items/scythe_of_vyse.jpg",
+        "url": "https://dota2.ru/items/scythe-of-vyse/",
+        "recipe": [
+            "Mystic Staff",
+            "Tiara of Selemene",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "intelligence": 30.0,
+            "mana_regen": 8.5
+        }
+    },
+    "Crystalys": {
+        "name": "Crystalys",
+        "cost": 2000,
+        "image": "https://dota2.ru/img/items/crystalys.jpg",
+        "url": "https://dota2.ru/items/crystalys/",
+        "recipe": [
+            "Claymore",
+            "Blades of Attack",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "damage": 32.0
+        }
+    },
+    "Armlet of Mordiggian": {
+        "name": "Armlet of Mordiggian",
+        "cost": 2500,
+        "image": "https://dota2.ru/img/items/armlet_of_mordiggian.jpg",
+        "url": "https://dota2.ru/items/armlet-of-mordiggian/",
+        "recipe": [
+            "Helm of Iron Will",
+            "Gloves of Haste",
+            "Blades of Attack",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "health_regen": 5.0,
+            "attack_speed": 25.0,
+            "damage": 15.0,
+            "armor": 6.0
+        }
+    },
+    "Wind Waker": {
+        "name": "Wind Waker",
+        "cost": 6800,
+        "image": "https://dota2.ru/img/items/wind_waker.jpg",
+        "url": "https://dota2.ru/items/wind-waker/",
+        "recipe": [
+            "Eul's Scepter of Divinity",
+            "Mystic Staff",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "intelligence": 35.0,
+            "mana_regen": 3.0,
+            "move_speed": 0.0
+        }
+    },
+    "Aghanim's Scepter": {
+        "name": "Aghanim's Scepter",
+        "cost": 4200,
+        "image": "https://dota2.ru/img/items/aghanims_scepter.jpg",
+        "url": "https://dota2.ru/items/aghanims-scepter/",
+        "recipe": [
+            "Point Booster",
+            "Staff of Wizardry",
+            "Ogre Axe",
+            "Blade of Alacrity"
+        ],
+        "order": 2,
+        "buffs": {
+            "all_attributes": 10.0,
+            "health": 175.0,
+            "mana": 175.0
+        }
+    },
+    "Gleipnir": {
+        "name": "Gleipnir",
+        "cost": 4550,
+        "image": "https://dota2.ru/img/items/gleipnir.jpg",
+        "url": "https://dota2.ru/items/gleipnir/",
+        "recipe": [
+            "Point Booster",
+            "Rod of Atos",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "intelligence": 12.0,
+            "health": 450.0,
+            "mana": 200.0,
+            "spell_radius": 75.0
+        }
+    },
+    "Meteor Hammer": {
+        "name": "Meteor Hammer",
+        "cost": 2850,
+        "image": "https://dota2.ru/img/items/meteor_hammer.jpg",
+        "url": "https://dota2.ru/items/meteor-hammer/",
+        "recipe": [
+            "Kaya",
+            "Crown",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "strength": 6.0,
+            "agility": 6.0,
+            "intelligence": 24.0,
+            "mana_regen": 40.0,
+            "spell_damage": 10.0
+        }
+    },
+    "Skull Basher": {
+        "name": "Skull Basher",
+        "cost": 2875,
+        "image": "https://dota2.ru/img/items/skull_basher.jpg",
+        "url": "https://dota2.ru/items/skull-basher/",
+        "recipe": [
+            "Mithril Hammer",
+            "Belt of Strength",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 10.0,
+            "damage": 30.0
+        }
+    },
+    "Shadow Blade": {
+        "name": "Shadow Blade",
+        "cost": 3350,
+        "image": "https://dota2.ru/img/items/shadow_blade.jpg",
+        "url": "https://dota2.ru/items/shadow-blade/",
+        "recipe": [
+            "Shadow Amulet",
+            "Claymore",
+            "Blitz Knuckles"
+        ],
+        "order": 2,
+        "buffs": {
+            "attack_speed": 35.0,
+            "spell_damage": 25.0
+        }
+    },
+    "Desolator": {
+        "name": "Desolator",
+        "cost": 3500,
+        "image": "https://dota2.ru/img/items/desolator.jpg",
+        "url": "https://dota2.ru/items/desolator/",
+        "recipe": [
+            "Mithril Hammer",
+            "Mithril Hammer",
+            "Orb of Blight"
+        ],
+        "order": 2,
+        "buffs": {
+            "damage": 55.0
+        }
+    },
+    "Battle Fury": {
+        "name": "Battle Fury",
+        "cost": 3900,
+        "image": "https://dota2.ru/img/items/battle_fury.jpg",
+        "url": "https://dota2.ru/items/battle-fury/",
+        "recipe": [
+            "Broadsword",
+            "Broadsword",
+            "Quelling Blade",
+            "Cornucopia",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "health_regen": 7.5,
+            "mana_regen": 2.75,
+            "damage": 50.0
+        }
+    },
+    "Nullifier": {
+        "name": "Nullifier",
+        "cost": 4375,
+        "image": "https://dota2.ru/img/items/nullifier.jpg",
+        "url": "https://dota2.ru/items/nullifier/",
+        "recipe": [
+            "Helm of Iron Will",
+            "Sacred Relic"
+        ],
+        "order": 2,
+        "buffs": {
+            "health_regen": 6.0,
+            "damage": 75.0,
+            "armor": 10.0
+        }
+    },
+    "Butterfly": {
+        "name": "Butterfly",
+        "cost": 5450,
+        "image": "https://dota2.ru/img/items/butterfly.jpg",
+        "url": "https://dota2.ru/items/butterfly/",
+        "recipe": [
+            "Eaglesong",
+            "Talisman of Evasion",
+            "Claymore"
+        ],
+        "order": 2,
+        "buffs": {
+            "agility": 35.0,
+            "attack_speed": 20.0,
+            "damage": 25.0,
+            "evasion": 35.0
+        }
+    },
+    "Divine Rapier": {
+        "name": "Divine Rapier",
+        "cost": 5600,
+        "image": "https://dota2.ru/img/items/divine_rapier.jpg",
+        "url": "https://dota2.ru/items/divine-rapier/",
+        "recipe": [
+            "Sacred Relic",
+            "Demon Edge"
+        ],
+        "order": 2,
+        "buffs": {
+            "damage": 100.0
+        }
+    },
+    "Ethereal Blade": {
+        "name": "Ethereal Blade",
+        "cost": 5375,
+        "image": "https://dota2.ru/img/items/ethereal_blade.jpg",
+        "url": "https://dota2.ru/items/ethereal-blade/",
+        "recipe": [
+            "Aether Lens",
+            "Ghost Scepter",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "all_attributes": 8.0,
+            "mana": 300.0,
+            "mana_regen": 3.0,
+            "cast_range": 250.0
+        }
+    },
+    "Monkey King Bar": {
+        "name": "Monkey King Bar",
+        "cost": 4700,
+        "image": "https://dota2.ru/img/items/monkey_king_bar.jpg",
+        "url": "https://dota2.ru/items/monkey-king-bar/",
+        "recipe": [
+            "Demon Edge",
+            "Javelin",
+            "Blitz Knuckles",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "attack_speed": 45.0,
+            "damage": 40.0
+        }
+    },
+    "Silver Edge": {
+        "name": "Silver Edge",
+        "cost": 5800,
+        "image": "https://dota2.ru/img/items/silver_edge.jpg",
+        "url": "https://dota2.ru/items/silver-edge/",
+        "recipe": [
+            "Shadow Blade",
+            "Demon Edge",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "attack_speed": 35.0,
+            "damage": 70.0
+        }
+    },
+    "Radiance": {
+        "name": "Radiance",
+        "cost": 4700,
+        "image": "https://dota2.ru/img/items/radiance.jpg",
+        "url": "https://dota2.ru/items/radiance/",
+        "recipe": [
+            "Sacred Relic",
+            "Talisman of Evasion"
+        ],
+        "order": 2,
+        "buffs": {
+            "damage": 55.0,
+            "evasion": 15.0
+        }
+    },
+    "Daedalus": {
+        "name": "Daedalus",
+        "cost": 5100,
+        "image": "https://dota2.ru/img/items/daedalus.jpg",
+        "url": "https://dota2.ru/items/daedalus/",
+        "recipe": [
+            "Demon Edge",
+            "Crystalys",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "damage": 88.0
+        }
+    },
+    "Revenant's Brooch": {
+        "name": "Revenant's Brooch",
+        "cost": 3300,
+        "image": "https://dota2.ru/img/items/revenants_brooch.jpg",
+        "url": "https://dota2.ru/items/revenants-brooch/",
+        "recipe": [
+            "Crystalys",
+            "Voodoo Mask",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "spell_lifesteal_heroes": 14.0,
+            "spell_lifesteal_creeps": 2.8,
+            "damage": 35.0
+        }
+    },
+    "Bloodthorn": {
+        "name": "Bloodthorn",
+        "cost": 6625,
+        "image": "https://dota2.ru/img/items/bloodthorn.jpg",
+        "url": "https://dota2.ru/items/bloodthorn/",
+        "recipe": [
+            "Orchid Malevolence",
+            "Javelin",
+            "Hyperstone",
+            "Recipe"
+        ],
+        "order": 4,
+        "buffs": {
+            "intelligence": 10.0,
+            "health_regen": 6.5,
+            "mana_regen": 3.25,
+            "attack_speed": 95.0,
+            "damage": 10.0
+        }
+    },
+    "Vanguard": {
+        "name": "Vanguard",
+        "cost": 1700,
+        "image": "https://dota2.ru/img/items/vanguard.jpg",
+        "url": "https://dota2.ru/items/vanguard/",
+        "recipe": [
+            "Ring of Health",
+            "Vitality Booster"
+        ],
+        "order": 2,
+        "buffs": {
+            "health": 250.0,
+            "health_regen": 4.5
+        }
+    },
+    "Blade Mail": {
+        "name": "Blade Mail",
+        "cost": 2300,
+        "image": "https://dota2.ru/img/items/blade_mail.jpg",
+        "url": "https://dota2.ru/items/blade-mail/",
+        "recipe": [
+            "Broadsword",
+            "Chainmail",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "damage": 15.0,
+            "armor": 6.0
+        }
+    },
+    "Aeon Disk": {
+        "name": "Aeon Disk",
+        "cost": 3000,
+        "image": "https://dota2.ru/img/items/aeon_disk.jpg",
+        "url": "https://dota2.ru/items/aeon-disk/",
+        "recipe": [
+            "Vitality Booster",
+            "Energy Booster",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "health": 250.0,
+            "mana": 300.0
+        }
+    },
+    "Soul Booster": {
+        "name": "Soul Booster",
+        "cost": 3000,
+        "image": "https://dota2.ru/img/items/soul_booster.jpg",
+        "url": "https://dota2.ru/items/soul-booster/",
+        "recipe": [
+            "Energy Booster",
+            "Point Booster",
+            "Vitality Booster"
+        ],
+        "order": 2,
+        "buffs": {
+            "health": 425.0,
+            "mana": 425.0
+        }
+    },
+    "Disperser": {
+        "name": "Disperser",
+        "cost": 6100,
+        "image": "https://dota2.ru/img/items/disperser.jpg",
+        "url": "https://dota2.ru/items/disperser/",
+        "recipe": [
+            "Diffusal Blade",
+            "Eaglesong",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "agility": 40.0,
+            "intelligence": 10.0
+        }
+    },
+    "Khanda": {
+        "name": "Khanda",
+        "cost": 5600,
+        "image": "https://dota2.ru/img/items/khanda.jpg",
+        "url": "https://dota2.ru/items/khanda/",
+        "recipe": [
+            "Phylactery",
+            "Tiara of Selemene",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "all_attributes": 8.0,
+            "health": 200.0,
+            "mana": 200.0,
+            "mana_regen": 8.0
+        }
+    },
+    "Black King Bar": {
+        "name": "Black King Bar",
+        "cost": 4050,
+        "image": "https://dota2.ru/img/items/black_king_bar.jpg",
+        "url": "https://dota2.ru/items/black-king-bar/",
+        "recipe": [
+            "Ogre Axe",
+            "Mithril Hammer",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 10.0,
+            "damage": 24.0
+        }
+    },
+    "Abyssal Blade": {
+        "name": "Abyssal Blade",
+        "cost": 6250,
+        "image": "https://dota2.ru/img/items/abyssal_blade.jpg",
+        "url": "https://dota2.ru/items/abyssal-blade/",
+        "recipe": [
+            "Skull Basher",
+            "Sange",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "strength": 26.0,
+            "health_replenish_amp": 20.0,
+            "spell_lifesteal_amp": 25.0,
+            "damage": 35.0,
+            "slow_resist": 25.0
+        }
+    },
+    "Crimson Guard": {
+        "name": "Crimson Guard",
+        "cost": 3725,
+        "image": "https://dota2.ru/img/items/crimson_guard.jpg",
+        "url": "https://dota2.ru/items/crimson-guard/",
+        "recipe": [
+            "Vanguard",
+            "Helm of Iron Will",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "health": 250.0,
+            "health_regen": 12.0,
+            "armor": 8.0
+        }
+    },
+    "Manta Style": {
+        "name": "Manta Style",
+        "cost": 4650,
+        "image": "https://dota2.ru/img/items/manta_style.jpg",
+        "url": "https://dota2.ru/items/manta-style/",
+        "recipe": [
+            "Yasha",
+            "Diadem",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "strength": 10.0,
+            "agility": 26.0,
+            "intelligence": 10.0,
+            "move_speed": 10.0,
+            "attack_speed": 15.0
+        }
+    },
+    "Bloodstone": {
+        "name": "Bloodstone",
+        "cost": 4400,
+        "image": "https://dota2.ru/img/items/bloodstone.jpg",
+        "url": "https://dota2.ru/items/bloodstone/",
+        "recipe": [
+            "Voodoo Mask",
+            "Soul Booster",
+            "Void Stone"
+        ],
+        "order": 3,
+        "buffs": {
+            "health": 450.0,
+            "mana": 450.0,
+            "mana_regen": 3.0,
+            "spell_lifesteal_heroes": 20.0,
+            "spell_lifesteal_creeps": 4.0
+        }
+    },
+    "Linken's Sphere": {
+        "name": "Linken's Sphere",
+        "cost": 4800,
+        "image": "https://dota2.ru/img/items/linkens_sphere.jpg",
+        "url": "https://dota2.ru/items/linkens-sphere/",
+        "recipe": [
+            "Ultimate Orb",
+            "Perseverance",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "all_attributes": 16.0,
+            "health_regen": 6.5,
+            "mana_regen": 4.25
+        }
+    },
+    "Assault Cuirass": {
+        "name": "Assault Cuirass",
+        "cost": 5125,
+        "image": "https://dota2.ru/img/items/assault_cuirass.jpg",
+        "url": "https://dota2.ru/items/assault-cuirass/",
+        "recipe": [
+            "Platemail",
+            "Hyperstone",
+            "Buckler",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "attack_speed": 30.0,
+            "armor": 10.0
+        }
+    },
+    "Heart of Tarrasque": {
+        "name": "Heart of Tarrasque",
+        "cost": 5200,
+        "image": "https://dota2.ru/img/items/heart_of_tarrasque.jpg",
+        "url": "https://dota2.ru/items/heart-of-tarrasque/",
+        "recipe": [
+            "Ring of Tarrasque",
+            "Reaver",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 40.0,
+            "max_health_per_sec": 1.4
+        }
+    },
+    "Lotus Orb": {
+        "name": "Lotus Orb",
+        "cost": 3850,
+        "image": "https://dota2.ru/img/items/lotus_orb.jpg",
+        "url": "https://dota2.ru/items/lotus-orb/",
+        "recipe": [
+            "Perseverance",
+            "Platemail",
+            "Energy Booster",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "mana": 250.0,
+            "health_regen": 6.5,
+            "mana_regen": 4.0,
+            "armor": 10.0
+        }
+    },
+    "Hurricane Pike": {
+        "name": "Hurricane Pike",
+        "cost": 4450,
+        "image": "https://dota2.ru/img/items/hurricane_pike.jpg",
+        "url": "https://dota2.ru/items/hurricane-pike/",
+        "recipe": [
+            "Force Staff",
+            "Dragon Lance",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "strength": 15.0,
+            "agility": 20.0,
+            "intelligence": 15.0,
+            "health": 200.0,
+            "move_speed_ranged": 140.0
+        }
+    },
+    "Shiva's Guard": {
+        "name": "Shiva's Guard",
+        "cost": 5175,
+        "image": "https://dota2.ru/img/items/shivas_guard.jpg",
+        "url": "https://dota2.ru/items/shivas-guard/",
+        "recipe": [
+            "Veil of Discord",
+            "Platemail",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "strength": 5.0,
+            "agility": 5.0,
+            "intelligence": 5.0,
+            "health_regen": 5.0,
+            "armor": 15.0
+        }
+    },
+    "Eternal Shroud": {
+        "name": "Eternal Shroud",
+        "cost": 3700,
+        "image": "https://dota2.ru/img/items/eternal_shroud.jpg",
+        "url": "https://dota2.ru/items/eternal-shroud/",
+        "recipe": [
+            "Cloak",
+            "Ogre Axe",
+            "Vitality Booster",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 10.0,
+            "health": 250.0,
+            "magic_resist": 20.0
+        }
+    },
+    "Dragon Lance": {
+        "name": "Dragon Lance",
+        "cost": 1900,
+        "image": "https://dota2.ru/img/items/dragon_lance.jpg",
+        "url": "https://dota2.ru/items/dragon-lance/",
+        "recipe": [
+            "Blade of Alacrity",
+            "Belt of Strength",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 10.0,
+            "agility": 15.0,
+            "move_speed_ranged": 140.0
+        }
+    },
+    "Sange": {
+        "name": "Sange",
+        "cost": 2100,
+        "image": "https://dota2.ru/img/items/sange.jpg",
+        "url": "https://dota2.ru/items/sange/",
+        "recipe": [
+            "Ogre Axe",
+            "Belt of Strength",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 16.0,
+            "health_replenish_amp": 16.0,
+            "slow_resist": 20.0
+        }
+    },
+    "Echo Sabre": {
+        "name": "Echo Sabre",
+        "cost": 2700,
+        "image": "https://dota2.ru/img/items/echo_sabre.jpg",
+        "url": "https://dota2.ru/items/echo-sabre/",
+        "recipe": [
+            "Ogre Axe",
+            "Broadsword",
+            "Void Stone"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 15.0,
+            "mana_regen": 1.75,
+            "damage": 20.0
+        }
+    },
+    "Kaya": {
+        "name": "Kaya",
+        "cost": 2100,
+        "image": "https://dota2.ru/img/items/kaya.jpg",
+        "url": "https://dota2.ru/items/kaya/",
+        "recipe": [
+            "Robe of the Magi",
+            "Staff of Wizardry",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "intelligence": 16.0,
+            "spell_damage": 10.0,
+            "mana_regen_amp": 40.0
+        }
+    },
+    "Maelstrom": {
+        "name": "Maelstrom",
+        "cost": 2950,
+        "image": "https://dota2.ru/img/items/maelstrom.jpg",
+        "url": "https://dota2.ru/items/maelstrom/",
+        "recipe": [
+            "Mithril Hammer",
+            "Javelin",
+            "Gloves of Haste"
+        ],
+        "order": 2,
+        "buffs": {
+            "attack_speed": 25.0,
+            "damage": 25.0
+        }
+    },
+    "Helm of the Overlord": {
+        "name": "Helm of the Overlord",
+        "cost": 5650,
+        "image": "https://dota2.ru/img/items/helm_of_the_overlord.jpg",
+        "url": "https://dota2.ru/items/helm-of-the-overlord/",
+        "recipe": [
+            "Helm of the Dominator",
+            "Ultimate Orb",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "all_attributes": 21.0,
+            "health_regen": 7.0,
+            "armor": 7.0
+        }
+    },
+    "Yasha": {
+        "name": "Yasha",
+        "cost": 2100,
+        "image": "https://dota2.ru/img/items/yasha.jpg",
+        "url": "https://dota2.ru/items/yasha/",
+        "recipe": [
+            "Band of Elvenskin",
+            "Blade of Alacrity",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "agility": 16.0,
+            "move_speed": 10.0,
+            "attack_speed": 15.0
+        }
+    },
+    "Diffusal Blade": {
+        "name": "Diffusal Blade",
+        "cost": 2500,
+        "image": "https://dota2.ru/img/items/diffusal_blade.jpg",
+        "url": "https://dota2.ru/items/diffusal-blade/",
+        "recipe": [
+            "Blade of Alacrity",
+            "Robe of the Magi",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "agility": 15.0,
+            "intelligence": 10.0
+        }
+    },
+    "Phylactery": {
+        "name": "Phylactery",
+        "cost": 2500,
+        "image": "https://dota2.ru/img/items/phylactery.jpg",
+        "url": "https://dota2.ru/items/phylactery/",
+        "recipe": [
+            "Diadem",
+            "Point Booster",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "all_attributes": 7.0,
+            "health": 200.0,
+            "mana": 200.0
+        }
+    },
+    "Yasha and Kaya": {
+        "name": "Yasha and Kaya",
+        "cost": 4200,
+        "image": "https://dota2.ru/img/items/yasha_and_kaya.jpg",
+        "url": "https://dota2.ru/items/yasha-and-kaya/",
+        "recipe": [
+            "Kaya",
+            "Yasha"
+        ],
+        "order": 3,
+        "buffs": {
+            "agility": 16.0,
+            "intelligence": 16.0,
+            "move_speed": 12.0,
+            "attack_speed": 20.0,
+            "cast_speed": 25.0,
+            "spell_damage_amp": 12.0,
+            "mana_regen_amp": 50.0
+        }
+    },
+    "Mage Slayer": {
+        "name": "Mage Slayer",
+        "cost": 2800,
+        "image": "https://dota2.ru/img/items/mage_slayer.jpg",
+        "url": "https://dota2.ru/items/mage-slayer/",
+        "recipe": [
+            "Orb of Venom",
+            "Cloak",
+            "Cornucopia",
+            "Gloves of Haste"
+        ],
+        "order": 2,
+        "buffs": {
+            "health_regen": 5.0,
+            "mana_regen": 2.0,
+            "attack_speed": 30.0,
+            "damage": 8.0,
+            "magic_resist": 20.0
+        }
+    },
+    "Kaya and Sange": {
+        "name": "Kaya and Sange",
+        "cost": 4200,
+        "image": "https://dota2.ru/img/items/kaya_and_sange.jpg",
+        "url": "https://dota2.ru/items/kaya-and-sange/",
+        "recipe": [
+            "Kaya",
+            "Sange"
+        ],
+        "order": 3,
+        "buffs": {
+            "strength": 16.0,
+            "intelligence": 16.0,
+            "health_replenish_amp": 20.0,
+            "ability_damage_amp": 12.0,
+            "slow_resist": 25.0,
+            "mana_efficiency": 25.0,
+            "mana_regen_amp": 50.0
+        }
+    },
+    "Sange and Yasha": {
+        "name": "Sange and Yasha",
+        "cost": 4200,
+        "image": "https://dota2.ru/img/items/sange_and_yasha.jpg",
+        "url": "https://dota2.ru/items/sange-and-yasha/",
+        "recipe": [
+            "Sange",
+            "Yasha"
+        ],
+        "order": 3,
+        "buffs": {
+            "strength": 16.0,
+            "agility": 16.0,
+            "health_replenish_amp": 20.0,
+            "move_speed": 12.0,
+            "attack_speed": 20.0,
+            "slow_resist": 25.0,
+            "status_resist": 15.0
+        }
+    },
+    "Satanic": {
+        "name": "Satanic",
+        "cost": 5050,
+        "image": "https://dota2.ru/img/items/satanic.jpg",
+        "url": "https://dota2.ru/items/satanic/",
+        "recipe": [
+            "Claymore",
+            "Morbid Mask",
+            "Reaver"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 25.0,
+            "damage": 25.0
+        }
+    },
+    "Heaven's Halberd": {
+        "name": "Heaven's Halberd",
+        "cost": 2600,
+        "image": "https://dota2.ru/img/items/heavens_halberd.jpg",
+        "url": "https://dota2.ru/items/heavens-halberd/",
+        "recipe": [
+            "Vanguard",
+            "Crown",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "all_attributes": 5.0,
+            "health": 275.0,
+            "health_regen": 6.0
+        }
+    },
+    "Eye of Skadi": {
+        "name": "Eye of Skadi",
+        "cost": 5900,
+        "image": "https://dota2.ru/img/items/eye_of_skadi.jpg",
+        "url": "https://dota2.ru/items/eye-of-skadi/",
+        "recipe": [
+            "Ultimate Orb",
+            "Ultimate Orb",
+            "Orb of Frost"
+        ],
+        "order": 2,
+        "buffs": {
+            "all_attributes": 35.0
+        }
+    },
+    "Ring of Tarrasque": {
+        "name": "Ring of Tarrasque",
+        "cost": 1800,
+        "image": "https://dota2.ru/img/items/ring_of_tarrasque.jpg",
+        "url": "https://dota2.ru/items/ring-of-tarrasque/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health_regen": 12.0
+        }
+    },
+    "Tiara of Selemene": {
+        "name": "Tiara of Selemene",
+        "cost": 1800,
+        "image": "https://dota2.ru/img/items/tiara_of_selemene.jpg",
+        "url": "https://dota2.ru/items/tiara-of-selemene/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "mana_regen": 6.0
+        }
+    },
+    "Cornucopia": {
+        "name": "Cornucopia",
+        "cost": 1200,
+        "image": "https://dota2.ru/img/items/cornucopia.jpg",
+        "url": "https://dota2.ru/items/cornucopia/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health_regen": 5.0,
+            "mana_regen": 2.0,
+            "damage": 7.0
+        }
+    },
+    "Energy Booster": {
+        "name": "Energy Booster",
+        "cost": 800,
+        "image": "https://dota2.ru/img/items/energy_booster.jpg",
+        "url": "https://dota2.ru/items/energy-booster/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "mana": 250.0
+        }
+    },
+    "Arcane Blink": {
+        "name": "Arcane Blink",
+        "cost": 6800,
+        "image": "https://dota2.ru/img/items/arcane_blink.jpg",
+        "url": "https://dota2.ru/items/arcane-blink/",
+        "recipe": [
+            "Blink Dagger",
+            "Mystic Staff",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "intelligence": 25.0
+        }
+    },
+    "Swift Blink": {
+        "name": "Swift Blink",
+        "cost": 6800,
+        "image": "https://dota2.ru/img/items/swift_blink.jpg",
+        "url": "https://dota2.ru/items/swift-blink/",
+        "recipe": [
+            "Blink Dagger",
+            "Eaglesong",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "agility": 25.0
+        }
+    },
+    "Overwhelming Blink": {
+        "name": "Overwhelming Blink",
+        "cost": 6800,
+        "image": "https://dota2.ru/img/items/overwhelming_blink.jpg",
+        "url": "https://dota2.ru/items/overwhelming-blink/",
+        "recipe": [
+            "Blink Dagger",
+            "Reaver",
+            "Recipe"
+        ],
+        "order": 2,
+        "buffs": {
+            "strength": 25.0
+        }
+    },
+    "Harpoon": {
+        "name": "Harpoon",
+        "cost": 4700,
+        "image": "https://dota2.ru/img/items/harpoon.jpg",
+        "url": "https://dota2.ru/items/harpoon/",
+        "recipe": [
+            "Echo Sabre",
+            "Diadem",
+            "Recipe"
+        ],
+        "order": 3,
+        "buffs": {
+            "strength": 25.0,
+            "agility": 10.0,
+            "intelligence": 10.0,
+            "mana_regen": 2.0,
+            "damage": 25.0
+        }
+    },
+    "Vitality Booster": {
+        "name": "Vitality Booster",
+        "cost": 1000,
+        "image": "https://dota2.ru/img/items/vitality_booster.jpg",
+        "url": "https://dota2.ru/items/vitality-booster/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health": 250.0
+        }
+    },
+    "Point Booster": {
+        "name": "Point Booster",
+        "cost": 1200,
+        "image": "https://dota2.ru/img/items/point_booster.jpg",
+        "url": "https://dota2.ru/items/point-booster/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "health": 175.0,
+            "mana": 175.0
+        }
+    },
+    "Talisman of Evasion": {
+        "name": "Talisman of Evasion",
+        "cost": 1300,
+        "image": "https://dota2.ru/img/items/talisman_of_evasion.jpg",
+        "url": "https://dota2.ru/items/talisman-of-evasion/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "evasion": 15.0
+        }
+    },
+    "Demon Edge": {
+        "name": "Demon Edge",
+        "cost": 2200,
+        "image": "https://dota2.ru/img/items/demon_edge.jpg",
+        "url": "https://dota2.ru/items/demon-edge/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "damage": 40.0
+        }
+    },
+    "Platemail": {
+        "name": "Platemail",
+        "cost": 1400,
+        "image": "https://dota2.ru/img/items/platemail.jpg",
+        "url": "https://dota2.ru/items/platemail/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "armor": 10.0
+        }
+    },
+    "Hyperstone": {
+        "name": "Hyperstone",
+        "cost": 2000,
+        "image": "https://dota2.ru/img/items/hyperstone.jpg",
+        "url": "https://dota2.ru/items/hyperstone/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "attack_speed": 60.0
+        }
+    },
+    "Mystic Staff": {
+        "name": "Mystic Staff",
+        "cost": 2800,
+        "image": "https://dota2.ru/img/items/mystic_staff.jpg",
+        "url": "https://dota2.ru/items/mystic-staff/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "intelligence": 25.0
+        }
+    },
+    "Reaver": {
+        "name": "Reaver",
+        "cost": 2800,
+        "image": "https://dota2.ru/img/items/reaver.jpg",
+        "url": "https://dota2.ru/items/reaver/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "strength": 25.0
+        }
+    },
+    "Ultimate Orb": {
+        "name": "Ultimate Orb",
+        "cost": 2800,
+        "image": "https://dota2.ru/img/items/ultimate_orb.jpg",
+        "url": "https://dota2.ru/items/ultimate-orb/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "all_attributes": 15.0
+        }
+    },
+    "Sacred Relic": {
+        "name": "Sacred Relic",
+        "cost": 3400,
+        "image": "https://dota2.ru/img/items/sacred_relic.jpg",
+        "url": "https://dota2.ru/items/sacred-relic/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "damage": 55.0
+        }
+    },
+    "Eaglesong": {
+        "name": "Eaglesong",
+        "cost": 2800,
+        "image": "https://dota2.ru/img/items/eaglesong.jpg",
+        "url": "https://dota2.ru/items/eaglesong/",
+        "recipe": [],
+        "order": 1,
+        "buffs": {
+            "agility": 25.0
+        }
+    }
+}

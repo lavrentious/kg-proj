@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+    "prettier.configPath": "client/.prettierrc",
+    "mypy.configFile": "./pyproject.toml",
+    "python.envFile": "${workspaceFolder}/.env"
+}

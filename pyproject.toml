@@ -1,0 +1,31 @@
+[project]
+name = "kg-proj"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "lavrentious",email = "lavrent0@yandex.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bs4 (>=0.0.2,<0.0.3)",
+    "requests (>=2.32.4,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.1"
+autoflake = "^2.3.1"
+mypy = "^1.15.0"
+black = "^25.1.0"
+types-requests = "^2.32.0.20250602"
+
+[tool.mypy]
+mypy_path = "./src"
+explicit_package_bases = true
+strict = true
+disallow_untyped_calls = false
