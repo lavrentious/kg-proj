@@ -1,3 +1,4 @@
+import logging
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from functools import lru_cache
@@ -8,9 +9,13 @@ from bs4 import BeautifulSoup, Tag
 
 from scraper.dota.types import Buffs, DotaItem
 from scraper.dota.utils import parse_buffs
+from scraper.scrapers.base_scraper import BaseScraper
+
+logger = logging.getLogger(__name__)
 
 
-class Dota2RuScraper:
+class Dota2RuScraper(BaseScraper):
+    NAME: str = "dota2_ru"
     HEADERS = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -65,7 +70,7 @@ class Dota2RuScraper:
             try:
                 buffs = self._scrape_buffs(item)
             except Exception as e:
-                print(f"[WARN] ERROR processing buffs: {e}")
+                logger.warning(f"ERROR processing buffs: {e}")
 
             return DotaItem(
                 name=item_name,
@@ -77,7 +82,7 @@ class Dota2RuScraper:
             )
 
         except Exception as e:
-            print(f"ERROR processing item: {e}")
+            logger.warning(f"ERROR processing item: {e}")
             return None
 
     def scrape(self) -> Dict[str, DotaItem]:
@@ -104,7 +109,6 @@ class Dota2RuScraper:
             for future in as_completed(futures):
                 result = future.result()
                 if result:
-                    # print(f"DEBUG: fetched {result.name}")
                     ans[result.name] = result
 
         return ans

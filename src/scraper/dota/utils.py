@@ -1,10 +1,13 @@
 import json
+import logging
 import re
 from dataclasses import asdict, is_dataclass
 from difflib import get_close_matches
 from typing import Any, Dict, List, Tuple
 
 from scraper.dota.types import Buffs, DotaItem
+
+logger = logging.getLogger(__name__)
 
 
 def raw_to_name_cost(raw: str) -> Tuple[str, int] | None:
@@ -13,12 +16,12 @@ def raw_to_name_cost(raw: str) -> Tuple[str, int] | None:
 
     m = re.search(r"^(.+) \((\d+)\)$", raw)
     if m is None:
-        print(f"ERROR: no match at {raw}")
+        logger.error(f"no match at {raw}")
         return None
 
     name, cost = m.groups()
     if not name or not cost:
-        print(f"ERROR: no name or cost at {raw}")
+        logger.error(f"no name or cost at {raw}")
         return None
     return name, int(cost)
 
@@ -37,7 +40,6 @@ def set_orders(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
 
     for name, item in ans.items():
         item.order = get_order(name)
-        print(item)
 
     return ans
 
@@ -67,6 +69,7 @@ def save_to_json(path: str, data: Dict[str, DotaItem]) -> None:
             f,
             ensure_ascii=False,
             indent=4,
+            sort_keys=True,
         )
 
 
@@ -118,7 +121,7 @@ FUZZY_THRESHOLD = 0.6
 
 def parse_buffs(lines: List[str]) -> Buffs:
     ans = Buffs()
-    print("parsing buffs from", lines)
+    logger.debug("parsing buffs from %s", lines)
 
     for line in lines:
         line = line.strip()
@@ -127,19 +130,19 @@ def parse_buffs(lines: List[str]) -> Buffs:
         line = re.sub(r"\s+%", "%", line)
 
         if not line:
-            print(f"⚠️ Skipping unparsable line: {line}")
+            logger.warning(f"skipping unparsable buff: {line}")
             continue
 
         match = re.search(BUFF_PATTERN, line)
         if not match:
-            print(f"⚠️ No match for line: {line}")
+            logger.warning(f"no match for buff: {line}")
             continue
 
         value_str, label = match.groups()[0], match.groups()[2]
         try:
             value = float(value_str)
         except ValueError:
-            print(f"⚠️ Invalid value: {value_str} in {line}")
+            logger.warning(f"invalid float value {value_str} in {line}")
             continue
 
         label = label.strip().lower()
@@ -153,7 +156,7 @@ def parse_buffs(lines: List[str]) -> Buffs:
             if close:
                 field = BUFF_KEYWORDS[close[0]]
             else:
-                print(f"❌ Unknown buff label: '{label}'")
+                logger.warning(f"unknown buff: '{label}'")
                 continue
 
         setattr(ans, field, value)

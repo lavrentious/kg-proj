@@ -1,5 +1,4 @@
 import json
-from dataclasses import asdict, dataclass
 from typing import Dict, List, Set
 
 from scraper.dota.types import Buffs, DotaItem
