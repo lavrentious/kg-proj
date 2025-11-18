@@ -2,8 +2,9 @@ import argparse
 import logging
 from typing import Dict
 
-from logger import getLogger
+from logger import getLogger, setLevel
 from scraper.dota.utils import (
+    get_recipes_count,
     parse_from_json,
     remove_distinct_recipes,
     save_to_json,
@@ -30,7 +31,7 @@ def main(
 ) -> None:
     # configure logger
     logger = getLogger(__name__)
-    logger.setLevel(logging.DEBUG if verbose else logging.INFO)
+    setLevel(logging.DEBUG if verbose else logging.INFO)
 
     if scraper_name not in SCRAPERS:
         raise ValueError(f"Unknown scraper: {scraper_name}")
@@ -42,7 +43,10 @@ def main(
     if input_file:
         logger.debug(f"reading from input file: {input_file}")
         res = parse_from_json(input_file)
-        logger.debug(f"loaded {len(res)} items from {input_file}.")
+        recipe_count = get_recipes_count(res)
+        logger.debug(
+            f"loaded {len(res) - recipe_count} items from {input_file} (+{recipe_count} recipes)."
+        )
     else:
         logger.info("scraping data from the site...")
         res = scraper.scrape()

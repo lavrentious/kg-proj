@@ -203,3 +203,11 @@ def remove_distinct_recipes(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
             item.recipe = ["Recipe" if r.endswith("Recipe") else r for r in item.recipe]
         ans[name] = item
     return ans
+
+
+def get_recipes_count(items: Dict[str, DotaItem]) -> int:
+    count = 0
+    for name in items.keys():
+        if "recipe" in name.lower():
+            count += 1
+    return count

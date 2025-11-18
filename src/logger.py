@@ -8,3 +8,7 @@ logging.basicConfig(
 
 def getLogger(name: str) -> logging.Logger:
     return logging.getLogger(name)
+
+
+def setLevel(level: int) -> None:
+    logging.getLogger().setLevel(level)

@@ -1,9 +1,10 @@
 import argparse
 import logging
 from pathlib import Path
+
 from rdflib import OWL, RDF, RDFS, XSD, Graph, Literal, Namespace
 
-from logger import getLogger
+from logger import getLogger, setLevel
 from scraper.dota.types import Buffs, DotaItem
 from scraper.dota.utils import parse_from_json
 from utils import normalize_name, snake_case_to_camel_case
@@ -148,7 +149,7 @@ def main() -> None:
     args = parser.parse_args()
 
     # Configure logger
-    getLogger("root").setLevel(logging.DEBUG if args.verbose else logging.INFO)
+    setLevel(logging.DEBUG if args.verbose else logging.INFO)
 
     # Build graph
     g = Graph()
