@@ -123,6 +123,13 @@ class Buffs:
         None  # макс. здоровья в секунду (Heart of Tarrasque)
     )
 
+    def __str__(self) -> str:
+        return (
+            "Buffs("
+            + ", ".join(f"{k}={v}" for k, v in self.__dict__.items() if v is not None)
+            + ")"
+        )
+
 
 @dataclass
 class DotaItem:
