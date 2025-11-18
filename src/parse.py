@@ -1,126 +1,169 @@
-import json
-from typing import Dict, List, Set
+import argparse
+import logging
+from pathlib import Path
+from rdflib import OWL, RDF, RDFS, XSD, Graph, Literal, Namespace
 
+from logger import getLogger
 from scraper.dota.types import Buffs, DotaItem
-from utils import snake_case_to_camel_case
+from scraper.dota.utils import parse_from_json
+from utils import normalize_name, snake_case_to_camel_case
+
+BASE = "http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#"
+ONTO_CLASSES = [
+    "Ability",
+    "PassiveAbility",
+    "ActiveAbility",
+    "NoTargetActiveAbility",
+    "PointTargetActiveAbility",
+    "UnitTargetActiveAbility",
+    "Item",
+    "NeutralItem",
+    "DotaItem",
+]
+KG = Namespace(BASE)
+
+logger = getLogger(__name__)
 
 
-def normalize_name(name: str) -> str:
-    return name.replace(" ", "_").replace("'", "")
+def build_item(graph: Graph, item: DotaItem) -> None:
+    name = item.name.replace(" ", "_").replace("'", "")
+    item_uri = KG[name]
 
+    # Create item individual
+    graph.add((item_uri, RDF.type, KG.DotaItem))
+    graph.add((item_uri, KG.cost, Literal(item.cost, datatype=XSD.integer)))
+    graph.add((item_uri, KG.name, Literal(item.name)))
+    graph.add((item_uri, KG.imageUrl, Literal(item.image)))
+    graph.add((item_uri, KG.wikiUrl, Literal(item.url)))
 
-def dota_item_to_rdf_entry(item: DotaItem) -> str | None:
-    normalized_name = normalize_name(item.name)
-    ans = ""
-    if len(set(item.recipe)) != len(item.recipe):
-        for r in item.recipe:
-            quantity = item.recipe.count(r)
-            if quantity < 2:
-                continue
-            r_normalized = normalize_name(r)
-            ans += f"""
-            <!-- http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{r_normalized}_{quantity}x -->
-
-            <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{r_normalized}_{quantity}x">
-                <rdf:type rdf:resource="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#BuildSchemaSlot"/>
-                <kg-dota:hasItem rdf:resource="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{r_normalized}"/>
-                <kg-dota:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">{quantity}</kg-dota:quantity>
-            </owl:NamedIndividual>
-            """
-
+    # Build schema
     if item.recipe:
-        ans += f"""
-        <!-- http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{normalized_name}_BS -->
+        schema_uri = KG[f"{name}_BS"]
+        graph.add((schema_uri, RDF.type, KG.BuildSchema))
+        graph.add((item_uri, KG.hasBuildSchema, schema_uri))
 
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{normalized_name}_BS">
-            <rdf:type rdf:resource="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#BuildSchema"/>
-        """
+        used = set()
+        for comp in item.recipe:
+            normalized_name = normalize_name(comp)
+            qty = item.recipe.count(comp)
 
-        processed_components: Set[str] = set()
-        for r in item.recipe:
-            quantity = item.recipe.count(r)
-            r_normalized = normalize_name(r)
-            if r_normalized in processed_components:
-                continue
-            processed_components.add(r_normalized)
-            if quantity == 1:
-                ans += f'<kg-dota:hasSlot rdf:resource="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{r_normalized}"/>\n'
-            else:
-                ans += f'<kg-dota:hasSlot rdf:resource="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{r_normalized}_{quantity}x"/>\n'
-        ans += "</owl:NamedIndividual>\n"
+            if normalized_name not in used:
+                used.add(normalized_name)
 
-    ans += f"""
-    <!-- http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{normalized_name} -->
+                if qty == 1:
+                    slot_ref = KG[normalized_name]
+                else:
+                    slot_id = f"{normalized_name}_{qty}x"
+                    slot_ref = KG[slot_id]
+                    graph.add((slot_ref, RDF.type, KG.BuildSchemaSlot))
+                    graph.add((slot_ref, KG.hasItem, KG[normalized_name]))
+                    graph.add(
+                        (slot_ref, KG.quantity, Literal(qty, datatype=XSD.integer))
+                    )
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{normalized_name}">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#DotaItem"/>
-        {f'<kg-dota:hasBuildSchema rdf:resource="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{normalized_name}_BS"/>' if item.recipe else ''}
-        <kg-dota:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">{item.cost}</kg-dota:cost>
-    """
+                graph.add((schema_uri, KG.hasSlot, slot_ref))
+
+    # Buffs
     if item.buffs:
-        for k, v in item.buffs.items():  # type: ignore
-            if not v:
-                continue
-            buff_name = snake_case_to_camel_case(k)
-            ans += f'<kg-dota:{buff_name} rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">{v}</kg-dota:{buff_name}>\n'
-    ans += f"""    
-        <kg-dota:name>{item.name}</kg-dota:name>
-        <kg-dota:imageUrl>{item.image}</kg-dota:imageUrl>
-        <kg-dota:wikiUrl>{item.url}</kg-dota:wikiUrl>
-    </owl:NamedIndividual>
-    """
+        for k, val in item.buffs.asdict().items():
+            if val:
+                logger.debug(f"adding buff {k}={val} to item {item.name}")
+                buff = snake_case_to_camel_case(k)
+                prop = KG[buff]
+                graph.add((item_uri, prop, Literal(val, datatype=XSD.decimal)))
 
-    return ans
+
+def build_ontology(graph: Graph) -> None:
+    graph.bind("kg-dota", KG)
+
+    # Classes
+    for c in ONTO_CLASSES:
+        graph.add((KG[c], RDF.type, OWL.Class))
+
+    # Class inheritance
+    inheritance = [
+        (KG["PassiveAbility"], KG["Ability"]),
+        (KG["ActiveAbility"], KG["Ability"]),
+        (KG["NoTargetActiveAbility"], KG["ActiveAbility"]),
+        (KG["PointTargetActiveAbility"], KG["ActiveAbility"]),
+        (KG["UnitTargetActiveAbility"], KG["ActiveAbility"]),
+        (KG["NeutralItem"], KG["Item"]),
+        (KG["DotaItem"], KG["Item"]),
+    ]
+    for subclass, superclass in inheritance:
+        graph.add((subclass, RDFS.subClassOf, superclass))
+
+    # Object properties
+    graph.add((KG.hasBuildSchema, RDF.type, OWL.ObjectProperty))
+    graph.add((KG.hasBuildSchema, RDFS.domain, KG.DotaItem))
+    graph.add((KG.hasBuildSchema, RDFS.range, KG.BuildSchema))
+
+    graph.add((KG.hasSlot, RDF.type, OWL.ObjectProperty))
+    graph.add((KG.hasSlot, RDFS.domain, KG.BuildSchema))
+    graph.add((KG.hasSlot, RDFS.range, KG.BuildSchemaSlot))
+    graph.add((KG.hasSlot, RDFS.range, KG.DotaItem))  # for slots with qty=1
+
+    graph.add((KG.hasAbility, RDF.type, OWL.ObjectProperty))
+    graph.add((KG.hasAbility, RDFS.domain, KG.Item))
+    graph.add((KG.hasAbility, RDFS.range, KG.Ability))
+
+    graph.add((KG.hasItem, RDF.type, OWL.ObjectProperty))
+    graph.add((KG.hasItem, RDFS.domain, KG.BuildSchemaSlot))
+    graph.add((KG.hasItem, RDFS.range, KG.DotaItem))
+
+    # Datatype properties: buffs
+    for k in Buffs.__annotations__:
+        buff_name = snake_case_to_camel_case(k)
+        graph.add((KG[buff_name], RDF.type, OWL.DatatypeProperty))
+        graph.add((KG[buff_name], RDFS.domain, KG.Item))
+
+    # Other datatype properties
+    graph.add((KG.cost, RDF.type, OWL.DatatypeProperty))
+    graph.add((KG.cost, RDFS.domain, KG.DotaItem))
+    graph.add((KG.cost, RDFS.range, XSD.integer))
 
 
 def main() -> None:
-    # 0. create data properties for buffs
-    for k in Buffs.__annotations__.keys():
-        buff_name = snake_case_to_camel_case(k)
-        entry = f"""
-        <!-- http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{buff_name} -->
+    parser = argparse.ArgumentParser(
+        description="Generate KG-Dota RDF ontology from item JSON."
+    )
+    parser.add_argument(
+        "input",
+        type=Path,
+        help="Path to input JSON file",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default="kg-dota.rdf",
+        help="Path to output RDF file (default: kg-dota.rdf)",
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Enable verbose logging",
+        default=False,
+    )
+    args = parser.parse_args()
 
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#{buff_name}">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#Item"/>
-        </owl:DatatypeProperty>
-        """
-        print(entry)
+    # Configure logger
+    getLogger("root").setLevel(logging.DEBUG if args.verbose else logging.INFO)
 
-    # 1. load items
-    d = json.load(open("items.json"))
-    data: Dict[str, DotaItem] = {}
-    for k, v in d.items():
-        data[k] = DotaItem(**v)
+    # Build graph
+    g = Graph()
+    build_ontology(g)
 
-    # 2. init recipes
-    for item in sorted(data.values(), key=lambda x: x.order or 0):
-        if "Recipe" not in item.recipe:
-            continue
-        recipe_name = normalize_name(item.name) + "_Recipe"
-        item.recipe.remove("Recipe")
-        recipe_cost = item.cost - sum([data[r].cost for r in item.recipe])
-        item.recipe.append(recipe_name)
-        data[recipe_name] = DotaItem(
-            name=recipe_name,
-            cost=recipe_cost,
-            image="https://dota2.ru/img/items/recipe.jpg",
-            url="",
-            recipe=[],
-            order=None,
-        )
+    # Load and process data
+    logger.info(f"Loading items from {args.input}")
+    data = parse_from_json(str(args.input))
 
-    # 3. generate rdf
-    failed: List[DotaItem] = []
     for item in data.values():
-        rdf_entry = dota_item_to_rdf_entry(item)
-        if rdf_entry is None:
-            failed.append(item)
-        else:
-            print(rdf_entry)
+        build_item(g, item)
 
-    # print("failed items:")
-    # for i in range(len(failed)):
-    #     print(f"{i+1}: {failed[i]}")
+    # Serialize
+    logger.info(f"Writing RDF to {args.output}")
+    g.serialize(str(args.output), format="xml")
 
 
 if __name__ == "__main__":

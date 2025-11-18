@@ -1,4 +1,5 @@
 import argparse
+import logging
 from typing import Dict
 
 from logger import getLogger
@@ -25,9 +26,11 @@ def main(
     scraper_name: str,
     assign_orders: bool = True,
     distinct_recipes: bool = False,
+    verbose: bool = False,
 ) -> None:
     # configure logger
     logger = getLogger(__name__)
+    logger.setLevel(logging.DEBUG if verbose else logging.INFO)
 
     if scraper_name not in SCRAPERS:
         raise ValueError(f"Unknown scraper: {scraper_name}")
@@ -61,6 +64,14 @@ def main(
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Scrape Dota 2 items and save them to a JSON file."
+    )
+
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Enable verbose logging",
+        default=False,
     )
 
     parser.add_argument(
@@ -111,4 +122,5 @@ if __name__ == "__main__":
         args.scraper,
         args.no_assign_orders,
         args.no_distinct_recipes,
+        args.verbose,
     )

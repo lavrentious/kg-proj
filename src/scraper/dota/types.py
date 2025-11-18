@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import List
+from typing import Dict, List
 
 """
 1. к cиле
@@ -129,6 +129,9 @@ class Buffs:
             + ", ".join(f"{k}={v}" for k, v in self.__dict__.items() if v is not None)
             + ")"
         )
+
+    def asdict(self) -> Dict[str, float]:
+        return {k: v for k, v in self.__dict__.items() if v is not None}
 
 
 @dataclass
