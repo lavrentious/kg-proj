@@ -31,7 +31,7 @@ def set_orders(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
     orders: Dict[str, int] = {}
 
     def get_order(name: str) -> int:
-        if name == "Recipe":
+        if name.endswith("Recipe"):
             return 0
         if name in orders:
             return orders[name]
@@ -48,7 +48,13 @@ def parse_from_json(path: str) -> Dict[str, DotaItem]:
     with open(path, "r") as f:
         data: Dict[str, Dict[str, Any]] = json.load(f)
         assert type(data) == dict
-        return {item["name"]: DotaItem(**item) for name, item in data.items()}
+        return {
+            item["name"]: DotaItem(
+                **{k: v for k, v in item.items() if k != "buffs"},
+                buffs=Buffs(**item["buffs"]),
+            )
+            for item in data.values()
+        }
 
 
 def dataclass_to_clean_dict(obj: Any) -> Any:
@@ -125,7 +131,7 @@ def parse_buffs(lines: List[str]) -> Buffs:
 
     for line in lines:
         line = line.strip()
-        line = re.sub(r"(\d\S+)\s(\d+)", r"\1\2", line)
+        line = re.sub(r"(\d)\s+(\d)", r"\1\2", line)
         line = re.sub(r"(\d+),(\d+)", r"\1.\2", line)
         line = re.sub(r"\s+", " ", line)
         line = re.sub(r"\s+%", "%", line)
@@ -162,4 +168,23 @@ def parse_buffs(lines: List[str]) -> Buffs:
 
         setattr(ans, field, value)
 
+    return ans
+
+
+def set_distinct_recipes(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
+    ans: Dict[str, DotaItem] = {}
+    for name, item in items.items():
+        if item.recipe and "Recipe" in item.recipe:
+            recipe_name = f"{name} Recipe"
+            item.recipe = [recipe_name if r == "Recipe" else r for r in item.recipe]
+        ans[name] = item
+    return ans
+
+
+def remove_distinct_recipes(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
+    ans: Dict[str, DotaItem] = {}
+    for name, item in items.items():
+        if item.recipe:
+            item.recipe = ["Recipe" if r.endswith("Recipe") else r for r in item.recipe]
+        ans[name] = item
     return ans

@@ -13,7 +13,7 @@
         "recipe": [
             "Skull Basher",
             "Sange",
-            "Recipe"
+            "Abyssal Blade Recipe"
         ],
         "url": "https://dota2.ru/items/abyssal-blade/"
     },
@@ -29,7 +29,7 @@
         "recipe": [
             "Vitality Booster",
             "Energy Booster",
-            "Recipe"
+            "Aeon Disk Recipe"
         ],
         "url": "https://dota2.ru/items/aeon-disk/"
     },
@@ -45,7 +45,7 @@
         "recipe": [
             "Void Stone",
             "Energy Booster",
-            "Recipe"
+            "Aether Lens Recipe"
         ],
         "url": "https://dota2.ru/items/aether-lens/"
     },
@@ -57,7 +57,7 @@
         "order": 3,
         "recipe": [
             "Aghanim's Scepter",
-            "Recipe"
+            "Aghanim's Blessing Recipe"
         ],
         "url": "https://dota2.ru/items/aghanims-blessing/"
     },
@@ -99,7 +99,7 @@
         "recipe": [
             "Blink Dagger",
             "Mystic Staff",
-            "Recipe"
+            "Arcane Blink Recipe"
         ],
         "url": "https://dota2.ru/items/arcane-blink/"
     },
@@ -115,7 +115,7 @@
         "recipe": [
             "Boots of Speed",
             "Ring of Basilius",
-            "Recipe"
+            "Arcane Boots Recipe"
         ],
         "url": "https://dota2.ru/items/arcane-boots/"
     },
@@ -134,7 +134,7 @@
             "Helm of Iron Will",
             "Gloves of Haste",
             "Blades of Attack",
-            "Recipe"
+            "Armlet of Mordiggian Recipe"
         ],
         "url": "https://dota2.ru/items/armlet-of-mordiggian/"
     },
@@ -151,7 +151,7 @@
             "Platemail",
             "Hyperstone",
             "Buckler",
-            "Recipe"
+            "Assault Cuirass Recipe"
         ],
         "url": "https://dota2.ru/items/assault-cuirass/"
     },
@@ -181,7 +181,7 @@
             "Broadsword",
             "Quelling Blade",
             "Cornucopia",
-            "Recipe"
+            "Battle Fury Recipe"
         ],
         "url": "https://dota2.ru/items/battle-fury/"
     },
@@ -208,7 +208,7 @@
         "recipe": [
             "Ogre Axe",
             "Mithril Hammer",
-            "Recipe"
+            "Black King Bar Recipe"
         ],
         "url": "https://dota2.ru/items/black-king-bar/"
     },
@@ -224,7 +224,7 @@
         "recipe": [
             "Broadsword",
             "Chainmail",
-            "Recipe"
+            "Blade Mail Recipe"
         ],
         "url": "https://dota2.ru/items/blade-mail/"
     },
@@ -316,7 +316,7 @@
             "Orchid Malevolence",
             "Javelin",
             "Hyperstone",
-            "Recipe"
+            "Bloodthorn Recipe"
         ],
         "url": "https://dota2.ru/items/bloodthorn/"
     },
@@ -334,7 +334,7 @@
         "recipe": [
             "Drum of Endurance",
             "Tranquil Boots",
-            "Recipe"
+            "Boots of Bearing Recipe"
         ],
         "url": "https://dota2.ru/items/boots-of-bearing/"
     },
@@ -359,7 +359,7 @@
         "order": 2,
         "recipe": [
             "Boots of Speed",
-            "Recipe"
+            "Boots of Travel Recipe"
         ],
         "url": "https://dota2.ru/items/boots-of-travel/"
     },
@@ -373,7 +373,7 @@
         "order": 3,
         "recipe": [
             "Boots of Travel",
-            "Recipe"
+            "Boots of Travel 2 Recipe"
         ],
         "url": "https://dota2.ru/items/boots-of-travel-2/"
     },
@@ -401,7 +401,7 @@
         "recipe": [
             "Gauntlets of Strength",
             "Circlet",
-            "Recipe"
+            "Bracer Recipe"
         ],
         "url": "https://dota2.ru/items/bracer/"
     },
@@ -426,7 +426,7 @@
         "order": 2,
         "recipe": [
             "Ring of Protection",
-            "Recipe"
+            "Buckler Recipe"
         ],
         "url": "https://dota2.ru/items/buckler/"
     },
@@ -527,7 +527,7 @@
         "recipe": [
             "Vanguard",
             "Helm of Iron Will",
-            "Recipe"
+            "Crimson Guard Recipe"
         ],
         "url": "https://dota2.ru/items/crimson-guard/"
     },
@@ -553,7 +553,7 @@
         "recipe": [
             "Claymore",
             "Blades of Attack",
-            "Recipe"
+            "Crystalys Recipe"
         ],
         "url": "https://dota2.ru/items/crystalys/"
     },
@@ -568,7 +568,7 @@
         "recipe": [
             "Demon Edge",
             "Crystalys",
-            "Recipe"
+            "Daedalus Recipe"
         ],
         "url": "https://dota2.ru/items/daedalus/"
     },
@@ -585,7 +585,7 @@
         "recipe": [
             "Diadem",
             "Voodoo Mask",
-            "Recipe"
+            "Dagon Recipe"
         ],
         "url": "https://dota2.ru/items/dagon/"
     },
@@ -638,7 +638,7 @@
         "recipe": [
             "Blade of Alacrity",
             "Robe of the Magi",
-            "Recipe"
+            "Diffusal Blade Recipe"
         ],
         "url": "https://dota2.ru/items/diffusal-blade/"
     },
@@ -654,7 +654,7 @@
         "recipe": [
             "Diffusal Blade",
             "Eaglesong",
-            "Recipe"
+            "Disperser Recipe"
         ],
         "url": "https://dota2.ru/items/disperser/"
     },
@@ -685,7 +685,7 @@
         "recipe": [
             "Blade of Alacrity",
             "Belt of Strength",
-            "Recipe"
+            "Dragon Lance Recipe"
         ],
         "url": "https://dota2.ru/items/dragon-lance/"
     },
@@ -702,7 +702,7 @@
             "Robe of the Magi",
             "Belt of Strength",
             "Wind Lace",
-            "Recipe"
+            "Drum of Endurance Recipe"
         ],
         "url": "https://dota2.ru/items/drum-of-endurance/"
     },
@@ -779,7 +779,7 @@
             "Cloak",
             "Ogre Axe",
             "Vitality Booster",
-            "Recipe"
+            "Eternal Shroud Recipe"
         ],
         "url": "https://dota2.ru/items/eternal-shroud/"
     },
@@ -797,7 +797,7 @@
         "recipe": [
             "Aether Lens",
             "Ghost Scepter",
-            "Recipe"
+            "Ethereal Blade Recipe"
         ],
         "url": "https://dota2.ru/items/ethereal-blade/"
     },
@@ -815,7 +815,7 @@
             "Staff of Wizardry",
             "Void Stone",
             "Wind Lace",
-            "Recipe"
+            "Eul's Scepter of Divinity Recipe"
         ],
         "url": "https://dota2.ru/items/euls-scepter-of-divinity/"
     },
@@ -859,7 +859,7 @@
             "Fluffy Hat",
             "Sage's Mask",
             "Blades of Attack",
-            "Recipe"
+            "Falcon Blade Recipe"
         ],
         "url": "https://dota2.ru/items/falcon-blade/"
     },
@@ -886,7 +886,7 @@
         "recipe": [
             "Staff of Wizardry",
             "Fluffy Hat",
-            "Recipe"
+            "Force Staff Recipe"
         ],
         "url": "https://dota2.ru/items/force-staff/"
     },
@@ -935,7 +935,7 @@
         "recipe": [
             "Point Booster",
             "Rod of Atos",
-            "Recipe"
+            "Gleipnir Recipe"
         ],
         "url": "https://dota2.ru/items/gleipnir/"
     },
@@ -950,7 +950,7 @@
         "recipe": [
             "Shadow Amulet",
             "Cloak",
-            "Recipe"
+            "Glimmer Cape Recipe"
         ],
         "url": "https://dota2.ru/items/glimmer-cape/"
     },
@@ -979,7 +979,7 @@
             "Mekansm",
             "Arcane Boots",
             "Buckler",
-            "Recipe"
+            "Guardian Greaves Recipe"
         ],
         "url": "https://dota2.ru/items/guardian-greaves/"
     },
@@ -993,7 +993,7 @@
         "order": 2,
         "recipe": [
             "Gloves of Haste",
-            "Recipe"
+            "Hand of Midas Recipe"
         ],
         "url": "https://dota2.ru/items/hand-of-midas/"
     },
@@ -1012,7 +1012,7 @@
         "recipe": [
             "Echo Sabre",
             "Diadem",
-            "Recipe"
+            "Harpoon Recipe"
         ],
         "url": "https://dota2.ru/items/harpoon/"
     },
@@ -1026,7 +1026,7 @@
         "order": 2,
         "recipe": [
             "Ring of Regen",
-            "Recipe"
+            "Headdress Recipe"
         ],
         "url": "https://dota2.ru/items/headdress/"
     },
@@ -1051,7 +1051,7 @@
         "recipe": [
             "Ring of Tarrasque",
             "Reaver",
-            "Recipe"
+            "Heart of Tarrasque Recipe"
         ],
         "url": "https://dota2.ru/items/heart-of-tarrasque/"
     },
@@ -1068,7 +1068,7 @@
         "recipe": [
             "Vanguard",
             "Crown",
-            "Recipe"
+            "Heaven's Halberd Recipe"
         ],
         "url": "https://dota2.ru/items/heavens-halberd/"
     },
@@ -1097,7 +1097,7 @@
         "recipe": [
             "Helm of Iron Will",
             "Crown",
-            "Recipe"
+            "Helm of the Dominator Recipe"
         ],
         "url": "https://dota2.ru/items/helm-of-the-dominator/"
     },
@@ -1114,7 +1114,7 @@
         "recipe": [
             "Helm of the Dominator",
             "Ultimate Orb",
-            "Recipe"
+            "Helm of the Overlord Recipe"
         ],
         "url": "https://dota2.ru/items/helm-of-the-overlord/"
     },
@@ -1129,7 +1129,7 @@
         "recipe": [
             "Diadem",
             "Magic Wand",
-            "Recipe"
+            "Holy Locket Recipe"
         ],
         "url": "https://dota2.ru/items/holy-locket/"
     },
@@ -1148,7 +1148,7 @@
         "recipe": [
             "Force Staff",
             "Dragon Lance",
-            "Recipe"
+            "Hurricane Pike Recipe"
         ],
         "url": "https://dota2.ru/items/hurricane-pike/"
     },
@@ -1207,7 +1207,7 @@
         "recipe": [
             "Robe of the Magi",
             "Staff of Wizardry",
-            "Recipe"
+            "Kaya Recipe"
         ],
         "url": "https://dota2.ru/items/kaya/"
     },
@@ -1245,7 +1245,7 @@
         "recipe": [
             "Phylactery",
             "Tiara of Selemene",
-            "Recipe"
+            "Khanda Recipe"
         ],
         "url": "https://dota2.ru/items/khanda/"
     },
@@ -1262,7 +1262,7 @@
         "recipe": [
             "Ultimate Orb",
             "Perseverance",
-            "Recipe"
+            "Linken's Sphere Recipe"
         ],
         "url": "https://dota2.ru/items/linkens-sphere/"
     },
@@ -1281,7 +1281,7 @@
             "Perseverance",
             "Platemail",
             "Energy Booster",
-            "Recipe"
+            "Lotus Orb Recipe"
         ],
         "url": "https://dota2.ru/items/lotus-orb/"
     },
@@ -1342,7 +1342,7 @@
             "Iron Branch",
             "Iron Branch",
             "Magic Stick",
-            "Recipe"
+            "Magic Wand Recipe"
         ],
         "url": "https://dota2.ru/items/magic-wand/"
     },
@@ -1361,7 +1361,7 @@
         "recipe": [
             "Yasha",
             "Diadem",
-            "Recipe"
+            "Manta Style Recipe"
         ],
         "url": "https://dota2.ru/items/manta-style/"
     },
@@ -1401,7 +1401,7 @@
         "recipe": [
             "Headdress",
             "Chainmail",
-            "Recipe"
+            "Mekansm Recipe"
         ],
         "url": "https://dota2.ru/items/mekansm/"
     },
@@ -1420,7 +1420,7 @@
         "recipe": [
             "Kaya",
             "Crown",
-            "Recipe"
+            "Meteor Hammer Recipe"
         ],
         "url": "https://dota2.ru/items/meteor-hammer/"
     },
@@ -1447,7 +1447,7 @@
         "recipe": [
             "Maelstrom",
             "Hyperstone",
-            "Recipe"
+            "Mjollnir Recipe"
         ],
         "url": "https://dota2.ru/items/mjollnir/"
     },
@@ -1464,7 +1464,7 @@
             "Demon Edge",
             "Javelin",
             "Blitz Knuckles",
-            "Recipe"
+            "Monkey King Bar Recipe"
         ],
         "url": "https://dota2.ru/items/monkey-king-bar/"
     },
@@ -1519,7 +1519,7 @@
         "recipe": [
             "Mantle of Intelligence",
             "Circlet",
-            "Recipe"
+            "Null Talisman Recipe"
         ],
         "url": "https://dota2.ru/items/null-talisman/"
     },
@@ -1661,7 +1661,7 @@
         "recipe": [
             "Oblivion Staff",
             "Cornucopia",
-            "Recipe"
+            "Orchid Malevolence Recipe"
         ],
         "url": "https://dota2.ru/items/orchid-malevolence/"
     },
@@ -1676,7 +1676,7 @@
         "recipe": [
             "Blink Dagger",
             "Reaver",
-            "Recipe"
+            "Overwhelming Blink Recipe"
         ],
         "url": "https://dota2.ru/items/overwhelming-blink/"
     },
@@ -1695,7 +1695,7 @@
         "recipe": [
             "Witch Blade",
             "Mystic Staff",
-            "Recipe"
+            "Parasma Recipe"
         ],
         "url": "https://dota2.ru/items/parasma/"
     },
@@ -1713,7 +1713,7 @@
             "Energy Booster",
             "Ring of Protection",
             "Fluffy Hat",
-            "Recipe"
+            "Pavise Recipe"
         ],
         "url": "https://dota2.ru/items/pavise/"
     },
@@ -1763,7 +1763,7 @@
         "recipe": [
             "Diadem",
             "Point Booster",
-            "Recipe"
+            "Phylactery Recipe"
         ],
         "url": "https://dota2.ru/items/phylactery/"
     },
@@ -1780,7 +1780,7 @@
             "Cloak",
             "Headdress",
             "Ring of Tarrasque",
-            "Recipe"
+            "Pipe of Insight Recipe"
         ],
         "url": "https://dota2.ru/items/pipe-of-insight/"
     },
@@ -1873,7 +1873,7 @@
             "Cornucopia",
             "Ring of Tarrasque",
             "Tiara of Selemene",
-            "Recipe"
+            "Refresher Orb Recipe"
         ],
         "url": "https://dota2.ru/items/refresher-orb/"
     },
@@ -1890,7 +1890,7 @@
         "recipe": [
             "Crystalys",
             "Voodoo Mask",
-            "Recipe"
+            "Revenant's Brooch Recipe"
         ],
         "url": "https://dota2.ru/items/revenants-brooch/"
     },
@@ -1904,7 +1904,7 @@
         "order": 2,
         "recipe": [
             "Sage's Mask",
-            "Recipe"
+            "Ring of Basilius Recipe"
         ],
         "url": "https://dota2.ru/items/ring-of-basilius/"
     },
@@ -1975,7 +1975,7 @@
         "recipe": [
             "Staff of Wizardry",
             "Vitality Booster",
-            "Recipe"
+            "Rod of Atos Recipe"
         ],
         "url": "https://dota2.ru/items/rod-of-atos/"
     },
@@ -2014,7 +2014,7 @@
         "recipe": [
             "Ogre Axe",
             "Belt of Strength",
-            "Recipe"
+            "Sange Recipe"
         ],
         "url": "https://dota2.ru/items/sange/"
     },
@@ -2066,7 +2066,7 @@
         "recipe": [
             "Mystic Staff",
             "Tiara of Selemene",
-            "Recipe"
+            "Scythe of Vyse Recipe"
         ],
         "url": "https://dota2.ru/items/scythe-of-vyse/"
     },
@@ -2119,7 +2119,7 @@
         "recipe": [
             "Veil of Discord",
             "Platemail",
-            "Recipe"
+            "Shiva's Guard Recipe"
         ],
         "url": "https://dota2.ru/items/shivas-guard/"
     },
@@ -2135,7 +2135,7 @@
         "recipe": [
             "Shadow Blade",
             "Demon Edge",
-            "Recipe"
+            "Silver Edge Recipe"
         ],
         "url": "https://dota2.ru/items/silver-edge/"
     },
@@ -2151,7 +2151,7 @@
         "recipe": [
             "Mithril Hammer",
             "Belt of Strength",
-            "Recipe"
+            "Skull Basher Recipe"
         ],
         "url": "https://dota2.ru/items/skull-basher/"
     },
@@ -2191,7 +2191,7 @@
             "Pavise",
             "Crown",
             "Wind Lace",
-            "Recipe"
+            "Solar Crest Recipe"
         ],
         "url": "https://dota2.ru/items/solar-crest/"
     },
@@ -2224,7 +2224,7 @@
             "Ring of Protection",
             "Gauntlets of Strength",
             "Gauntlets of Strength",
-            "Recipe"
+            "Soul Ring Recipe"
         ],
         "url": "https://dota2.ru/items/soul-ring/"
     },
@@ -2241,7 +2241,7 @@
         "recipe": [
             "Urn of Shadows",
             "Diadem",
-            "Recipe"
+            "Spirit Vessel Recipe"
         ],
         "url": "https://dota2.ru/items/spirit-vessel/"
     },
@@ -2267,7 +2267,7 @@
         "recipe": [
             "Blink Dagger",
             "Eaglesong",
-            "Recipe"
+            "Swift Blink Recipe"
         ],
         "url": "https://dota2.ru/items/swift-blink/"
     },
@@ -2352,7 +2352,7 @@
             "Sage's Mask",
             "Circlet",
             "Ring of Protection",
-            "Recipe"
+            "Urn of Shadows Recipe"
         ],
         "url": "https://dota2.ru/items/urn-of-shadows/"
     },
@@ -2384,7 +2384,7 @@
         "recipe": [
             "Helm of Iron Will",
             "Crown",
-            "Recipe"
+            "Veil of Discord Recipe"
         ],
         "url": "https://dota2.ru/items/veil-of-discord/"
     },
@@ -2451,7 +2451,7 @@
         "buffs": {
             "intelligence": 35.0,
             "mana_regen": 3.0,
-            "move_speed": 0.0
+            "move_speed": 30.0
         },
         "cost": 6800,
         "image": "https://dota2.ru/img/items/wind_waker.jpg",
@@ -2460,7 +2460,7 @@
         "recipe": [
             "Eul's Scepter of Divinity",
             "Mystic Staff",
-            "Recipe"
+            "Wind Waker Recipe"
         ],
         "url": "https://dota2.ru/items/wind-waker/"
     },
@@ -2480,7 +2480,7 @@
             "Oblivion Staff",
             "Orb of Venom",
             "Chainmail",
-            "Recipe"
+            "Witch Blade Recipe"
         ],
         "url": "https://dota2.ru/items/witch-blade/"
     },
@@ -2499,7 +2499,7 @@
         "recipe": [
             "Slippers of Agility",
             "Circlet",
-            "Recipe"
+            "Wraith Band Recipe"
         ],
         "url": "https://dota2.ru/items/wraith-band/"
     },
@@ -2516,7 +2516,7 @@
         "recipe": [
             "Band of Elvenskin",
             "Blade of Alacrity",
-            "Recipe"
+            "Yasha Recipe"
         ],
         "url": "https://dota2.ru/items/yasha/"
     },

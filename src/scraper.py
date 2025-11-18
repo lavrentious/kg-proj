@@ -1,12 +1,17 @@
 import argparse
-import logging
 from typing import Dict
 
-from scraper.dota.utils import parse_from_json, save_to_json, set_orders
+from logger import getLogger
+from scraper.dota.utils import (
+    parse_from_json,
+    remove_distinct_recipes,
+    save_to_json,
+    set_distinct_recipes,
+    set_orders,
+)
 from scraper.scrapers.base_scraper import BaseScraper
 from scraper.scrapers.dota2_ru_scraper import Dota2RuScraper
 from scraper.scrapers.fandom_scraper import FandomScraper
-
 
 SCRAPERS: Dict[str, type[BaseScraper]] = {
     "dota2_ru": Dota2RuScraper,
@@ -15,14 +20,14 @@ SCRAPERS: Dict[str, type[BaseScraper]] = {
 
 
 def main(
-    input_file: str, output_file: str, scraper_name: str, assign_orders: bool = True
+    input_file: str,
+    output_file: str,
+    scraper_name: str,
+    assign_orders: bool = True,
+    distinct_recipes: bool = False,
 ) -> None:
     # configure logger
-    logging.getLogger("urllib3").setLevel(logging.ERROR)
-    logging.basicConfig(
-        level=logging.DEBUG, format="%(asctime)s [%(levelname)s] %(message)s"
-    )
-    logger = logging.getLogger(__name__)
+    logger = getLogger(__name__)
 
     if scraper_name not in SCRAPERS:
         raise ValueError(f"Unknown scraper: {scraper_name}")
@@ -42,6 +47,12 @@ def main(
     if assign_orders:
         logger.info("assigning orders to items...")
         res = set_orders(res)  # assign orders
+    if distinct_recipes:
+        logger.info("using distinct recipes for items...")
+        res = set_distinct_recipes(res)
+    else:
+        logger.info("using default recipes for items...")
+        res = remove_distinct_recipes(res)
 
     save_to_json(output_file, res)
     logger.info(f"data saved to {output_file}.")
@@ -80,9 +91,24 @@ def parse_arguments() -> argparse.Namespace:
         help="Whether to assign orders to items (default: True)",
     )
 
+    parser.add_argument(
+        "--no-distinct-recipes",
+        action="store_false",
+        default=True,
+        help="""Whether to use distinct recipes (default: True).
+        By default items that require a recipe will have just 'Recipe' in their recipe list.
+        With this flag, recipes will be named uniquely per item, e.g. \"Wind Waker Recipe\"""",
+    )
+
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_arguments()
-    main(args.input, args.output, args.scraper, args.no_assign_orders)
+    main(
+        args.input,
+        args.output,
+        args.scraper,
+        args.no_assign_orders,
+        args.no_distinct_recipes,
+    )
