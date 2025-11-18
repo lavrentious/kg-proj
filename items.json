@@ -35,7 +35,7 @@
     },
     "Aether Lens": {
         "buffs": {
-            "mana": 0.0,
+            "mana": 300.0,
             "mana_regen": 2.5
         },
         "cost": 2275,

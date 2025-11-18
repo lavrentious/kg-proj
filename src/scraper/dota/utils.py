@@ -125,6 +125,7 @@ def parse_buffs(lines: List[str]) -> Buffs:
 
     for line in lines:
         line = line.strip()
+        line = re.sub(r"(\d\S+)\s(\d+)", r"\1\2", line)
         line = re.sub(r"(\d+),(\d+)", r"\1.\2", line)
         line = re.sub(r"\s+", " ", line)
         line = re.sub(r"\s+%", "%", line)
