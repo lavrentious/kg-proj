@@ -173,10 +173,23 @@ def parse_buffs(lines: List[str]) -> Buffs:
 
 def set_distinct_recipes(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
     ans: Dict[str, DotaItem] = {}
-    for name, item in items.items():
-        if item.recipe and "Recipe" in item.recipe:
+    for name, item in sorted(items.items(), key=lambda x: (x[1].order, x[0])):
+        if "recipe" in name.lower():
+            continue
+        if item.recipe and any("recipe" in comp.lower() for comp in item.recipe):
             recipe_name = f"{name} Recipe"
             item.recipe = [recipe_name if r == "Recipe" else r for r in item.recipe]
+            recipe_cost = item.cost - sum(
+                [items[r].cost for r in item.recipe if r != recipe_name]
+            )
+            ans[recipe_name] = DotaItem(
+                name=recipe_name,
+                cost=recipe_cost,
+                url=item.url,
+                image="https://dota2.ru/img/items/recipe.jpg",
+                recipe=[],
+                buffs=Buffs(),
+            )
         ans[name] = item
     return ans
 
@@ -184,6 +197,8 @@ def set_distinct_recipes(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
 def remove_distinct_recipes(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
     ans: Dict[str, DotaItem] = {}
     for name, item in items.items():
+        if "recipe" in name.lower():
+            continue
         if item.recipe:
             item.recipe = ["Recipe" if r.endswith("Recipe") else r for r in item.recipe]
         ans[name] = item

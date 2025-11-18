@@ -17,6 +17,14 @@
         ],
         "url": "https://dota2.ru/items/abyssal-blade/"
     },
+    "Abyssal Blade Recipe": {
+        "buffs": {},
+        "cost": 1275,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Abyssal Blade Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/abyssal-blade/"
+    },
     "Aeon Disk": {
         "buffs": {
             "health": 250.0,
@@ -31,6 +39,14 @@
             "Energy Booster",
             "Aeon Disk Recipe"
         ],
+        "url": "https://dota2.ru/items/aeon-disk/"
+    },
+    "Aeon Disk Recipe": {
+        "buffs": {},
+        "cost": 1200,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Aeon Disk Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/aeon-disk/"
     },
     "Aether Lens": {
@@ -49,6 +65,14 @@
         ],
         "url": "https://dota2.ru/items/aether-lens/"
     },
+    "Aether Lens Recipe": {
+        "buffs": {},
+        "cost": 775,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Aether Lens Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/aether-lens/"
+    },
     "Aghanim's Blessing": {
         "buffs": {},
         "cost": 5800,
@@ -59,6 +83,14 @@
             "Aghanim's Scepter",
             "Aghanim's Blessing Recipe"
         ],
+        "url": "https://dota2.ru/items/aghanims-blessing/"
+    },
+    "Aghanim's Blessing Recipe": {
+        "buffs": {},
+        "cost": 1600,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Aghanim's Blessing Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/aghanims-blessing/"
     },
     "Aghanim's Scepter": {
@@ -103,6 +135,14 @@
         ],
         "url": "https://dota2.ru/items/arcane-blink/"
     },
+    "Arcane Blink Recipe": {
+        "buffs": {},
+        "cost": 1750,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Arcane Blink Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/arcane-blink/"
+    },
     "Arcane Boots": {
         "buffs": {
             "mana_regen": 0.25,
@@ -117,6 +157,14 @@
             "Ring of Basilius",
             "Arcane Boots Recipe"
         ],
+        "url": "https://dota2.ru/items/arcane-boots/"
+    },
+    "Arcane Boots Recipe": {
+        "buffs": {},
+        "cost": 475,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Arcane Boots Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/arcane-boots/"
     },
     "Armlet of Mordiggian": {
@@ -138,6 +186,14 @@
         ],
         "url": "https://dota2.ru/items/armlet-of-mordiggian/"
     },
+    "Armlet of Mordiggian Recipe": {
+        "buffs": {},
+        "cost": 625,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Armlet of Mordiggian Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/armlet-of-mordiggian/"
+    },
     "Assault Cuirass": {
         "buffs": {
             "armor": 10.0,
@@ -153,6 +209,14 @@
             "Buckler",
             "Assault Cuirass Recipe"
         ],
+        "url": "https://dota2.ru/items/assault-cuirass/"
+    },
+    "Assault Cuirass Recipe": {
+        "buffs": {},
+        "cost": 1300,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Assault Cuirass Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/assault-cuirass/"
     },
     "Band of Elvenskin": {
@@ -185,6 +249,14 @@
         ],
         "url": "https://dota2.ru/items/battle-fury/"
     },
+    "Battle Fury Recipe": {
+        "buffs": {},
+        "cost": 600,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Battle Fury Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/battle-fury/"
+    },
     "Belt of Strength": {
         "buffs": {
             "strength": 6.0
@@ -212,6 +284,14 @@
         ],
         "url": "https://dota2.ru/items/black-king-bar/"
     },
+    "Black King Bar Recipe": {
+        "buffs": {},
+        "cost": 1450,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Black King Bar Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/black-king-bar/"
+    },
     "Blade Mail": {
         "buffs": {
             "armor": 6.0,
@@ -226,6 +306,14 @@
             "Chainmail",
             "Blade Mail Recipe"
         ],
+        "url": "https://dota2.ru/items/blade-mail/"
+    },
+    "Blade Mail Recipe": {
+        "buffs": {},
+        "cost": 750,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Blade Mail Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/blade-mail/"
     },
     "Blade of Alacrity": {
@@ -320,6 +408,14 @@
         ],
         "url": "https://dota2.ru/items/bloodthorn/"
     },
+    "Bloodthorn Recipe": {
+        "buffs": {},
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Bloodthorn Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/bloodthorn/"
+    },
     "Boots of Bearing": {
         "buffs": {
             "health_regen": 15.0,
@@ -336,6 +432,14 @@
             "Tranquil Boots",
             "Boots of Bearing Recipe"
         ],
+        "url": "https://dota2.ru/items/boots-of-bearing/"
+    },
+    "Boots of Bearing Recipe": {
+        "buffs": {},
+        "cost": 1700,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Boots of Bearing Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/boots-of-bearing/"
     },
     "Boots of Speed": {
@@ -377,6 +481,22 @@
         ],
         "url": "https://dota2.ru/items/boots-of-travel-2/"
     },
+    "Boots of Travel 2 Recipe": {
+        "buffs": {},
+        "cost": 2000,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Boots of Travel 2 Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/boots-of-travel-2/"
+    },
+    "Boots of Travel Recipe": {
+        "buffs": {},
+        "cost": 2000,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Boots of Travel Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/boots-of-travel/"
+    },
     "Bottle": {
         "buffs": {},
         "cost": 675,
@@ -405,6 +525,14 @@
         ],
         "url": "https://dota2.ru/items/bracer/"
     },
+    "Bracer Recipe": {
+        "buffs": {},
+        "cost": 210,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Bracer Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/bracer/"
+    },
     "Broadsword": {
         "buffs": {
             "damage": 15.0
@@ -428,6 +556,14 @@
             "Ring of Protection",
             "Buckler Recipe"
         ],
+        "url": "https://dota2.ru/items/buckler/"
+    },
+    "Buckler Recipe": {
+        "buffs": {},
+        "cost": 250,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Buckler Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/buckler/"
     },
     "Butterfly": {
@@ -531,6 +667,14 @@
         ],
         "url": "https://dota2.ru/items/crimson-guard/"
     },
+    "Crimson Guard Recipe": {
+        "buffs": {},
+        "cost": 1050,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Crimson Guard Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/crimson-guard/"
+    },
     "Crown": {
         "buffs": {
             "all_attributes": 4.0
@@ -557,6 +701,14 @@
         ],
         "url": "https://dota2.ru/items/crystalys/"
     },
+    "Crystalys Recipe": {
+        "buffs": {},
+        "cost": 200,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Crystalys Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/crystalys/"
+    },
     "Daedalus": {
         "buffs": {
             "damage": 88.0
@@ -570,6 +722,14 @@
             "Crystalys",
             "Daedalus Recipe"
         ],
+        "url": "https://dota2.ru/items/daedalus/"
+    },
+    "Daedalus Recipe": {
+        "buffs": {},
+        "cost": 900,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Daedalus Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/daedalus/"
     },
     "Dagon": {
@@ -587,6 +747,14 @@
             "Voodoo Mask",
             "Dagon Recipe"
         ],
+        "url": "https://dota2.ru/items/dagon/"
+    },
+    "Dagon Recipe": {
+        "buffs": {},
+        "cost": 1150,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Dagon Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/dagon/"
     },
     "Demon Edge": {
@@ -642,6 +810,14 @@
         ],
         "url": "https://dota2.ru/items/diffusal-blade/"
     },
+    "Diffusal Blade Recipe": {
+        "buffs": {},
+        "cost": 1050,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Diffusal Blade Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/diffusal-blade/"
+    },
     "Disperser": {
         "buffs": {
             "agility": 40.0,
@@ -656,6 +832,14 @@
             "Eaglesong",
             "Disperser Recipe"
         ],
+        "url": "https://dota2.ru/items/disperser/"
+    },
+    "Disperser Recipe": {
+        "buffs": {},
+        "cost": 800,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Disperser Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/disperser/"
     },
     "Divine Rapier": {
@@ -689,6 +873,14 @@
         ],
         "url": "https://dota2.ru/items/dragon-lance/"
     },
+    "Dragon Lance Recipe": {
+        "buffs": {},
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Dragon Lance Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/dragon-lance/"
+    },
     "Drum of Endurance": {
         "buffs": {
             "intelligence": 7.0,
@@ -704,6 +896,14 @@
             "Wind Lace",
             "Drum of Endurance Recipe"
         ],
+        "url": "https://dota2.ru/items/drum-of-endurance/"
+    },
+    "Drum of Endurance Recipe": {
+        "buffs": {},
+        "cost": 500,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Drum of Endurance Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/drum-of-endurance/"
     },
     "Dust of Appearance": {
@@ -783,6 +983,14 @@
         ],
         "url": "https://dota2.ru/items/eternal-shroud/"
     },
+    "Eternal Shroud Recipe": {
+        "buffs": {},
+        "cost": 900,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Eternal Shroud Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/eternal-shroud/"
+    },
     "Ethereal Blade": {
         "buffs": {
             "all_attributes": 8.0,
@@ -801,6 +1009,14 @@
         ],
         "url": "https://dota2.ru/items/ethereal-blade/"
     },
+    "Ethereal Blade Recipe": {
+        "buffs": {},
+        "cost": 1600,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Ethereal Blade Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/ethereal-blade/"
+    },
     "Eul's Scepter of Divinity": {
         "buffs": {
             "intelligence": 10.0,
@@ -817,6 +1033,14 @@
             "Wind Lace",
             "Eul's Scepter of Divinity Recipe"
         ],
+        "url": "https://dota2.ru/items/euls-scepter-of-divinity/"
+    },
+    "Eul's Scepter of Divinity Recipe": {
+        "buffs": {},
+        "cost": 675,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Eul's Scepter of Divinity Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/euls-scepter-of-divinity/"
     },
     "Eye of Skadi": {
@@ -863,6 +1087,14 @@
         ],
         "url": "https://dota2.ru/items/falcon-blade/"
     },
+    "Falcon Blade Recipe": {
+        "buffs": {},
+        "cost": 250,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Falcon Blade Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/falcon-blade/"
+    },
     "Fluffy Hat": {
         "buffs": {
             "health": 125.0
@@ -888,6 +1120,14 @@
             "Fluffy Hat",
             "Force Staff Recipe"
         ],
+        "url": "https://dota2.ru/items/force-staff/"
+    },
+    "Force Staff Recipe": {
+        "buffs": {},
+        "cost": 950,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Force Staff Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/force-staff/"
     },
     "Gauntlets of Strength": {
@@ -939,6 +1179,14 @@
         ],
         "url": "https://dota2.ru/items/gleipnir/"
     },
+    "Gleipnir Recipe": {
+        "buffs": {},
+        "cost": 1100,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Gleipnir Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/gleipnir/"
+    },
     "Glimmer Cape": {
         "buffs": {
             "magic_resist": 20.0
@@ -952,6 +1200,14 @@
             "Cloak",
             "Glimmer Cape Recipe"
         ],
+        "url": "https://dota2.ru/items/glimmer-cape/"
+    },
+    "Glimmer Cape Recipe": {
+        "buffs": {},
+        "cost": 350,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Glimmer Cape Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/glimmer-cape/"
     },
     "Gloves of Haste": {
@@ -983,6 +1239,14 @@
         ],
         "url": "https://dota2.ru/items/guardian-greaves/"
     },
+    "Guardian Greaves Recipe": {
+        "buffs": {},
+        "cost": 1450,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Guardian Greaves Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/guardian-greaves/"
+    },
     "Hand of Midas": {
         "buffs": {
             "attack_speed": 35.0
@@ -995,6 +1259,14 @@
             "Gloves of Haste",
             "Hand of Midas Recipe"
         ],
+        "url": "https://dota2.ru/items/hand-of-midas/"
+    },
+    "Hand of Midas Recipe": {
+        "buffs": {},
+        "cost": 1750,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Hand of Midas Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/hand-of-midas/"
     },
     "Harpoon": {
@@ -1016,6 +1288,14 @@
         ],
         "url": "https://dota2.ru/items/harpoon/"
     },
+    "Harpoon Recipe": {
+        "buffs": {},
+        "cost": 1000,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Harpoon Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/harpoon/"
+    },
     "Headdress": {
         "buffs": {
             "health_regen": 0.5
@@ -1028,6 +1308,14 @@
             "Ring of Regen",
             "Headdress Recipe"
         ],
+        "url": "https://dota2.ru/items/headdress/"
+    },
+    "Headdress Recipe": {
+        "buffs": {},
+        "cost": 250,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Headdress Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/headdress/"
     },
     "Healing Salve": {
@@ -1055,6 +1343,14 @@
         ],
         "url": "https://dota2.ru/items/heart-of-tarrasque/"
     },
+    "Heart of Tarrasque Recipe": {
+        "buffs": {},
+        "cost": 600,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Heart of Tarrasque Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/heart-of-tarrasque/"
+    },
     "Heaven's Halberd": {
         "buffs": {
             "all_attributes": 5.0,
@@ -1070,6 +1366,14 @@
             "Crown",
             "Heaven's Halberd Recipe"
         ],
+        "url": "https://dota2.ru/items/heavens-halberd/"
+    },
+    "Heaven's Halberd Recipe": {
+        "buffs": {},
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Heaven's Halberd Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/heavens-halberd/"
     },
     "Helm of Iron Will": {
@@ -1101,6 +1405,14 @@
         ],
         "url": "https://dota2.ru/items/helm-of-the-dominator/"
     },
+    "Helm of the Dominator Recipe": {
+        "buffs": {},
+        "cost": 1125,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Helm of the Dominator Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/helm-of-the-dominator/"
+    },
     "Helm of the Overlord": {
         "buffs": {
             "all_attributes": 21.0,
@@ -1118,6 +1430,14 @@
         ],
         "url": "https://dota2.ru/items/helm-of-the-overlord/"
     },
+    "Helm of the Overlord Recipe": {
+        "buffs": {},
+        "cost": 300,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Helm of the Overlord Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/helm-of-the-overlord/"
+    },
     "Holy Locket": {
         "buffs": {
             "all_attributes": 9.0
@@ -1131,6 +1451,14 @@
             "Magic Wand",
             "Holy Locket Recipe"
         ],
+        "url": "https://dota2.ru/items/holy-locket/"
+    },
+    "Holy Locket Recipe": {
+        "buffs": {},
+        "cost": 800,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Holy Locket Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/holy-locket/"
     },
     "Hurricane Pike": {
@@ -1150,6 +1478,14 @@
             "Dragon Lance",
             "Hurricane Pike Recipe"
         ],
+        "url": "https://dota2.ru/items/hurricane-pike/"
+    },
+    "Hurricane Pike Recipe": {
+        "buffs": {},
+        "cost": 350,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Hurricane Pike Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/hurricane-pike/"
     },
     "Hyperstone": {
@@ -1211,6 +1547,14 @@
         ],
         "url": "https://dota2.ru/items/kaya/"
     },
+    "Kaya Recipe": {
+        "buffs": {},
+        "cost": 650,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Kaya Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/kaya/"
+    },
     "Kaya and Sange": {
         "buffs": {
             "ability_damage_amp": 12.0,
@@ -1249,6 +1593,14 @@
         ],
         "url": "https://dota2.ru/items/khanda/"
     },
+    "Khanda Recipe": {
+        "buffs": {},
+        "cost": 1300,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Khanda Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/khanda/"
+    },
     "Linken's Sphere": {
         "buffs": {
             "all_attributes": 16.0,
@@ -1264,6 +1616,14 @@
             "Perseverance",
             "Linken's Sphere Recipe"
         ],
+        "url": "https://dota2.ru/items/linkens-sphere/"
+    },
+    "Linken's Sphere Recipe": {
+        "buffs": {},
+        "cost": 600,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Linken's Sphere Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/linkens-sphere/"
     },
     "Lotus Orb": {
@@ -1283,6 +1643,14 @@
             "Energy Booster",
             "Lotus Orb Recipe"
         ],
+        "url": "https://dota2.ru/items/lotus-orb/"
+    },
+    "Lotus Orb Recipe": {
+        "buffs": {},
+        "cost": 250,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Lotus Orb Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/lotus-orb/"
     },
     "Maelstrom": {
@@ -1346,6 +1714,14 @@
         ],
         "url": "https://dota2.ru/items/magic-wand/"
     },
+    "Magic Wand Recipe": {
+        "buffs": {},
+        "cost": 150,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Magic Wand Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/magic-wand/"
+    },
     "Manta Style": {
         "buffs": {
             "agility": 26.0,
@@ -1363,6 +1739,14 @@
             "Diadem",
             "Manta Style Recipe"
         ],
+        "url": "https://dota2.ru/items/manta-style/"
+    },
+    "Manta Style Recipe": {
+        "buffs": {},
+        "cost": 1550,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Manta Style Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/manta-style/"
     },
     "Mantle of Intelligence": {
@@ -1405,6 +1789,14 @@
         ],
         "url": "https://dota2.ru/items/mekansm/"
     },
+    "Mekansm Recipe": {
+        "buffs": {},
+        "cost": 800,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Mekansm Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/mekansm/"
+    },
     "Meteor Hammer": {
         "buffs": {
             "agility": 6.0,
@@ -1422,6 +1814,14 @@
             "Crown",
             "Meteor Hammer Recipe"
         ],
+        "url": "https://dota2.ru/items/meteor-hammer/"
+    },
+    "Meteor Hammer Recipe": {
+        "buffs": {},
+        "cost": 300,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Meteor Hammer Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/meteor-hammer/"
     },
     "Mithril Hammer": {
@@ -1451,6 +1851,14 @@
         ],
         "url": "https://dota2.ru/items/mjollnir/"
     },
+    "Mjollnir Recipe": {
+        "buffs": {},
+        "cost": 550,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Mjollnir Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/mjollnir/"
+    },
     "Monkey King Bar": {
         "buffs": {
             "attack_speed": 45.0,
@@ -1466,6 +1874,14 @@
             "Blitz Knuckles",
             "Monkey King Bar Recipe"
         ],
+        "url": "https://dota2.ru/items/monkey-king-bar/"
+    },
+    "Monkey King Bar Recipe": {
+        "buffs": {},
+        "cost": 600,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Monkey King Bar Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/monkey-king-bar/"
     },
     "Moon Shard": {
@@ -1521,6 +1937,14 @@
             "Circlet",
             "Null Talisman Recipe"
         ],
+        "url": "https://dota2.ru/items/null-talisman/"
+    },
+    "Null Talisman Recipe": {
+        "buffs": {},
+        "cost": 210,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Null Talisman Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/null-talisman/"
     },
     "Nullifier": {
@@ -1665,6 +2089,14 @@
         ],
         "url": "https://dota2.ru/items/orchid-malevolence/"
     },
+    "Orchid Malevolence Recipe": {
+        "buffs": {},
+        "cost": 450,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Orchid Malevolence Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/orchid-malevolence/"
+    },
     "Overwhelming Blink": {
         "buffs": {
             "strength": 25.0
@@ -1678,6 +2110,14 @@
             "Reaver",
             "Overwhelming Blink Recipe"
         ],
+        "url": "https://dota2.ru/items/overwhelming-blink/"
+    },
+    "Overwhelming Blink Recipe": {
+        "buffs": {},
+        "cost": 1750,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Overwhelming Blink Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/overwhelming-blink/"
     },
     "Parasma": {
@@ -1699,6 +2139,14 @@
         ],
         "url": "https://dota2.ru/items/parasma/"
     },
+    "Parasma Recipe": {
+        "buffs": {},
+        "cost": 400,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Parasma Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/parasma/"
+    },
     "Pavise": {
         "buffs": {
             "armor": 2.0,
@@ -1715,6 +2163,14 @@
             "Fluffy Hat",
             "Pavise Recipe"
         ],
+        "url": "https://dota2.ru/items/pavise/"
+    },
+    "Pavise Recipe": {
+        "buffs": {},
+        "cost": 175,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Pavise Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/pavise/"
     },
     "Perseverance": {
@@ -1767,6 +2223,14 @@
         ],
         "url": "https://dota2.ru/items/phylactery/"
     },
+    "Phylactery Recipe": {
+        "buffs": {},
+        "cost": 300,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Phylactery Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/phylactery/"
+    },
     "Pipe of Insight": {
         "buffs": {
             "health_regen": 14.0,
@@ -1782,6 +2246,14 @@
             "Ring of Tarrasque",
             "Pipe of Insight Recipe"
         ],
+        "url": "https://dota2.ru/items/pipe-of-insight/"
+    },
+    "Pipe of Insight Recipe": {
+        "buffs": {},
+        "cost": 700,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Pipe of Insight Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/pipe-of-insight/"
     },
     "Platemail": {
@@ -1877,6 +2349,14 @@
         ],
         "url": "https://dota2.ru/items/refresher-orb/"
     },
+    "Refresher Orb Recipe": {
+        "buffs": {},
+        "cost": 200,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Refresher Orb Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/refresher-orb/"
+    },
     "Revenant's Brooch": {
         "buffs": {
             "damage": 35.0,
@@ -1894,6 +2374,14 @@
         ],
         "url": "https://dota2.ru/items/revenants-brooch/"
     },
+    "Revenant's Brooch Recipe": {
+        "buffs": {},
+        "cost": 600,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Revenant's Brooch Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/revenants-brooch/"
+    },
     "Ring of Basilius": {
         "buffs": {
             "mana_regen": 0.25
@@ -1906,6 +2394,14 @@
             "Sage's Mask",
             "Ring of Basilius Recipe"
         ],
+        "url": "https://dota2.ru/items/ring-of-basilius/"
+    },
+    "Ring of Basilius Recipe": {
+        "buffs": {},
+        "cost": 250,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Ring of Basilius Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/ring-of-basilius/"
     },
     "Ring of Health": {
@@ -1979,6 +2475,14 @@
         ],
         "url": "https://dota2.ru/items/rod-of-atos/"
     },
+    "Rod of Atos Recipe": {
+        "buffs": {},
+        "cost": 250,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Rod of Atos Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/rod-of-atos/"
+    },
     "Sacred Relic": {
         "buffs": {
             "damage": 55.0
@@ -2016,6 +2520,14 @@
             "Belt of Strength",
             "Sange Recipe"
         ],
+        "url": "https://dota2.ru/items/sange/"
+    },
+    "Sange Recipe": {
+        "buffs": {},
+        "cost": 650,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Sange Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/sange/"
     },
     "Sange and Yasha": {
@@ -2068,6 +2580,14 @@
             "Tiara of Selemene",
             "Scythe of Vyse Recipe"
         ],
+        "url": "https://dota2.ru/items/scythe-of-vyse/"
+    },
+    "Scythe of Vyse Recipe": {
+        "buffs": {},
+        "cost": 600,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Scythe of Vyse Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/scythe-of-vyse/"
     },
     "Sentry Ward": {
@@ -2123,6 +2643,14 @@
         ],
         "url": "https://dota2.ru/items/shivas-guard/"
     },
+    "Shiva's Guard Recipe": {
+        "buffs": {},
+        "cost": 2050,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Shiva's Guard Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/shivas-guard/"
+    },
     "Silver Edge": {
         "buffs": {
             "attack_speed": 35.0,
@@ -2139,6 +2667,14 @@
         ],
         "url": "https://dota2.ru/items/silver-edge/"
     },
+    "Silver Edge Recipe": {
+        "buffs": {},
+        "cost": 250,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Silver Edge Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/silver-edge/"
+    },
     "Skull Basher": {
         "buffs": {
             "damage": 30.0,
@@ -2153,6 +2689,14 @@
             "Belt of Strength",
             "Skull Basher Recipe"
         ],
+        "url": "https://dota2.ru/items/skull-basher/"
+    },
+    "Skull Basher Recipe": {
+        "buffs": {},
+        "cost": 825,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Skull Basher Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/skull-basher/"
     },
     "Slippers of Agility": {
@@ -2195,6 +2739,14 @@
         ],
         "url": "https://dota2.ru/items/solar-crest/"
     },
+    "Solar Crest Recipe": {
+        "buffs": {},
+        "cost": 500,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Solar Crest Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/solar-crest/"
+    },
     "Soul Booster": {
         "buffs": {
             "health": 425.0,
@@ -2228,6 +2780,14 @@
         ],
         "url": "https://dota2.ru/items/soul-ring/"
     },
+    "Soul Ring Recipe": {
+        "buffs": {},
+        "cost": 350,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Soul Ring Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/soul-ring/"
+    },
     "Spirit Vessel": {
         "buffs": {
             "all_attributes": 10.0,
@@ -2243,6 +2803,14 @@
             "Diadem",
             "Spirit Vessel Recipe"
         ],
+        "url": "https://dota2.ru/items/spirit-vessel/"
+    },
+    "Spirit Vessel Recipe": {
+        "buffs": {},
+        "cost": 900,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Spirit Vessel Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/spirit-vessel/"
     },
     "Staff of Wizardry": {
@@ -2269,6 +2837,14 @@
             "Eaglesong",
             "Swift Blink Recipe"
         ],
+        "url": "https://dota2.ru/items/swift-blink/"
+    },
+    "Swift Blink Recipe": {
+        "buffs": {},
+        "cost": 1750,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Swift Blink Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/swift-blink/"
     },
     "Talisman of Evasion": {
@@ -2356,6 +2932,14 @@
         ],
         "url": "https://dota2.ru/items/urn-of-shadows/"
     },
+    "Urn of Shadows Recipe": {
+        "buffs": {},
+        "cost": 320,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Urn of Shadows Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/urn-of-shadows/"
+    },
     "Vanguard": {
         "buffs": {
             "health": 250.0,
@@ -2386,6 +2970,14 @@
             "Crown",
             "Veil of Discord Recipe"
         ],
+        "url": "https://dota2.ru/items/veil-of-discord/"
+    },
+    "Veil of Discord Recipe": {
+        "buffs": {},
+        "cost": 300,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Veil of Discord Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/veil-of-discord/"
     },
     "Vitality Booster": {
@@ -2464,6 +3056,14 @@
         ],
         "url": "https://dota2.ru/items/wind-waker/"
     },
+    "Wind Waker Recipe": {
+        "buffs": {},
+        "cost": 1400,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Wind Waker Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/wind-waker/"
+    },
     "Witch Blade": {
         "buffs": {
             "armor": 5.0,
@@ -2482,6 +3082,14 @@
             "Chainmail",
             "Witch Blade Recipe"
         ],
+        "url": "https://dota2.ru/items/witch-blade/"
+    },
+    "Witch Blade Recipe": {
+        "buffs": {},
+        "cost": 250,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Witch Blade Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/witch-blade/"
     },
     "Wraith Band": {
@@ -2503,6 +3111,14 @@
         ],
         "url": "https://dota2.ru/items/wraith-band/"
     },
+    "Wraith Band Recipe": {
+        "buffs": {},
+        "cost": 210,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Wraith Band Recipe",
+        "recipe": [],
+        "url": "https://dota2.ru/items/wraith-band/"
+    },
     "Yasha": {
         "buffs": {
             "agility": 16.0,
@@ -2518,6 +3134,14 @@
             "Blade of Alacrity",
             "Yasha Recipe"
         ],
+        "url": "https://dota2.ru/items/yasha/"
+    },
+    "Yasha Recipe": {
+        "buffs": {},
+        "cost": 650,
+        "image": "https://dota2.ru/img/items/recipe.jpg",
+        "name": "Yasha Recipe",
+        "recipe": [],
         "url": "https://dota2.ru/items/yasha/"
     },
     "Yasha and Kaya": {
