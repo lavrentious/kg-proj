@@ -80,6 +80,7 @@ def save_to_json(path: str, data: Dict[str, DotaItem]) -> None:
 
 
 BUFF_KEYWORDS = {
+    # dota2.ru
     "к силе": "strength",
     "к ловкости": "agility",
     "к интеллекту": "intelligence",
@@ -119,6 +120,38 @@ BUFF_KEYWORDS = {
     "к уменьшению затрат и потерь маны": "mana_efficiency",
     "к усилению восстановления маны": "mana_regen_amp",
     "макс. здоровья в секунду": "max_health_per_sec",
+    # fandom
+    "strength": "strength",
+    "agility": "agility",
+    "intelligence": "intelligence",
+    "health": "health",
+    "mana": "mana",
+    "health regeneration": "health_regen",
+    "health regen amp": "health_replenish_amp",
+    "mana regeneration": "mana_regen",
+    "mana regen amp": "mana_regen_amp",
+    "mana efficiency": "mana_efficiency",
+    "move speed": "move_speed",
+    "attack speed": "attack_speed",
+    "projectile speed": "projectile_speed",
+    "base attack speed": "attack_speed",
+    "cast range": "cast_range",
+    "aoe radius": "spell_radius",
+    "attack range": "attack_range_ranged",
+    "attack damage": "damage",
+    "damage": "damage",
+    "spell damage amp": "spell_damage_amp",
+    "ability damage amp": "ability_damage_amp",
+    "lifesteal amp": "spell_lifesteal_amp",
+    "spell lifesteal amp": "spell_lifesteal_amp",
+    "spell lifesteal (hero)": "spell_lifesteal_heroes",
+    "spell lifesteal (creep)": "spell_lifesteal_creeps",
+    "armor": "armor",
+    "magic resistance": "magic_resist",
+    "slow resistance": "slow_resist",
+    "status resistance": "status_resist",
+    "evasion": "evasion",
+    "max hp health regen": "max_health_per_sec",
 }
 
 BUFF_PATTERN = r"([+-]?\d+(\.\d+)?)%? (\D+)"

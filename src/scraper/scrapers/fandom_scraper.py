@@ -5,8 +5,8 @@ from typing import Dict, List
 import requests
 from bs4 import BeautifulSoup, Tag
 
-from scraper.dota.types import DotaItem
-from scraper.dota.utils import raw_to_name_cost
+from scraper.dota.types import Buffs, DotaItem
+from scraper.dota.utils import parse_buffs, raw_to_name_cost
 from scraper.scrapers.base_scraper import BaseScraper
 
 logger = logging.getLogger(__name__)
@@ -54,10 +54,17 @@ class FandomScraper(BaseScraper):
             return None
         item_url = "https://dota2.fandom.com" + href
 
-        recipe = self._scrape_item_recipe(name, item_url)
+        # item page scraper soup
+        response = requests.get(item_url)
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        recipe = self._scrape_item_recipe(soup, name)
         if recipe is None:
             logger.error(f"could not parse recipe for {name}")
             return None
+
+        # scrape buffs
+        buffs = self._scrape_buffs(soup, name)
 
         logger.debug(
             f"Name: {name}, Cost: {cost}, Image: {img_url}, URL: {item_url}, Recipe: {recipe}"
@@ -68,15 +75,54 @@ class FandomScraper(BaseScraper):
             image=img_url,
             url=item_url,
             recipe=recipe,
+            buffs=buffs if buffs else Buffs(),
             order=None,
         )
         self.items[name] = obj
         return obj
 
-    def _scrape_item_recipe(self, name: str, url: str) -> List[str] | None:
-        logger.debug(f"Fetching recipe from: {url}")
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, "html.parser")
+    def _scrape_buffs(self, soup: BeautifulSoup, name: str) -> Buffs | None:
+        logger.debug(f"scraping buffs for {name}")
+        rows = soup.find_all("tr")
+        td: Tag | None = None
+        for row in rows:
+            th = row.find("th")
+            if not th or "bonus" not in th.text.lower():
+                continue
+            tds = row.find_all("td")
+            td = tds[-1] if tds else None
+        if not td:
+            return None
+
+        buffs = []
+        current_bonus = ""
+
+        for child in td.children:
+            if isinstance(child, str):
+                if child == "\n":
+                    if current_bonus.strip():
+                        buffs.append(current_bonus.strip())
+                        current_bonus = ""
+                else:
+                    current_bonus += child
+            elif hasattr(child, "name"):
+                if child.name == "br":
+                    if current_bonus.strip():
+                        buffs.append(current_bonus.strip())
+                        current_bonus = ""
+                elif child.name == "a":
+                    current_bonus += child.get_text()
+
+        if current_bonus.strip():
+            buffs.append(current_bonus.strip())
+
+        if not buffs:
+            return None
+        logger.debug(f"buffs for {name}: {buffs}")
+        return parse_buffs(buffs)
+
+    def _scrape_item_recipe(self, soup: BeautifulSoup, name: str) -> List[str] | None:
+        logger.debug(f"Fetching recipe for: {name}")
 
         info_table = soup.find("table", class_="infobox")
         if not info_table or not isinstance(info_table, Tag):
