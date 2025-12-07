@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 
 class FandomScraper(BaseScraper):
     NAME: str = "fandom"
+    items: Dict[str, DotaItem] = {}
 
     def __init__(self) -> None:
         pass
@@ -28,6 +29,9 @@ class FandomScraper(BaseScraper):
             logger.error(f"no data for {item.text}")
             return None
         name, cost = data
+        if name in self.items:
+            logger.debug(f"Already cached {name}")
+            return self.items[name]
 
         img = item.find("img")
         img_url = None
@@ -55,7 +59,7 @@ class FandomScraper(BaseScraper):
             logger.error(f"could not parse recipe for {name}")
             return None
 
-        logger.info(
+        logger.debug(
             f"Name: {name}, Cost: {cost}, Image: {img_url}, URL: {item_url}, Recipe: {recipe}"
         )
         obj = DotaItem(
@@ -66,10 +70,11 @@ class FandomScraper(BaseScraper):
             recipe=recipe,
             order=None,
         )
+        self.items[name] = obj
         return obj
 
     def _scrape_item_recipe(self, name: str, url: str) -> List[str] | None:
-        logger.info(f"Fetching recipe from: {url}")
+        logger.debug(f"Fetching recipe from: {url}")
         response = requests.get(url)
         soup = BeautifulSoup(response.text, "html.parser")
 
@@ -113,18 +118,19 @@ class FandomScraper(BaseScraper):
                 if not data:
                     logger.error(f"no data for {title}")
                     continue
+                if data[0] == name:
+                    continue
+                logger.debug(f"Component title: {title}, href: {href}, data: {data}")
+                if data[0].lower() != "recipe" and data[0] not in self.items:
+                    # fetch component item details if not cached
+                    logger.debug(f"missing item in recipe: {data[0]}, fetching...")
+                    self._build_dota_item(a)
                 recipe_components.append(data[0])
-
-        if len(recipe_components) == 1:
-            if recipe_components[0] == name:
-                return []
-            else:
-                logger.warning(f"anomalous single item recipe for {name}")
-                return [name]
 
         return recipe_components
 
     def scrape(self) -> Dict[str, DotaItem]:
+        self.items.clear()
         response = requests.get("https://dota2.fandom.com/wiki/Items")
         soup = BeautifulSoup(response.text, "html.parser")
 
@@ -158,7 +164,6 @@ class FandomScraper(BaseScraper):
 
                 sibling = sibling.find_next_sibling()
 
-        res: List[DotaItem] = []
         with ThreadPoolExecutor(max_workers=12) as executor:
             future_to_tag = {
                 executor.submit(self._build_dota_item, item): item for item in res_items
@@ -168,15 +173,10 @@ class FandomScraper(BaseScraper):
                 try:
                     result = future.result()
                     if result:
-                        res.append(result)
+                        self.items[result.name] = result
                 except Exception as exc:
                     logger.error(f"item {item} generated an exception: {exc}")
 
-        logger.info(f"parsed: {len(res)}; processed: {len(res_items)}")
+        logger.info(f"parsed: {len(self.items)}; processed: {len(res_items)}")
 
-        # normalize items
-        ans: Dict[str, DotaItem] = {}
-        for i in res:
-            assert i.name not in ans, f"Duplicate item: {i.name}"
-            ans[i.name] = i
-        return ans
+        return self.items
