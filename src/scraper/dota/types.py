@@ -1,5 +1,9 @@
 from dataclasses import dataclass
-from typing import Dict, List, Optional
+from enum import Enum
+from typing import Any, Dict, List, Optional
+
+from scraper.dota.consts import STATS_MAPPING
+from utils import normalize_name, parse_value
 
 
 @dataclass
@@ -83,6 +87,90 @@ class Buffs:
         return {k: v for k, v in self.__dict__.items() if v is not None}
 
 
+class AbilityType(str, Enum):
+    # active subtypes
+    UNIT_TARGET = "UNIT TARGET"
+    POINT_TARGET = "POINT TARGET"
+    NO_TARGET = "NO TARGET"
+    # rest
+    PASSIVE = "PASSIVE"
+    TOGGLE = "TOGGLE"
+    AURA = "AURA"
+
+
+@dataclass
+class AbilityStats:
+    additional_stats: Optional[Dict[str, Any]] = None
+
+    # specific properties
+    # --- Damage amplification / magic ---
+    spell_damage_amp: Optional[float] = None
+    bonus_magical_damage: Optional[float] = None
+    spell_damage_bonus: Optional[float] = None
+    magic_resistance_reduction: Optional[float] = None
+    dmg_dealt_as_bonus_dmg: Optional[float] = None
+    int_as_dps: Optional[float] = None
+    damage_per_second: Optional[float] = None
+
+    # --- Physical damage / armor ---
+    armor_reduction: Optional[float] = None
+    attack_damage_bonus: Optional[float] = None
+    critical_damage: Optional[float] = None
+
+    # --- Healing ---
+    heal_amp: Optional[float] = None
+    health_restored: Optional[float] = None
+    health_regen_bonus: Optional[float] = None
+
+    # --- Anti-heal ---
+    heal_reduction: Optional[float] = None
+    enemy_heal_reduction: Optional[float] = None
+
+    def asdict(self) -> Dict[str, float]:
+        return {k: v for k, v in self.__dict__.items() if v is not None}
+
+
+@dataclass
+class Ability:
+    name: str
+    description: Optional[str]
+    ability_type: AbilityType
+    mana_cost: Optional[int] = None
+    cooldown: Optional[float] = None
+    cast_range: Optional[float] = None
+
+    stats: AbilityStats | None = None
+
+    def __str__(self) -> str:
+        return (
+            "Abilities("
+            + ", ".join(f"{k}={v}" for k, v in self.__dict__.items() if v is not None)
+            + ")"
+        )
+
+    def apply_stats(self, stats: Dict[str, Any]) -> None:
+        if self.stats is None:
+            self.stats = AbilityStats()
+
+        for key, value in stats.items():
+            normalized_key = key.strip().lower()
+
+            if normalized_key == "cast range":
+                self.cast_range = parse_value(value)
+                continue
+
+            if normalized_key in STATS_MAPPING:
+                field_name = STATS_MAPPING[normalized_key]
+                setattr(self.stats, field_name, parse_value(value))
+            else:
+                if self.stats.additional_stats is None:
+                    self.stats.additional_stats = {}
+                self.stats.additional_stats[normalize_name(normalized_key)] = value
+
+    def asdict(self) -> Dict[str, float]:
+        return {k: v for k, v in self.__dict__.items() if v is not None}
+
+
 @dataclass
 class DotaItem:
     name: str  # unique
@@ -90,5 +178,6 @@ class DotaItem:
     image: str
     url: str
     recipe: List[str]
+    abilities: List[Ability] | None = None
     order: int | None = None  # abstract variable to assess item coolness
     buffs: Buffs | None = None

@@ -5,7 +5,7 @@ from pathlib import Path
 from rdflib import OWL, RDF, RDFS, XSD, Graph, Literal, Namespace
 
 from logger import getLogger, setLevel
-from scraper.dota.types import Buffs, DotaItem
+from scraper.dota.types import AbilityStats, AbilityType, Buffs, DotaItem
 from scraper.dota.utils import parse_from_json
 from utils import normalize_name, snake_case_to_camel_case
 
@@ -17,6 +17,8 @@ ONTO_CLASSES = [
     "NoTargetActiveAbility",
     "PointTargetActiveAbility",
     "UnitTargetActiveAbility",
+    "AuraAbility",
+    "ToggleAbility",
     "Item",
     "NeutralItem",
     "DotaItem",
@@ -73,6 +75,67 @@ def build_item(graph: Graph, item: DotaItem) -> None:
                 prop = KG[buff]
                 graph.add((item_uri, prop, Literal(val, datatype=XSD.decimal)))
 
+    # Abilities
+    if item.abilities:
+        for ability in item.abilities:
+            logger.debug(f"adding ability {ability} to item {item.name}")
+            ability_name = name + "_" + ability.name.replace(" ", "_").replace("'", "")
+            ability_uri = KG[ability_name]
+
+            ability_type = KG.Ability
+            if ability.ability_type == AbilityType.PASSIVE:
+                ability_type = KG.PassiveAbility
+            elif ability.ability_type == AbilityType.NO_TARGET:
+                ability_type = KG.NoTargetActiveAbility
+            elif ability.ability_type == AbilityType.POINT_TARGET:
+                ability_type = KG.PointTargetActiveAbility
+            elif ability.ability_type == AbilityType.UNIT_TARGET:
+                ability_type = KG.UnitTargetActiveAbility
+            elif ability.ability_type == AbilityType.AURA:
+                ability_type = KG.AuraAbility
+            elif ability.ability_type == AbilityType.TOGGLE:
+                ability_type = KG.ToggleAbility
+
+            graph.add((ability_uri, RDF.type, ability_type))
+            graph.add((ability_uri, KG.name, Literal(ability.name)))
+            graph.add((ability_uri, KG.description, Literal(ability.description)))
+
+            if ability.cooldown is not None:
+                graph.add(
+                    (
+                        ability_uri,
+                        KG.cooldown,
+                        Literal(ability.cooldown, datatype=XSD.integer),
+                    )
+                )
+            if ability.mana_cost is not None:
+                graph.add(
+                    (
+                        ability_uri,
+                        KG.manaCost,
+                        Literal(ability.mana_cost, datatype=XSD.integer),
+                    )
+                )
+
+            if ability.stats:
+                for stat_name, stat_value in ability.stats.asdict().items():
+                    if stat_name == "additional_stats":
+                        continue
+                    logger.debug(
+                        f"adding ability stat {stat_name}={stat_value} for ability {ability.name}"
+                    )
+                    stat_prop = KG[snake_case_to_camel_case(stat_name)]
+                    graph.add(
+                        (
+                            ability_uri,
+                            stat_prop,
+                            Literal(stat_value, datatype=XSD.decimal),
+                        )
+                    )
+
+            # Link ability to item
+            graph.add((item_uri, KG.hasAbility, ability_uri))
+
 
 def build_ontology(graph: Graph) -> None:
     graph.bind("kg-dota", KG)
@@ -88,6 +151,8 @@ def build_ontology(graph: Graph) -> None:
         (KG["NoTargetActiveAbility"], KG["ActiveAbility"]),
         (KG["PointTargetActiveAbility"], KG["ActiveAbility"]),
         (KG["UnitTargetActiveAbility"], KG["ActiveAbility"]),
+        (KG["AuraAbility"], KG["Ability"]),
+        (KG["ToggleAbility"], KG["Ability"]),
         (KG["NeutralItem"], KG["Item"]),
         (KG["DotaItem"], KG["Item"]),
     ]
@@ -117,6 +182,15 @@ def build_ontology(graph: Graph) -> None:
         buff_name = snake_case_to_camel_case(k)
         graph.add((KG[buff_name], RDF.type, OWL.DatatypeProperty))
         graph.add((KG[buff_name], RDFS.domain, KG.Item))
+
+    # initialize ability stats data properties
+    for k in list(AbilityStats.__annotations__.keys()) + ["mana_cost", "cooldown"]:
+        if k == "additional_stats":
+            continue
+        stat_name = snake_case_to_camel_case(k)
+        graph.add((KG[stat_name], RDF.type, OWL.DatatypeProperty))
+        graph.add((KG[stat_name], RDFS.domain, KG.Ability))
+        graph.add((KG[stat_name], RDFS.range, XSD.integer))
 
     # Other datatype properties
     graph.add((KG.cost, RDF.type, OWL.DatatypeProperty))

@@ -5,8 +5,8 @@ from typing import Dict, List
 import requests
 from bs4 import BeautifulSoup, Tag
 
-from scraper.dota.types import Buffs, DotaItem
-from scraper.dota.utils import parse_buffs, raw_to_name_cost
+from scraper.dota.types import Ability, AbilityStats, AbilityType, Buffs, DotaItem
+from scraper.dota.utils import parse_ability_type, parse_buffs, raw_to_name_cost
 from scraper.scrapers.base_scraper import BaseScraper
 
 logger = logging.getLogger(__name__)
@@ -66,6 +66,11 @@ class FandomScraper(BaseScraper):
         # scrape buffs
         buffs = self._scrape_buffs(soup, name)
 
+        # scrape abilities
+        abilities = self._scrape_abilities(soup, name)
+        if abilities:
+            logger.debug(f"scraped {len(abilities)} abilities for {name}")
+
         logger.debug(
             f"Name: {name}, Cost: {cost}, Image: {img_url}, URL: {item_url}, Recipe: {recipe}"
         )
@@ -76,10 +81,110 @@ class FandomScraper(BaseScraper):
             url=item_url,
             recipe=recipe,
             buffs=buffs if buffs else Buffs(),
+            abilities=abilities if abilities else None,
             order=None,
         )
         self.items[name] = obj
         return obj
+
+    def _scrape_abilities(self, soup: BeautifulSoup, name: str) -> List[Ability]:
+        logger.debug(f"scraping abilities for {name}")
+
+        ability_blocks = soup.select(".ability-background")
+        abilities: List[Ability] = []
+
+        for block in ability_blocks:
+            result: Dict[str, str | Dict[str, str] | None] = {}
+
+            # Ability name
+            title = block.select_one("span[style*='color']")
+            ability_name = title.get_text(strip=True) if title else None
+            logger.debug(f"processing ability {ability_name}")
+
+            # Header entries (Ability type, affects, etc.)
+            header_entries = block.select(
+                ".ability-description.adItemOrRune div[style*='inline-block']"
+            )
+            for entry in header_entries:
+                tag = entry.find("b")
+                if not tag:
+                    continue
+                key = tag.get_text(strip=True)
+                value = entry.text.replace(key, "").strip()
+                result[key] = value
+
+            # Parse ability type
+            ability_type_raw = result.get("Ability")
+            if ability_type_raw and isinstance(ability_type_raw, str):
+                ability_type = (
+                    parse_ability_type(ability_type_raw) or AbilityType.PASSIVE
+                )
+            else:
+                ability_type = AbilityType.PASSIVE
+
+            # Description
+            desc = block.select_one(".ability-description div[style*='border-top']")
+            ability_description = desc.get_text(" ", strip=True) if desc else None
+
+            # Stats
+            stats: Dict[str, str] = {}
+            stat_rows = block.select("div[style*='font-size:98%']")
+            for stat in stat_rows:
+                bold = stat.find("b")
+                if not bold:
+                    continue
+                key = bold.get_text(strip=True).strip(":")
+                value = (
+                    stat.get_text(" ", strip=True)
+                    .replace(bold.get_text(strip=True), "")
+                    .strip()
+                )
+                stats[key] = value
+
+            # Extract cooldown and mana cost
+            cooldown_mana_block = block.select_one(
+                "div[style*='display:inline-block; margin:8px']"
+            )
+            ability_cooldown = None
+            ability_mana_cost = None
+            if cooldown_mana_block:
+                cells = cooldown_mana_block.select("div[style*='display:table-cell']")
+                if len(cells) >= 3:
+                    cooldown_value = (
+                        cells[2].get_text(strip=True).replace("\xa0", "").strip()
+                    )
+                    if cooldown_value in ["", "-"]:
+                        cooldown_value = "0"
+                    try:
+                        ability_cooldown = int(cooldown_value)
+                    except ValueError:
+                        pass
+                # Mana value is in the 2nd table-cell of second row
+                if len(cells) >= 6:
+                    mana_value = (
+                        cells[5].get_text(strip=True).replace("\xa0", "").strip()
+                    )
+                    if mana_value in ["", "-"]:
+                        mana_value = "0"
+                    try:
+                        ability_mana_cost = int(mana_value)
+                    except ValueError:
+                        pass
+
+            result["stats"] = stats
+
+            a = Ability(
+                name=ability_name or "???",
+                ability_type=ability_type,
+                description=ability_description,
+                cooldown=ability_cooldown,
+                mana_cost=ability_mana_cost,
+            )
+            a.apply_stats(stats)
+
+            abilities.append(a)
+
+        return abilities
 
     def _scrape_buffs(self, soup: BeautifulSoup, name: str) -> Buffs | None:
         logger.debug(f"scraping buffs for {name}")

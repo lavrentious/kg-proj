@@ -5,7 +5,8 @@ from dataclasses import asdict, is_dataclass
 from difflib import get_close_matches
 from typing import Any, Dict, List, Tuple
 
-from scraper.dota.types import Buffs, DotaItem
+from scraper.dota.consts import BUFF_KEYWORDS
+from scraper.dota.types import Ability, AbilityStats, AbilityType, Buffs, DotaItem
 
 logger = logging.getLogger(__name__)
 
@@ -50,8 +51,23 @@ def parse_from_json(path: str) -> Dict[str, DotaItem]:
         assert type(data) == dict
         return {
             item["name"]: DotaItem(
-                **{k: v for k, v in item.items() if k != "buffs"},
+                **{k: v for k, v in item.items() if k != "buffs" and k != "abilities"},
                 buffs=Buffs(**item["buffs"]) if "buffs" in item else Buffs(),
+                abilities=(
+                    [
+                        Ability(
+                            **{k: v for k, v in ability.items() if k != "stats"},
+                            stats=(
+                                AbilityStats(**ability["stats"])
+                                if "stats" in ability
+                                else AbilityStats()
+                            ),
+                        )
+                        for ability in item["abilities"]
+                    ]
+                    if "abilities" in item
+                    else None
+                ),
             )
             for item in data.values()
         }
@@ -78,81 +94,6 @@ def save_to_json(path: str, data: Dict[str, DotaItem]) -> None:
             sort_keys=True,
         )
 
-
-BUFF_KEYWORDS = {
-    # dota2.ru
-    "к силе": "strength",
-    "к ловкости": "agility",
-    "к интеллекту": "intelligence",
-    "ко всем атрибутам": "all_attributes",
-    "к здоровью": "health",
-    "к мане": "mana",
-    "к максимальному запасу маны": "mana",
-    "к восстановлению здоровья": "health_regen",
-    "к пополнению здоровья": "health_replenish_amp",
-    "к восстановлению маны": "mana_regen",
-    "к скорости передвижения": "move_speed",
-    "к скорости передвижения героям ближнего боя": "move_speed_melee",
-    "к скорости передвижения героям дальнего боя": "move_speed_ranged",
-    "к скорости атаки": "attack_speed",
-    "к скорости применения заклинаний": "cast_speed",
-    "к скорости снарядов": "projectile_speed",
-    "к скорости снарядов атак": "projectile_speed",
-    "к дальности атаки": "attack_range_ranged",
-    "к дальности применения заклинаний": "cast_range",
-    "к радиусу заклинаний": "spell_radius",
-    "к вампиризму": "lifesteal",
-    "к вампиризму от заклинаний против героев": "spell_lifesteal_heroes",
-    "к вампиризму от заклинаний против крипов": "spell_lifesteal_creeps",
-    "к усилению вампиризма": "spell_lifesteal_amp",
-    "к урону": "damage",
-    "к урону (ближний бой)": "damage_melee",
-    "к урону (дальний бой)": "damage_ranged",
-    "к урону от заклинаний": "spell_damage",
-    "к усилению урона от заклинаний": "spell_damage_amp",
-    "к усилению урона способностей": "ability_damage_amp",
-    "к броне": "armor",
-    "к сопротивлению магии": "magic_resist",
-    "к сопротивлению замедлению": "slow_resist",
-    "к сопротивлению замедлениям": "slow_resist",
-    "к сопротивлению эффектам": "status_resist",
-    "к уклонению": "evasion",
-    "к уменьшению затрат и потерь маны": "mana_efficiency",
-    "к усилению восстановления маны": "mana_regen_amp",
-    "макс. здоровья в секунду": "max_health_per_sec",
-    # fandom
-    "strength": "strength",
-    "agility": "agility",
-    "intelligence": "intelligence",
-    "health": "health",
-    "mana": "mana",
-    "health regeneration": "health_regen",
-    "health regen amp": "health_replenish_amp",
-    "mana regeneration": "mana_regen",
-    "mana regen amp": "mana_regen_amp",
-    "mana efficiency": "mana_efficiency",
-    "move speed": "move_speed",
-    "attack speed": "attack_speed",
-    "projectile speed": "projectile_speed",
-    "base attack speed": "attack_speed",
-    "cast range": "cast_range",
-    "aoe radius": "spell_radius",
-    "attack range": "attack_range_ranged",
-    "attack damage": "damage",
-    "damage": "damage",
-    "spell damage amp": "spell_damage_amp",
-    "ability damage amp": "ability_damage_amp",
-    "lifesteal amp": "spell_lifesteal_amp",
-    "spell lifesteal amp": "spell_lifesteal_amp",
-    "spell lifesteal (hero)": "spell_lifesteal_heroes",
-    "spell lifesteal (creep)": "spell_lifesteal_creeps",
-    "armor": "armor",
-    "magic resistance": "magic_resist",
-    "slow resistance": "slow_resist",
-    "status resistance": "status_resist",
-    "evasion": "evasion",
-    "max hp health regen": "max_health_per_sec",
-}
 
 BUFF_PATTERN = r"([+-]?\d+(\.\d+)?)%? (\D+)"
 FUZZY_THRESHOLD = 0.6
@@ -202,6 +143,28 @@ def parse_buffs(lines: List[str]) -> Buffs:
         setattr(ans, field, value)
 
     return ans
+
+
+def parse_ability_type(value: str) -> AbilityType | None:
+    value = value.strip().lower()
+
+    d = {
+        "unit target": AbilityType.UNIT_TARGET,
+        "target unit": AbilityType.UNIT_TARGET,
+        "point target": AbilityType.POINT_TARGET,
+        "target point": AbilityType.POINT_TARGET,
+        "target area": AbilityType.POINT_TARGET,
+        "area target": AbilityType.POINT_TARGET,
+        "no target": AbilityType.NO_TARGET,
+        "passive": AbilityType.PASSIVE,
+        "toggle": AbilityType.TOGGLE,
+        "aura": AbilityType.AURA,
+    }
+    for k, v in d.items():
+        if k in value:
+            return v
+
+    return None
 
 
 def set_distinct_recipes(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
