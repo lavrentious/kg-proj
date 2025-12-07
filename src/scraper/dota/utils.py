@@ -51,7 +51,7 @@ def parse_from_json(path: str) -> Dict[str, DotaItem]:
         return {
             item["name"]: DotaItem(
                 **{k: v for k, v in item.items() if k != "buffs"},
-                buffs=Buffs(**item["buffs"]),
+                buffs=Buffs(**item["buffs"]) if "buffs" in item else Buffs(),
             )
             for item in data.values()
         }
