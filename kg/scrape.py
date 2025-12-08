@@ -2,8 +2,8 @@ import argparse
 import logging
 from typing import Dict
 
-from logger import getLogger, setLevel
-from scraper.dota.utils import (
+from kg.logger import getLogger, setLevel
+from kg.scraper.dota.utils import (
     get_recipes_count,
     parse_from_json,
     remove_distinct_recipes,
@@ -11,9 +11,9 @@ from scraper.dota.utils import (
     set_distinct_recipes,
     set_orders,
 )
-from scraper.scrapers.base_scraper import BaseScraper
-from scraper.scrapers.dota2_ru_scraper import Dota2RuScraper
-from scraper.scrapers.fandom_scraper import FandomScraper
+from kg.scraper.scrapers.base_scraper import BaseScraper
+from kg.scraper.scrapers.dota2_ru_scraper import Dota2RuScraper
+from kg.scraper.scrapers.fandom_scraper import FandomScraper
 
 SCRAPERS: Dict[str, type[BaseScraper]] = {
     "dota2_ru": Dota2RuScraper,

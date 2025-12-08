@@ -7,9 +7,9 @@ from typing import Dict, List
 import requests
 from bs4 import BeautifulSoup, Tag
 
-from scraper.dota.types import Buffs, DotaItem
-from scraper.dota.utils import parse_buffs
-from scraper.scrapers.base_scraper import BaseScraper
+from kg.scraper.dota.types import Buffs, DotaItem
+from kg.scraper.dota.utils import parse_buffs
+from kg.scraper.scrapers.base_scraper import BaseScraper
 
 logger = logging.getLogger(__name__)
 

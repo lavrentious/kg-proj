@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-from scraper.dota.consts import STATS_MAPPING
-from utils import normalize_name, parse_value
+from kg.scraper.dota.consts import STATS_MAPPING
+from kg.utils import normalize_name, parse_value
 
 
 @dataclass

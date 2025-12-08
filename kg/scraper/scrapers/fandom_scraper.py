@@ -5,9 +5,9 @@ from typing import Dict, List
 import requests
 from bs4 import BeautifulSoup, Tag
 
-from scraper.dota.types import Ability, AbilityStats, AbilityType, Buffs, DotaItem
-from scraper.dota.utils import parse_ability_type, parse_buffs, raw_to_name_cost
-from scraper.scrapers.base_scraper import BaseScraper
+from kg.scraper.dota.types import Ability, AbilityType, Buffs, DotaItem
+from kg.scraper.dota.utils import parse_ability_type, parse_buffs, raw_to_name_cost
+from kg.scraper.scrapers.base_scraper import BaseScraper
 
 logger = logging.getLogger(__name__)
 

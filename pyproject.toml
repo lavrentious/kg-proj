@@ -13,6 +13,9 @@ dependencies = [
     "rdflib (>=7.4.0,<8.0.0)",
     "dacite (>=1.9.2,<2.0.0)"
 ]
+packages = [
+    { include = "kg", from = "src" }
+]
 
 
 [build-system]
@@ -27,7 +30,6 @@ black = "^25.1.0"
 types-requests = "^2.32.0.20250602"
 
 [tool.mypy]
-mypy_path = "./src"
 explicit_package_bases = true
 strict = true
 disallow_untyped_calls = false

@@ -7,8 +7,8 @@ from typing import Any, Dict, List, Tuple
 
 from dacite import Config, from_dict
 
-from scraper.dota.consts import BUFF_KEYWORDS
-from scraper.dota.types import AbilityType, Buffs, DotaItem
+from kg.scraper.dota.consts import BUFF_KEYWORDS
+from kg.scraper.dota.types import AbilityType, Buffs, DotaItem
 
 logger = logging.getLogger(__name__)
 

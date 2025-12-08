@@ -23,9 +23,9 @@
 Онтология строится по базе данных предметов. Их данные парсятся с `dota2.ru` / `dota2.fandom.com`.
 
 
-Следует воспользоваться скриптом `scraper.py`, который парсит данные и собирает их в `.json`:
+Следует воспользоваться скриптом `scrape.py`, который парсит данные и собирает их в `.json`:
 ```bash
-python src/scraper.py --output items.json --scraper fandom
+poetry run python -m kg.scrape --output items.json --scraper fandom
 ```
 
 # 2. Заполнение онтологии
@@ -37,5 +37,5 @@ python src/scraper.py --output items.json --scraper fandom
 
 Следует воспользоваться скриптом `parse.py`, который создаст RDF на основе json
 ```bash
-python src/parse.py --output kg-dota.rdf items.json
+poetry run python -m kg.parse --output kg-dota.rdf items.json
 ```

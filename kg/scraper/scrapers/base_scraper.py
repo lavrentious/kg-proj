@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Dict
 
-from scraper.dota.types import DotaItem
+from kg.scraper.dota.types import DotaItem
 
 
 class BaseScraper(ABC):

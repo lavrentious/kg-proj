@@ -4,10 +4,10 @@ from pathlib import Path
 
 from rdflib import OWL, RDF, RDFS, XSD, Graph, Literal, Namespace
 
-from logger import getLogger, setLevel
-from scraper.dota.types import AbilityStats, AbilityType, Buffs, DotaItem
-from scraper.dota.utils import parse_from_json
-from utils import normalize_name, snake_case_to_camel_case
+from kg.logger import getLogger, setLevel
+from kg.scraper.dota.types import AbilityStats, AbilityType, Buffs, DotaItem
+from kg.scraper.dota.utils import parse_from_json
+from kg.utils import normalize_name, snake_case_to_camel_case
 
 BASE = "http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#"
 ONTO_CLASSES = [
