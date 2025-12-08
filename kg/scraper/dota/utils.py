@@ -12,7 +12,6 @@ from kg.scraper.dota.consts import BUFF_KEYWORDS
 from kg.scraper.dota.types import AbilityType, Buffs, DotaItem
 from kg.scraper.scrapers.base_scraper import ScrapeResult
 
-
 logger = logging.getLogger(__name__)
 
 

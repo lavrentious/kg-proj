@@ -1,6 +1,6 @@
 import logging
-from concurrent.futures import ThreadPoolExecutor, as_completed
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List, Set
 
 import requests
