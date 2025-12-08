@@ -5,8 +5,10 @@ from dataclasses import asdict, is_dataclass
 from difflib import get_close_matches
 from typing import Any, Dict, List, Tuple
 
+from dacite import Config, from_dict
+
 from scraper.dota.consts import BUFF_KEYWORDS
-from scraper.dota.types import Ability, AbilityStats, AbilityType, Buffs, DotaItem
+from scraper.dota.types import AbilityType, Buffs, DotaItem
 
 logger = logging.getLogger(__name__)
 
@@ -46,31 +48,19 @@ def set_orders(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
 
 
 def parse_from_json(path: str) -> Dict[str, DotaItem]:
-    with open(path, "r") as f:
-        data: Dict[str, Dict[str, Any]] = json.load(f)
-        assert type(data) == dict
-        return {
-            item["name"]: DotaItem(
-                **{k: v for k, v in item.items() if k != "buffs" and k != "abilities"},
-                buffs=Buffs(**item["buffs"]) if "buffs" in item else Buffs(),
-                abilities=(
-                    [
-                        Ability(
-                            **{k: v for k, v in ability.items() if k != "stats"},
-                            stats=(
-                                AbilityStats(**ability["stats"])
-                                if "stats" in ability
-                                else AbilityStats()
-                            ),
-                        )
-                        for ability in item["abilities"]
-                    ]
-                    if "abilities" in item
-                    else None
-                ),
-            )
-            for item in data.values()
-        }
+    with open(path) as f:
+        data = json.load(f)
+
+    return {
+        key: from_dict(
+            data_class=DotaItem,
+            data=item_dict,
+            config=Config(
+                strict=False, type_hooks={AbilityType: lambda v: AbilityType(v)}
+            ),
+        )
+        for key, item_dict in data.items()
+    }
 
 
 def dataclass_to_clean_dict(obj: Any) -> Any:
