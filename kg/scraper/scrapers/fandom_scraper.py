@@ -16,6 +16,7 @@ from kg.scraper.dota.types import (
 )
 from kg.scraper.dota.utils import parse_ability_type, parse_buffs, raw_to_name_cost
 from kg.scraper.scrapers.base_scraper import BaseScraper, ScrapeResult
+from kg.utils import normalize_name
 
 logger = logging.getLogger(__name__)
 
@@ -38,20 +39,21 @@ class FandomScraper(BaseScraper):
             return None
         name = data[0]
 
-        img = item.find("img")
-        img_url = None
-        if img and isinstance(img, Tag):
-            src = img.get("src")
-            if not isinstance(src, str) or not src or src.startswith("data:"):
-                src = img.get("data-src")
-                if not isinstance(src, str) or not src or src.startswith("data:"):
-                    logger.error(f"no src for {name}")
-                    return None
-            img_url = src
+        # img = item.find("img")
+        # img_url = None
+        # if img and isinstance(img, Tag):
+        #     src = img.get("src")
+        #     if not isinstance(src, str) or not src or src.startswith("data:"):
+        #         src = img.get("data-src")
+        #         if not isinstance(src, str) or not src or src.startswith("data:"):
+        #             logger.error(f"no src for {name}")
+        #             return None
+        #     img_url = src
 
-        if not img_url:
-            logger.error(f"no img url for {name}")
-            return None
+        # if not img_url:
+        #     logger.error(f"no img url for {name}")
+        #     return None
+        img_url = f'https://dota2.ru/img/items/{normalize_name(name).lower()}.jpg'
 
         href = item.get("href")
         if href is None or not isinstance(href, str):

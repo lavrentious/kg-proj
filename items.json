@@ -37,7 +37,7 @@
                 "strength": 26.0
             },
             "cost": 5525,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3b/Abyssal_Blade_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163207",
+            "image": "https://dota2.ru/img/items/abyssal_blade.jpg",
             "name": "Abyssal Blade",
             "order": 3,
             "recipe": [
@@ -77,7 +77,7 @@
                 "mana": 300.0
             },
             "cost": 3000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2b/Aeon_Disk_icon.png/revision/latest/scale-to-width-down/60?cb=20171101184000",
+            "image": "https://dota2.ru/img/items/aeon_disk.jpg",
             "name": "Aeon Disk",
             "order": 2,
             "recipe": [
@@ -113,7 +113,7 @@
                 "mana_regen": 2.5
             },
             "cost": 2275,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d4/Aether_Lens_icon.png/revision/latest/scale-to-width-down/60?cb=20200307133528",
+            "image": "https://dota2.ru/img/items/aether_lens.jpg",
             "name": "Aether Lens",
             "order": 2,
             "recipe": [
@@ -142,7 +142,7 @@
             ],
             "buffs": {},
             "cost": 5800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/24/Aghanim%27s_Blessing_icon.png/revision/latest/scale-to-width-down/60?cb=20190729085545",
+            "image": "https://dota2.ru/img/items/aghanims_blessing.jpg",
             "name": "Aghanim's Blessing",
             "order": 3,
             "recipe": [
@@ -176,7 +176,7 @@
                 "strength": 10.0
             },
             "cost": 4200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/07/Aghanim%27s_Scepter_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163350",
+            "image": "https://dota2.ru/img/items/aghanims_scepter.jpg",
             "name": "Aghanim's Scepter",
             "order": 2,
             "recipe": [
@@ -198,7 +198,7 @@
             ],
             "buffs": {},
             "cost": 1400,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d8/Aghanim%27s_Shard_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232020",
+            "image": "https://dota2.ru/img/items/aghanims_shard.jpg",
             "name": "Aghanim's Shard",
             "order": 1,
             "recipe": [],
@@ -224,7 +224,7 @@
                 "intelligence": 25.0
             },
             "cost": 6800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/28/Arcane_Blink_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232215",
+            "image": "https://dota2.ru/img/items/arcane_blink.jpg",
             "name": "Arcane Blink",
             "order": 2,
             "recipe": [
@@ -276,7 +276,7 @@
                 "move_speed": 45.0
             },
             "cost": 1300,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/be/Arcane_Boots_icon.png/revision/latest/scale-to-width-down/60?cb=20160530174210",
+            "image": "https://dota2.ru/img/items/arcane_boots.jpg",
             "name": "Arcane Boots",
             "order": 3,
             "recipe": [
@@ -321,7 +321,7 @@
                 "health_regen": 5.0
             },
             "cost": 2500,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8d/Armlet_of_Mordiggian_%28Inactive%29_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163650",
+            "image": "https://dota2.ru/img/items/armlet_of_mordiggian.jpg",
             "name": "Armlet of Mordiggian",
             "order": 2,
             "recipe": [
@@ -362,7 +362,7 @@
                 "attack_speed": 30.0
             },
             "cost": 5125,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d3/Assault_Cuirass_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163712",
+            "image": "https://dota2.ru/img/items/assault_cuirass.jpg",
             "name": "Assault Cuirass",
             "order": 3,
             "recipe": [
@@ -386,7 +386,7 @@
                 "agility": 6.0
             },
             "cost": 450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/ca/Band_of_Elvenskin_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163807",
+            "image": "https://dota2.ru/img/items/band_of_elvenskin.jpg",
             "name": "Band of Elvenskin",
             "order": 1,
             "recipe": [],
@@ -435,7 +435,7 @@
                 "mana_regen": 2.75
             },
             "cost": 4100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c1/Battle_Fury_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163833",
+            "image": "https://dota2.ru/img/items/battle_fury.jpg",
             "name": "Battle Fury",
             "order": 2,
             "recipe": [
@@ -460,7 +460,7 @@
                 "strength": 6.0
             },
             "cost": 450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f6/Belt_of_Strength_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163903",
+            "image": "https://dota2.ru/img/items/belt_of_strength.jpg",
             "name": "Belt of Strength",
             "order": 1,
             "recipe": [],
@@ -488,7 +488,7 @@
                 "strength": 10.0
             },
             "cost": 4050,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/72/Black_King_Bar_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163925",
+            "image": "https://dota2.ru/img/items/black_king_bar.jpg",
             "name": "Black King Bar",
             "order": 2,
             "recipe": [
@@ -539,7 +539,7 @@
                 "damage": 18.0
             },
             "cost": 2100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/18/Blade_Mail_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163957",
+            "image": "https://dota2.ru/img/items/blade_mail.jpg",
             "name": "Blade Mail",
             "order": 2,
             "recipe": [
@@ -562,7 +562,7 @@
                 "agility": 10.0
             },
             "cost": 1000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a2/Blade_of_Alacrity_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164022",
+            "image": "https://dota2.ru/img/items/blade_of_alacrity.jpg",
             "name": "Blade of Alacrity",
             "order": 1,
             "recipe": [],
@@ -573,7 +573,7 @@
                 "damage": 9.0
             },
             "cost": 450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ed/Blades_of_Attack_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164106",
+            "image": "https://dota2.ru/img/items/blades_of_attack.jpg",
             "name": "Blades of Attack",
             "order": 1,
             "recipe": [],
@@ -595,7 +595,7 @@
             ],
             "buffs": {},
             "cost": 300,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/98/Blight_Stone_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164129",
+            "image": "https://dota2.ru/img/items/blight_stone.jpg",
             "name": "Blight Stone",
             "order": 1,
             "recipe": [],
@@ -618,7 +618,7 @@
             ],
             "buffs": {},
             "cost": 2250,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4c/Blink_Dagger_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164152",
+            "image": "https://dota2.ru/img/items/blink_dagger.jpg",
             "name": "Blink Dagger",
             "order": 1,
             "recipe": [],
@@ -629,7 +629,7 @@
                 "attack_speed": 35.0
             },
             "cost": 1000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8c/Blitz_Knuckles_icon.png/revision/latest/scale-to-width-down/60?cb=20200629211227",
+            "image": "https://dota2.ru/img/items/blitz_knuckles.jpg",
             "name": "Blitz Knuckles",
             "order": 1,
             "recipe": [],
@@ -660,7 +660,7 @@
                 "health": 50.0
             },
             "cost": 50,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/03/Blood_Grenade_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051419",
+            "image": "https://dota2.ru/img/items/blood_grenade.jpg",
             "name": "Blood Grenade",
             "order": 1,
             "recipe": [],
@@ -690,7 +690,7 @@
                 "spell_radius": 75.0
             },
             "cost": 4400,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5a/Bloodstone_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164258",
+            "image": "https://dota2.ru/img/items/bloodstone.jpg",
             "name": "Bloodstone",
             "order": 3,
             "recipe": [
@@ -739,7 +739,7 @@
                 "mana_regen": 3.5
             },
             "cost": 6625,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f4/Bloodthorn_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164313",
+            "image": "https://dota2.ru/img/items/bloodthorn.jpg",
             "name": "Bloodthorn",
             "order": 4,
             "recipe": [
@@ -798,7 +798,7 @@
                 "strength": 8.0
             },
             "cost": 4275,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e9/Boots_of_Bearing_icon.png/revision/latest/scale-to-width-down/60?cb=20220227041455",
+            "image": "https://dota2.ru/img/items/boots_of_bearing.jpg",
             "name": "Boots of Bearing",
             "order": 3,
             "recipe": [
@@ -821,7 +821,7 @@
                 "move_speed": 45.0
             },
             "cost": 500,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/97/Boots_of_Speed_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164329",
+            "image": "https://dota2.ru/img/items/boots_of_speed.jpg",
             "name": "Boots of Speed",
             "order": 1,
             "recipe": [],
@@ -845,7 +845,7 @@
                 "move_speed": 110.0
             },
             "cost": 2500,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6d/Boots_of_Travel_1_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164348",
+            "image": "https://dota2.ru/img/items/boots_of_travel.jpg",
             "name": "Boots of Travel",
             "order": 2,
             "recipe": [
@@ -1031,7 +1031,7 @@
             ],
             "buffs": {},
             "cost": 675,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fa/Bottle_%28Full%29_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164631",
+            "image": "https://dota2.ru/img/items/bottle.jpg",
             "name": "Bottle",
             "order": 1,
             "recipe": [],
@@ -1046,7 +1046,7 @@
                 "strength": 10.0
             },
             "cost": 505,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6e/Bracer_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164846",
+            "image": "https://dota2.ru/img/items/bracer.jpg",
             "name": "Bracer",
             "order": 2,
             "recipe": [
@@ -1069,7 +1069,7 @@
                 "damage": 15.0
             },
             "cost": 1000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3e/Broadsword_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164859",
+            "image": "https://dota2.ru/img/items/broadsword.jpg",
             "name": "Broadsword",
             "order": 1,
             "recipe": [],
@@ -1094,7 +1094,7 @@
                 "armor": 1.0
             },
             "cost": 425,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ae/Buckler_%28Inactive%29_icon.png/revision/latest/scale-to-width-down/60?cb=20191221132412",
+            "image": "https://dota2.ru/img/items/buckler.jpg",
             "name": "Buckler",
             "order": 2,
             "recipe": [
@@ -1119,7 +1119,7 @@
                 "evasion": 35.0
             },
             "cost": 5450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/28/Butterfly_icon.png/revision/latest/scale-to-width-down/60?cb=20160530164923",
+            "image": "https://dota2.ru/img/items/butterfly.jpg",
             "name": "Butterfly",
             "order": 2,
             "recipe": [
@@ -1134,7 +1134,7 @@
                 "armor": 4.0
             },
             "cost": 550,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f2/Chainmail_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165032",
+            "image": "https://dota2.ru/img/items/chainmail.jpg",
             "name": "Chainmail",
             "order": 1,
             "recipe": [],
@@ -1147,7 +1147,7 @@
                 "strength": 2.0
             },
             "cost": 155,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/28/Circlet_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165058",
+            "image": "https://dota2.ru/img/items/circlet.jpg",
             "name": "Circlet",
             "order": 1,
             "recipe": [],
@@ -1172,7 +1172,7 @@
             ],
             "buffs": {},
             "cost": 50,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/77/Clarity_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165109",
+            "image": "https://dota2.ru/img/items/clarity.jpg",
             "name": "Clarity",
             "order": 1,
             "recipe": [],
@@ -1183,7 +1183,7 @@
                 "damage": 20.0
             },
             "cost": 1350,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/49/Claymore_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165121",
+            "image": "https://dota2.ru/img/items/claymore.jpg",
             "name": "Claymore",
             "order": 1,
             "recipe": [],
@@ -1194,7 +1194,7 @@
                 "magic_resist": 20.0
             },
             "cost": 800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/21/Cloak_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165135",
+            "image": "https://dota2.ru/img/items/cloak.jpg",
             "name": "Cloak",
             "order": 1,
             "recipe": [],
@@ -1207,7 +1207,7 @@
                 "mana_regen": 2.0
             },
             "cost": 1200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/20/Cornucopia_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051510",
+            "image": "https://dota2.ru/img/items/cornucopia.jpg",
             "name": "Cornucopia",
             "order": 1,
             "recipe": [],
@@ -1252,7 +1252,7 @@
                 "health_regen": 12.0
             },
             "cost": 3725,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/70/Crimson_Guard_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165153",
+            "image": "https://dota2.ru/img/items/crimson_guard.jpg",
             "name": "Crimson Guard",
             "order": 3,
             "recipe": [
@@ -1277,7 +1277,7 @@
                 "strength": 4.0
             },
             "cost": 450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/46/Crown_icon.png/revision/latest/scale-to-width-down/60?cb=20181119230330",
+            "image": "https://dota2.ru/img/items/crown.jpg",
             "name": "Crown",
             "order": 1,
             "recipe": [],
@@ -1301,7 +1301,7 @@
                 "damage": 32.0
             },
             "cost": 2000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3f/Crystalys_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165218",
+            "image": "https://dota2.ru/img/items/crystalys.jpg",
             "name": "Crystalys",
             "order": 2,
             "recipe": [
@@ -1337,7 +1337,7 @@
                 "damage": 88.0
             },
             "cost": 5100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/24/Daedalus_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165249",
+            "image": "https://dota2.ru/img/items/daedalus.jpg",
             "name": "Daedalus",
             "order": 3,
             "recipe": [
@@ -1379,7 +1379,7 @@
                 "strength": 15.0
             },
             "cost": 2850,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/bc/Dagon_1_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165316",
+            "image": "https://dota2.ru/img/items/dagon.jpg",
             "name": "Dagon",
             "order": 2,
             "recipe": [
@@ -1402,7 +1402,7 @@
                 "damage": 40.0
             },
             "cost": 2200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/ba/Demon_Edge_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165503",
+            "image": "https://dota2.ru/img/items/demon_edge.jpg",
             "name": "Demon Edge",
             "order": 1,
             "recipe": [],
@@ -1438,7 +1438,7 @@
                 "damage": 50.0
             },
             "cost": 3500,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/84/Desolator_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165519",
+            "image": "https://dota2.ru/img/items/desolator.jpg",
             "name": "Desolator",
             "order": 2,
             "recipe": [
@@ -1455,7 +1455,7 @@
                 "strength": 6.0
             },
             "cost": 1000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/87/Diadem_icon.png/revision/latest/scale-to-width-down/60?cb=20230420234338",
+            "image": "https://dota2.ru/img/items/diadem.jpg",
             "name": "Diadem",
             "order": 1,
             "recipe": [],
@@ -1495,7 +1495,7 @@
                 "intelligence": 10.0
             },
             "cost": 2500,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Diffusal_Blade_1_icon.png/revision/latest/scale-to-width-down/40?cb=20160530165804",
+            "image": "https://dota2.ru/img/items/diffusal_blade.jpg",
             "name": "Diffusal Blade",
             "order": 2,
             "recipe": [
@@ -1549,7 +1549,7 @@
                 "intelligence": 10.0
             },
             "cost": 6100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Disperser_icon.png/revision/latest/scale-to-width-down/60?cb=20230420234355",
+            "image": "https://dota2.ru/img/items/disperser.jpg",
             "name": "Disperser",
             "order": 3,
             "recipe": [
@@ -1587,7 +1587,7 @@
                 "damage": 100.0
             },
             "cost": 5600,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b1/Divine_Rapier_icon.png/revision/latest/scale-to-width-down/60?cb=20160530165837",
+            "image": "https://dota2.ru/img/items/divine_rapier.jpg",
             "name": "Divine Rapier",
             "order": 2,
             "recipe": [
@@ -1615,7 +1615,7 @@
                 "strength": 10.0
             },
             "cost": 1900,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/db/Dragon_Lance_icon.png/revision/latest/scale-to-width-down/60?cb=20180711225156",
+            "image": "https://dota2.ru/img/items/dragon_lance.jpg",
             "name": "Dragon Lance",
             "order": 2,
             "recipe": [
@@ -1669,7 +1669,7 @@
                 "strength": 7.0
             },
             "cost": 1650,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/91/Drum_of_Endurance_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170120",
+            "image": "https://dota2.ru/img/items/drum_of_endurance.jpg",
             "name": "Drum of Endurance",
             "order": 2,
             "recipe": [
@@ -1710,7 +1710,7 @@
             ],
             "buffs": {},
             "cost": 80,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ed/Dust_of_Appearance_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170133",
+            "image": "https://dota2.ru/img/items/dust_of_appearance.jpg",
             "name": "Dust of Appearance",
             "order": 1,
             "recipe": [],
@@ -1721,7 +1721,7 @@
                 "agility": 25.0
             },
             "cost": 2800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9a/Eaglesong_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170146",
+            "image": "https://dota2.ru/img/items/eaglesong.jpg",
             "name": "Eaglesong",
             "order": 1,
             "recipe": [],
@@ -1750,7 +1750,7 @@
                 "strength": 15.0
             },
             "cost": 2700,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6b/Echo_Sabre_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170159",
+            "image": "https://dota2.ru/img/items/echo_sabre.jpg",
             "name": "Echo Sabre",
             "order": 2,
             "recipe": [
@@ -1782,7 +1782,7 @@
                 "health_regen": 0.4
             },
             "cost": 65,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/70/Enchanted_Mango_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170213",
+            "image": "https://dota2.ru/img/items/enchanted_mango.jpg",
             "name": "Enchanted Mango",
             "order": 1,
             "recipe": [],
@@ -1793,7 +1793,7 @@
                 "mana": 250.0
             },
             "cost": 800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/72/Energy_Booster_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170229",
+            "image": "https://dota2.ru/img/items/energy_booster.jpg",
             "name": "Energy Booster",
             "order": 1,
             "recipe": [],
@@ -1831,7 +1831,7 @@
                 "strength": 14.0
             },
             "cost": 3600,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c5/Eternal_Shroud_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232622",
+            "image": "https://dota2.ru/img/items/eternal_shroud.jpg",
             "name": "Eternal Shroud",
             "order": 2,
             "recipe": [
@@ -1880,7 +1880,7 @@
                 "strength": 8.0
             },
             "cost": 5375,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5b/Ethereal_Blade_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170242",
+            "image": "https://dota2.ru/img/items/ethereal_blade.jpg",
             "name": "Ethereal Blade",
             "order": 3,
             "recipe": [
@@ -1922,7 +1922,7 @@
                 "move_speed": 20.0
             },
             "cost": 2625,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/80/Eul%27s_Scepter_of_Divinity_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170259",
+            "image": "https://dota2.ru/img/items/euls_scepter_of_divinity.jpg",
             "name": "Eul's Scepter of Divinity",
             "order": 2,
             "recipe": [
@@ -1967,7 +1967,7 @@
                 "strength": 22.0
             },
             "cost": 5300,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1e/Eye_of_Skadi_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170315",
+            "image": "https://dota2.ru/img/items/eye_of_skadi.jpg",
             "name": "Eye of Skadi",
             "order": 2,
             "recipe": [
@@ -2005,7 +2005,7 @@
                 "damage": 2.0
             },
             "cost": 65,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/54/Faerie_Fire_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170344",
+            "image": "https://dota2.ru/img/items/faerie_fire.jpg",
             "name": "Faerie Fire",
             "order": 1,
             "recipe": [],
@@ -2018,7 +2018,7 @@
                 "mana_regen": 1.8
             },
             "cost": 1125,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4a/Falcon_Blade_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232647",
+            "image": "https://dota2.ru/img/items/falcon_blade.jpg",
             "name": "Falcon Blade",
             "order": 2,
             "recipe": [
@@ -2042,7 +2042,7 @@
                 "health": 125.0
             },
             "cost": 250,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b5/Fluffy_Hat_icon.png/revision/latest/scale-to-width-down/60?cb=20201222194521",
+            "image": "https://dota2.ru/img/items/fluffy_hat.jpg",
             "name": "Fluffy Hat",
             "order": 1,
             "recipe": [],
@@ -2072,7 +2072,7 @@
                 "intelligence": 10.0
             },
             "cost": 2200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a2/Force_Staff_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170519",
+            "image": "https://dota2.ru/img/items/force_staff.jpg",
             "name": "Force Staff",
             "order": 2,
             "recipe": [
@@ -2095,7 +2095,7 @@
                 "strength": 3.0
             },
             "cost": 140,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/88/Gauntlets_of_Strength_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170531",
+            "image": "https://dota2.ru/img/items/gauntlets_of_strength.jpg",
             "name": "Gauntlets of Strength",
             "order": 1,
             "recipe": [],
@@ -2142,7 +2142,7 @@
             ],
             "buffs": {},
             "cost": 900,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1d/Gem_of_True_Sight_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170545",
+            "image": "https://dota2.ru/img/items/gem_of_true_sight.jpg",
             "name": "Gem of True Sight",
             "order": 1,
             "recipe": [],
@@ -2171,7 +2171,7 @@
                 "strength": 5.0
             },
             "cost": 1500,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9d/Ghost_Scepter_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170557",
+            "image": "https://dota2.ru/img/items/ghost_scepter.jpg",
             "name": "Ghost Scepter",
             "order": 1,
             "recipe": [],
@@ -2217,7 +2217,7 @@
                 "intelligence": 25.0
             },
             "cost": 5450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5d/Gleipnir_icon.png/revision/latest/scale-to-width-down/60?cb=20201222194556",
+            "image": "https://dota2.ru/img/items/gleipnir.jpg",
             "name": "Gleipnir",
             "order": 3,
             "recipe": [
@@ -2259,7 +2259,7 @@
                 "magic_resist": 25.0
             },
             "cost": 2150,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/ce/Glimmer_Cape_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170610",
+            "image": "https://dota2.ru/img/items/glimmer_cape.jpg",
             "name": "Glimmer Cape",
             "order": 2,
             "recipe": [
@@ -2282,7 +2282,7 @@
                 "attack_speed": 20.0
             },
             "cost": 450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/16/Gloves_of_Haste_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170623",
+            "image": "https://dota2.ru/img/items/gloves_of_haste.jpg",
             "name": "Gloves of Haste",
             "order": 1,
             "recipe": [],
@@ -2331,7 +2331,7 @@
                 "move_speed": 50.0
             },
             "cost": 4950,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/94/Guardian_Greaves_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170645",
+            "image": "https://dota2.ru/img/items/guardian_greaves.jpg",
             "name": "Guardian Greaves",
             "order": 4,
             "recipe": [
@@ -2371,7 +2371,7 @@
             ],
             "buffs": {},
             "cost": 2200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5b/Hand_of_Midas_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170658",
+            "image": "https://dota2.ru/img/items/hand_of_midas.jpg",
             "name": "Hand of Midas",
             "order": 2,
             "recipe": [
@@ -2429,7 +2429,7 @@
                 "strength": 25.0
             },
             "cost": 4700,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3c/Harpoon_icon.png/revision/latest/scale-to-width-down/60?cb=20230420234406",
+            "image": "https://dota2.ru/img/items/harpoon.jpg",
             "name": "Harpoon",
             "order": 3,
             "recipe": [
@@ -2466,7 +2466,7 @@
                 "health_regen": 0.5
             },
             "cost": 425,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/03/Headdress_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170800",
+            "image": "https://dota2.ru/img/items/headdress.jpg",
             "name": "Headdress",
             "order": 2,
             "recipe": [
@@ -2504,7 +2504,7 @@
             ],
             "buffs": {},
             "cost": 100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/36/Healing_Salve_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170815",
+            "image": "https://dota2.ru/img/items/healing_salve.jpg",
             "name": "Healing Salve",
             "order": 1,
             "recipe": [],
@@ -2516,7 +2516,7 @@
                 "strength": 40.0
             },
             "cost": 5200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/75/Heart_of_Tarrasque_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170827",
+            "image": "https://dota2.ru/img/items/heart_of_tarrasque.jpg",
             "name": "Heart of Tarrasque",
             "order": 2,
             "recipe": [
@@ -2559,7 +2559,7 @@
                 "strength": 20.0
             },
             "cost": 3550,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c6/Heaven%27s_Halberd_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170840",
+            "image": "https://dota2.ru/img/items/heavens_halberd.jpg",
             "name": "Heaven's Halberd",
             "order": 3,
             "recipe": [
@@ -2583,7 +2583,7 @@
                 "health_regen": 4.0
             },
             "cost": 975,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f6/Helm_of_Iron_Will_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170854",
+            "image": "https://dota2.ru/img/items/helm_of_iron_will.jpg",
             "name": "Helm of Iron Will",
             "order": 1,
             "recipe": [],
@@ -2620,7 +2620,7 @@
                 "strength": 6.0
             },
             "cost": 2625,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/97/Helm_of_the_Dominator_icon.png/revision/latest/scale-to-width-down/40?cb=20160530170906",
+            "image": "https://dota2.ru/img/items/helm_of_the_dominator.jpg",
             "name": "Helm of the Dominator",
             "order": 2,
             "recipe": [
@@ -2670,7 +2670,7 @@
                 "strength": 21.0
             },
             "cost": 5725,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f8/Helm_of_the_Overlord_icon.png/revision/latest/scale-to-width-down/60?cb=20201218233330",
+            "image": "https://dota2.ru/img/items/helm_of_the_overlord.jpg",
             "name": "Helm of the Overlord",
             "order": 3,
             "recipe": [
@@ -2722,7 +2722,7 @@
                 "strength": 9.0
             },
             "cost": 2350,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/48/Holy_Locket_icon.png/revision/latest/scale-to-width-down/60?cb=20181119230146",
+            "image": "https://dota2.ru/img/items/holy_locket.jpg",
             "name": "Holy Locket",
             "order": 3,
             "recipe": [
@@ -2781,7 +2781,7 @@
                 "strength": 15.0
             },
             "cost": 4450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/13/Hurricane_Pike_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170931",
+            "image": "https://dota2.ru/img/items/hurricane_pike.jpg",
             "name": "Hurricane Pike",
             "order": 3,
             "recipe": [
@@ -2804,7 +2804,7 @@
                 "attack_speed": 60.0
             },
             "cost": 2000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6a/Hyperstone_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170943",
+            "image": "https://dota2.ru/img/items/hyperstone.jpg",
             "name": "Hyperstone",
             "order": 1,
             "recipe": [],
@@ -2830,7 +2830,7 @@
                 "mana_regen": 0.8
             },
             "cost": 225,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d2/Infused_Raindrops_icon.png/revision/latest/scale-to-width-down/60?cb=20160530170956",
+            "image": "https://dota2.ru/img/items/infused_raindrops.jpg",
             "name": "Infused Raindrops",
             "order": 1,
             "recipe": [],
@@ -2858,7 +2858,7 @@
                 "strength": 1.0
             },
             "cost": 50,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/Iron_Branch_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171055",
+            "image": "https://dota2.ru/img/items/iron_branch.jpg",
             "name": "Iron Branch",
             "order": 1,
             "recipe": [],
@@ -2880,7 +2880,7 @@
             ],
             "buffs": {},
             "cost": 900,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ed/Javelin_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171126",
+            "image": "https://dota2.ru/img/items/javelin.jpg",
             "name": "Javelin",
             "order": 1,
             "recipe": [],
@@ -2894,7 +2894,7 @@
                 "spell_lifesteal_amp": 20.0
             },
             "cost": 2100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Kaya_icon.png/revision/latest/scale-to-width-down/60?cb=20171030224243",
+            "image": "https://dota2.ru/img/items/kaya.jpg",
             "name": "Kaya",
             "order": 2,
             "recipe": [
@@ -2923,7 +2923,7 @@
                 "strength": 16.0
             },
             "cost": 4050,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/67/Kaya_and_Sange_icon.png/revision/latest/scale-to-width-down/60?cb=20181127212550",
+            "image": "https://dota2.ru/img/items/kaya_and_sange.jpg",
             "name": "Kaya and Sange",
             "order": 3,
             "recipe": [
@@ -2969,7 +2969,7 @@
                 "strength": 8.0
             },
             "cost": 5000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/67/Khanda_icon.png/revision/latest/scale-to-width-down/60?cb=20231215080815",
+            "image": "https://dota2.ru/img/items/khanda.jpg",
             "name": "Khanda",
             "order": 3,
             "recipe": [
@@ -3018,7 +3018,7 @@
                 "strength": 16.0
             },
             "cost": 4800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/23/Linken%27s_Sphere_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171144",
+            "image": "https://dota2.ru/img/items/linkens_sphere.jpg",
             "name": "Linken's Sphere",
             "order": 3,
             "recipe": [
@@ -3059,7 +3059,7 @@
                 "mana_regen": 4.0
             },
             "cost": 3850,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c8/Lotus_Orb_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171208",
+            "image": "https://dota2.ru/img/items/lotus_orb.jpg",
             "name": "Lotus Orb",
             "order": 3,
             "recipe": [
@@ -3101,7 +3101,7 @@
                 "damage": 25.0
             },
             "cost": 2950,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Maelstrom_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171221",
+            "image": "https://dota2.ru/img/items/maelstrom.jpg",
             "name": "Maelstrom",
             "order": 2,
             "recipe": [
@@ -3133,7 +3133,7 @@
                 "mana_regen": 2.0
             },
             "cost": 2825,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/18/Mage_Slayer_icon.png/revision/latest/scale-to-width-down/60?cb=20201218233351",
+            "image": "https://dota2.ru/img/items/mage_slayer.jpg",
             "name": "Mage Slayer",
             "order": 3,
             "recipe": [
@@ -3171,7 +3171,7 @@
             ],
             "buffs": {},
             "cost": 200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/59/Magic_Stick_icon.png/revision/latest/scale-to-width-down/40?cb=20160530171235",
+            "image": "https://dota2.ru/img/items/magic_stick.jpg",
             "name": "Magic Stick",
             "order": 1,
             "recipe": [],
@@ -3202,7 +3202,7 @@
                 "strength": 3.0
             },
             "cost": 450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/74/Magic_Wand_icon.png/revision/latest/scale-to-width-down/60?cb=20160829124055",
+            "image": "https://dota2.ru/img/items/magic_wand.jpg",
             "name": "Magic Wand",
             "order": 2,
             "recipe": [
@@ -3249,7 +3249,7 @@
                 "strength": 10.0
             },
             "cost": 4550,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/84/Manta_Style_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171300",
+            "image": "https://dota2.ru/img/items/manta_style.jpg",
             "name": "Manta Style",
             "order": 3,
             "recipe": [
@@ -3272,7 +3272,7 @@
                 "intelligence": 3.0
             },
             "cost": 140,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cf/Mantle_of_Intelligence_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171312",
+            "image": "https://dota2.ru/img/items/mantle_of_intelligence.jpg",
             "name": "Mantle of Intelligence",
             "order": 1,
             "recipe": [],
@@ -3312,7 +3312,7 @@
                 "damage": 20.0
             },
             "cost": 1900,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/76/Mask_of_Madness_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171413",
+            "image": "https://dota2.ru/img/items/mask_of_madness.jpg",
             "name": "Mask of Madness",
             "order": 2,
             "recipe": [
@@ -3355,7 +3355,7 @@
                 "armor": 4.0
             },
             "cost": 1775,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f7/Mekansm_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171439",
+            "image": "https://dota2.ru/img/items/mekansm.jpg",
             "name": "Mekansm",
             "order": 3,
             "recipe": [
@@ -3406,7 +3406,7 @@
                 "strength": 6.0
             },
             "cost": 2850,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/54/Meteor_Hammer_icon.png/revision/latest/scale-to-width-down/60?cb=20171030224231",
+            "image": "https://dota2.ru/img/items/meteor_hammer.jpg",
             "name": "Meteor Hammer",
             "order": 3,
             "recipe": [
@@ -3429,7 +3429,7 @@
                 "damage": 24.0
             },
             "cost": 1600,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d5/Mithril_Hammer_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171455",
+            "image": "https://dota2.ru/img/items/mithril_hammer.jpg",
             "name": "Mithril Hammer",
             "order": 1,
             "recipe": [],
@@ -3476,7 +3476,7 @@
                 "damage": 25.0
             },
             "cost": 5500,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9d/Mjollnir_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171507",
+            "image": "https://dota2.ru/img/items/mjollnir.jpg",
             "name": "Mjollnir",
             "order": 3,
             "recipe": [
@@ -3513,7 +3513,7 @@
                 "damage": 40.0
             },
             "cost": 4700,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b0/Monkey_King_Bar_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171521",
+            "image": "https://dota2.ru/img/items/monkey_king_bar.jpg",
             "name": "Monkey King Bar",
             "order": 2,
             "recipe": [
@@ -3563,7 +3563,7 @@
                 "attack_speed": 140.0
             },
             "cost": 4000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/21/Moon_Shard_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171534",
+            "image": "https://dota2.ru/img/items/moon_shard.jpg",
             "name": "Moon Shard",
             "order": 2,
             "recipe": [
@@ -3588,7 +3588,7 @@
             ],
             "buffs": {},
             "cost": 900,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/76/Morbid_Mask_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171549",
+            "image": "https://dota2.ru/img/items/morbid_mask.jpg",
             "name": "Morbid Mask",
             "order": 1,
             "recipe": [],
@@ -3599,7 +3599,7 @@
                 "intelligence": 25.0
             },
             "cost": 2800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/29/Mystic_Staff_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171605",
+            "image": "https://dota2.ru/img/items/mystic_staff.jpg",
             "name": "Mystic Staff",
             "order": 1,
             "recipe": [],
@@ -3614,7 +3614,7 @@
                 "strength": 4.0
             },
             "cost": 505,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/90/Null_Talisman_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171748",
+            "image": "https://dota2.ru/img/items/null_talisman.jpg",
             "name": "Null Talisman",
             "order": 2,
             "recipe": [
@@ -3654,7 +3654,7 @@
                 "health_regen": 6.0
             },
             "cost": 4375,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/bc/Nullifier_icon.png/revision/latest/scale-to-width-down/60?cb=20171101183614",
+            "image": "https://dota2.ru/img/items/nullifier.jpg",
             "name": "Nullifier",
             "order": 2,
             "recipe": [
@@ -3670,7 +3670,7 @@
                 "mana_regen": 1.0
             },
             "cost": 1625,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7b/Oblivion_Staff_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171802",
+            "image": "https://dota2.ru/img/items/oblivion_staff.jpg",
             "name": "Oblivion Staff",
             "order": 2,
             "recipe": [
@@ -3715,7 +3715,7 @@
             ],
             "buffs": {},
             "cost": 0,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f6/Observer_Ward_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171901",
+            "image": "https://dota2.ru/img/items/observer_ward.jpg",
             "name": "Observer Ward",
             "order": 1,
             "recipe": [],
@@ -3740,7 +3740,7 @@
                 "mana_regen": 6.0
             },
             "cost": 4800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/13/Octarine_Core_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171918",
+            "image": "https://dota2.ru/img/items/octarine_core.jpg",
             "name": "Octarine Core",
             "order": 3,
             "recipe": [
@@ -3754,7 +3754,7 @@
                 "strength": 10.0
             },
             "cost": 1000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/dd/Ogre_Axe_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171933",
+            "image": "https://dota2.ru/img/items/ogre_axe.jpg",
             "name": "Ogre Axe",
             "order": 1,
             "recipe": [],
@@ -3782,7 +3782,7 @@
                 "attack_speed": 25.0
             },
             "cost": 900,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/97/Orb_of_Corrosion_icon.png/revision/latest/scale-to-width-down/60?cb=20201218233511",
+            "image": "https://dota2.ru/img/items/orb_of_corrosion.jpg",
             "name": "Orb of Corrosion",
             "order": 2,
             "recipe": [
@@ -3810,7 +3810,7 @@
             ],
             "buffs": {},
             "cost": 250,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/35/Orb_of_Venom_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171957",
+            "image": "https://dota2.ru/img/items/orb_of_venom.jpg",
             "name": "Orb of Venom",
             "order": 1,
             "recipe": [],
@@ -3842,7 +3842,7 @@
                 "mana_regen": 3.25
             },
             "cost": 3275,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ad/Orchid_Malevolence_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172207",
+            "image": "https://dota2.ru/img/items/orchid_malevolence.jpg",
             "name": "Orchid Malevolence",
             "order": 3,
             "recipe": [
@@ -3879,7 +3879,7 @@
                 "strength": 25.0
             },
             "cost": 6800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6d/Overwhelming_Blink_icon.png/revision/latest/scale-to-width-down/60?cb=20201218233620",
+            "image": "https://dota2.ru/img/items/overwhelming_blink.jpg",
             "name": "Overwhelming Blink",
             "order": 2,
             "recipe": [
@@ -3932,7 +3932,7 @@
                 "projectile_speed": 300.0
             },
             "cost": 5975,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6e/Parasma_icon.png/revision/latest/scale-to-width-down/60?cb=20231215082757",
+            "image": "https://dota2.ru/img/items/parasma.jpg",
             "name": "Parasma",
             "order": 4,
             "recipe": [
@@ -3973,7 +3973,7 @@
                 "mana": 250.0
             },
             "cost": 1400,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2f/Pavise_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051550",
+            "image": "https://dota2.ru/img/items/pavise.jpg",
             "name": "Pavise",
             "order": 2,
             "recipe": [
@@ -3998,7 +3998,7 @@
                 "mana_regen": 2.25
             },
             "cost": 1400,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fb/Perseverance_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172220",
+            "image": "https://dota2.ru/img/items/perseverance.jpg",
             "name": "Perseverance",
             "order": 2,
             "recipe": [
@@ -4032,7 +4032,7 @@
                 "move_speed": 50.0
             },
             "cost": 1500,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/98/Phase_Boots_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172232",
+            "image": "https://dota2.ru/img/items/phase_boots.jpg",
             "name": "Phase Boots",
             "order": 2,
             "recipe": [
@@ -4066,7 +4066,7 @@
                 "strength": 7.0
             },
             "cost": 2400,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8c/Phylactery_icon.png/revision/latest/scale-to-width-down/60?cb=20230420234419",
+            "image": "https://dota2.ru/img/items/phylactery.jpg",
             "name": "Phylactery",
             "order": 2,
             "recipe": [
@@ -4120,7 +4120,7 @@
                 "magic_resist": 20.0
             },
             "cost": 3725,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/76/Pipe_of_Insight_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172244",
+            "image": "https://dota2.ru/img/items/pipe_of_insight.jpg",
             "name": "Pipe of Insight",
             "order": 3,
             "recipe": [
@@ -4144,7 +4144,7 @@
                 "armor": 10.0
             },
             "cost": 1400,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4f/Platemail_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172259",
+            "image": "https://dota2.ru/img/items/platemail.jpg",
             "name": "Platemail",
             "order": 1,
             "recipe": [],
@@ -4156,7 +4156,7 @@
                 "mana": 175.0
             },
             "cost": 1200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/57/Point_Booster_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172312",
+            "image": "https://dota2.ru/img/items/point_booster.jpg",
             "name": "Point Booster",
             "order": 1,
             "recipe": [],
@@ -4183,7 +4183,7 @@
                 "move_speed": 45.0
             },
             "cost": 1400,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6b/Power_Treads_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172508",
+            "image": "https://dota2.ru/img/items/power_treads.jpg",
             "name": "Power Treads",
             "order": 2,
             "recipe": [
@@ -4218,7 +4218,7 @@
             ],
             "buffs": {},
             "cost": 100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/94/Quelling_Blade_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172535",
+            "image": "https://dota2.ru/img/items/quelling_blade.jpg",
             "name": "Quelling Blade",
             "order": 1,
             "recipe": [],
@@ -4248,7 +4248,7 @@
                 "evasion": 20.0
             },
             "cost": 4700,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/df/Radiance_%28Active%29_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172548",
+            "image": "https://dota2.ru/img/items/radiance.jpg",
             "name": "Radiance",
             "order": 2,
             "recipe": [
@@ -4262,7 +4262,7 @@
                 "strength": 25.0
             },
             "cost": 2800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/37/Reaver_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172613",
+            "image": "https://dota2.ru/img/items/reaver.jpg",
             "name": "Reaver",
             "order": 1,
             "recipe": [],
@@ -4285,7 +4285,7 @@
                 "mana_regen": 8.0
             },
             "cost": 5000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e2/Refresher_Orb_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172642",
+            "image": "https://dota2.ru/img/items/refresher_orb.jpg",
             "name": "Refresher Orb",
             "order": 2,
             "recipe": [
@@ -4324,7 +4324,7 @@
                 "spell_lifesteal_heroes": 20.0
             },
             "cost": 4900,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/37/Revenant%27s_Brooch_icon.png/revision/latest/scale-to-width-down/60?cb=20220227041411",
+            "image": "https://dota2.ru/img/items/revenants_brooch.jpg",
             "name": "Revenant's Brooch",
             "order": 2,
             "recipe": [
@@ -4361,7 +4361,7 @@
                 "mana_regen": 0.5
             },
             "cost": 425,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/26/Ring_of_Basilius_%28Active%29_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172819",
+            "image": "https://dota2.ru/img/items/ring_of_basilius.jpg",
             "name": "Ring of Basilius",
             "order": 2,
             "recipe": [
@@ -4383,7 +4383,7 @@
                 "health_regen": 4.5
             },
             "cost": 700,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/29/Ring_of_Health_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172847",
+            "image": "https://dota2.ru/img/items/ring_of_health.jpg",
             "name": "Ring of Health",
             "order": 1,
             "recipe": [],
@@ -4394,7 +4394,7 @@
                 "armor": 2.0
             },
             "cost": 175,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3b/Ring_of_Protection_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172859",
+            "image": "https://dota2.ru/img/items/ring_of_protection.jpg",
             "name": "Ring of Protection",
             "order": 1,
             "recipe": [],
@@ -4405,7 +4405,7 @@
                 "health_regen": 1.25
             },
             "cost": 175,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6d/Ring_of_Regen_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172912",
+            "image": "https://dota2.ru/img/items/ring_of_regen.jpg",
             "name": "Ring of Regen",
             "order": 1,
             "recipe": [],
@@ -4416,7 +4416,7 @@
                 "health_regen": 12.0
             },
             "cost": 1800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/78/Ring_of_Tarrasque_icon.png/revision/latest/scale-to-width-down/60?cb=20181119230142",
+            "image": "https://dota2.ru/img/items/ring_of_tarrasque.jpg",
             "name": "Ring of Tarrasque",
             "order": 1,
             "recipe": [],
@@ -4427,7 +4427,7 @@
                 "intelligence": 6.0
             },
             "cost": 450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b3/Robe_of_the_Magi_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172926",
+            "image": "https://dota2.ru/img/items/robe_of_the_magi.jpg",
             "name": "Robe of the Magi",
             "order": 1,
             "recipe": [],
@@ -4454,7 +4454,7 @@
                 "intelligence": 15.0
             },
             "cost": 2250,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/66/Rod_of_Atos_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172945",
+            "image": "https://dota2.ru/img/items/rod_of_atos.jpg",
             "name": "Rod of Atos",
             "order": 2,
             "recipe": [
@@ -4477,7 +4477,7 @@
                 "damage": 55.0
             },
             "cost": 3400,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7c/Sacred_Relic_icon.png/revision/latest/scale-to-width-down/60?cb=20160530172959",
+            "image": "https://dota2.ru/img/items/sacred_relic.jpg",
             "name": "Sacred Relic",
             "order": 1,
             "recipe": [],
@@ -4488,7 +4488,7 @@
                 "mana_regen": 0.7
             },
             "cost": 175,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c6/Sage%27s_Mask_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173019",
+            "image": "https://dota2.ru/img/items/sages_mask.jpg",
             "name": "Sage's Mask",
             "order": 1,
             "recipe": [],
@@ -4502,7 +4502,7 @@
                 "strength": 16.0
             },
             "cost": 2100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fc/Sange_icon.png/revision/latest/scale-to-width-down/40?cb=20160530173146",
+            "image": "https://dota2.ru/img/items/sange.jpg",
             "name": "Sange",
             "order": 2,
             "recipe": [
@@ -4532,7 +4532,7 @@
                 "strength": 16.0
             },
             "cost": 4200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b4/Sange_and_Yasha_icon.png/revision/latest/scale-to-width-down/60?cb=20181127212530",
+            "image": "https://dota2.ru/img/items/sange_and_yasha.jpg",
             "name": "Sange and Yasha",
             "order": 3,
             "recipe": [
@@ -4575,7 +4575,7 @@
                 "strength": 25.0
             },
             "cost": 5050,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/dd/Satanic_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173201",
+            "image": "https://dota2.ru/img/items/satanic.jpg",
             "name": "Satanic",
             "order": 2,
             "recipe": [
@@ -4607,7 +4607,7 @@
                 "mana_regen": 8.5
             },
             "cost": 5200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/54/Scythe_of_Vyse_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173214",
+            "image": "https://dota2.ru/img/items/scythe_of_vyse.jpg",
             "name": "Scythe of Vyse",
             "order": 2,
             "recipe": [
@@ -4668,7 +4668,7 @@
             ],
             "buffs": {},
             "cost": 50,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3e/Sentry_Ward_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173231",
+            "image": "https://dota2.ru/img/items/sentry_ward.jpg",
             "name": "Sentry Ward",
             "order": 1,
             "recipe": [],
@@ -4695,7 +4695,7 @@
             ],
             "buffs": {},
             "cost": 1000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/07/Shadow_Amulet_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173250",
+            "image": "https://dota2.ru/img/items/shadow_amulet.jpg",
             "name": "Shadow Amulet",
             "order": 1,
             "recipe": [],
@@ -4725,7 +4725,7 @@
                 "damage": 20.0
             },
             "cost": 3000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0f/Shadow_Blade_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173313",
+            "image": "https://dota2.ru/img/items/shadow_blade.jpg",
             "name": "Shadow Blade",
             "order": 2,
             "recipe": [
@@ -4778,7 +4778,7 @@
                 "strength": 5.0
             },
             "cost": 5175,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b6/Shiva%27s_Guard_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173326",
+            "image": "https://dota2.ru/img/items/shivas_guard.jpg",
             "name": "Shiva's Guard",
             "order": 3,
             "recipe": [
@@ -4821,7 +4821,7 @@
                 "damage": 60.0
             },
             "cost": 5450,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/91/Silver_Edge_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173343",
+            "image": "https://dota2.ru/img/items/silver_edge.jpg",
             "name": "Silver Edge",
             "order": 3,
             "recipe": [
@@ -4860,7 +4860,7 @@
                 "strength": 10.0
             },
             "cost": 2875,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9d/Skull_Basher_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173357",
+            "image": "https://dota2.ru/img/items/skull_basher.jpg",
             "name": "Skull Basher",
             "order": 2,
             "recipe": [
@@ -4883,7 +4883,7 @@
                 "agility": 3.0
             },
             "cost": 140,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5c/Slippers_of_Agility_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173411",
+            "image": "https://dota2.ru/img/items/slippers_of_agility.jpg",
             "name": "Slippers of Agility",
             "order": 1,
             "recipe": [],
@@ -4912,7 +4912,7 @@
             ],
             "buffs": {},
             "cost": 50,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/04/Smoke_of_Deceit_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173506",
+            "image": "https://dota2.ru/img/items/smoke_of_deceit.jpg",
             "name": "Smoke of Deceit",
             "order": 1,
             "recipe": [],
@@ -4948,7 +4948,7 @@
                 "strength": 4.0
             },
             "cost": 2700,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/36/Solar_Crest_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173521",
+            "image": "https://dota2.ru/img/items/solar_crest.jpg",
             "name": "Solar Crest",
             "order": 3,
             "recipe": [
@@ -4973,7 +4973,7 @@
                 "mana": 425.0
             },
             "cost": 3000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2f/Soul_Booster_icon.png/revision/latest/scale-to-width-down/40?cb=20160530173535",
+            "image": "https://dota2.ru/img/items/soul_booster.jpg",
             "name": "Soul Booster",
             "order": 2,
             "recipe": [
@@ -5005,7 +5005,7 @@
                 "strength": 6.0
             },
             "cost": 805,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a6/Soul_Ring_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173547",
+            "image": "https://dota2.ru/img/items/soul_ring.jpg",
             "name": "Soul Ring",
             "order": 2,
             "recipe": [
@@ -5055,7 +5055,7 @@
                 "strength": 6.0
             },
             "cost": 2780,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2a/Spirit_Vessel_icon.png/revision/latest/scale-to-width-down/60?cb=20171101184152",
+            "image": "https://dota2.ru/img/items/spirit_vessel.jpg",
             "name": "Spirit Vessel",
             "order": 3,
             "recipe": [
@@ -5079,7 +5079,7 @@
                 "intelligence": 10.0
             },
             "cost": 1000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8a/Staff_of_Wizardry_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173603",
+            "image": "https://dota2.ru/img/items/staff_of_wizardry.jpg",
             "name": "Staff of Wizardry",
             "order": 1,
             "recipe": [],
@@ -5104,7 +5104,7 @@
                 "agility": 25.0
             },
             "cost": 6800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/47/Swift_Blink_icon.png/revision/latest/scale-to-width-down/60?cb=20201219003624",
+            "image": "https://dota2.ru/img/items/swift_blink.jpg",
             "name": "Swift Blink",
             "order": 2,
             "recipe": [
@@ -5127,7 +5127,7 @@
                 "evasion": 20.0
             },
             "cost": 1300,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/37/Talisman_of_Evasion_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173629",
+            "image": "https://dota2.ru/img/items/talisman_of_evasion.jpg",
             "name": "Talisman of Evasion",
             "order": 1,
             "recipe": [],
@@ -5153,7 +5153,7 @@
             ],
             "buffs": {},
             "cost": 90,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fd/Tango_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173658",
+            "image": "https://dota2.ru/img/items/tango.jpg",
             "name": "Tango",
             "order": 1,
             "recipe": [],
@@ -5164,7 +5164,7 @@
                 "mana_regen": 6.0
             },
             "cost": 1800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e1/Tiara_of_Selemene_icon.png/revision/latest/scale-to-width-down/60?cb=20231215074137",
+            "image": "https://dota2.ru/img/items/tiara_of_selemene.jpg",
             "name": "Tiara of Selemene",
             "order": 1,
             "recipe": [],
@@ -5196,7 +5196,7 @@
             ],
             "buffs": {},
             "cost": 100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/46/Town_Portal_Scroll_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173822",
+            "image": "https://dota2.ru/img/items/town_portal_scroll.jpg",
             "name": "Town Portal Scroll",
             "order": 1,
             "recipe": [],
@@ -5222,7 +5222,7 @@
                 "move_speed": 65.0
             },
             "cost": 925,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/23/Tranquil_Boots_%28Active%29_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173837",
+            "image": "https://dota2.ru/img/items/tranquil_boots.jpg",
             "name": "Tranquil Boots",
             "order": 2,
             "recipe": [
@@ -5239,7 +5239,7 @@
                 "strength": 15.0
             },
             "cost": 2800,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/14/Ultimate_Orb_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173905",
+            "image": "https://dota2.ru/img/items/ultimate_orb.jpg",
             "name": "Ultimate Orb",
             "order": 1,
             "recipe": [],
@@ -5273,7 +5273,7 @@
                 "strength": 2.0
             },
             "cost": 880,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/58/Urn_of_Shadows_icon.png/revision/latest/scale-to-width-down/40?cb=20160530173928",
+            "image": "https://dota2.ru/img/items/urn_of_shadows.jpg",
             "name": "Urn of Shadows",
             "order": 2,
             "recipe": [
@@ -5312,7 +5312,7 @@
                 "health_regen": 4.5
             },
             "cost": 1700,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ab/Vanguard_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173946",
+            "image": "https://dota2.ru/img/items/vanguard.jpg",
             "name": "Vanguard",
             "order": 2,
             "recipe": [
@@ -5347,7 +5347,7 @@
                 "strength": 4.0
             },
             "cost": 1725,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f2/Veil_of_Discord_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173959",
+            "image": "https://dota2.ru/img/items/veil_of_discord.jpg",
             "name": "Veil of Discord",
             "order": 2,
             "recipe": [
@@ -5370,7 +5370,7 @@
                 "health": 250.0
             },
             "cost": 1000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1c/Vitality_Booster_icon.png/revision/latest/scale-to-width-down/60?cb=20160530174012",
+            "image": "https://dota2.ru/img/items/vitality_booster.jpg",
             "name": "Vitality Booster",
             "order": 1,
             "recipe": [],
@@ -5400,7 +5400,7 @@
                 "mana_regen": 0.75
             },
             "cost": 2200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/28/Vladmir%27s_Offering_icon.png/revision/latest/scale-to-width-down/60?cb=20160530174026",
+            "image": "https://dota2.ru/img/items/vladmirs_offering.jpg",
             "name": "Vladmir's Offering",
             "order": 3,
             "recipe": [
@@ -5416,7 +5416,7 @@
                 "mana_regen": 1.75
             },
             "cost": 700,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6b/Void_Stone_icon.png/revision/latest/scale-to-width-down/40?cb=20160530174037",
+            "image": "https://dota2.ru/img/items/void_stone.jpg",
             "name": "Void Stone",
             "order": 1,
             "recipe": [],
@@ -5441,7 +5441,7 @@
                 "spell_lifesteal_heroes": 12.0
             },
             "cost": 700,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/60/Voodoo_Mask_icon.png/revision/latest/scale-to-width-down/60?cb=20200715211909",
+            "image": "https://dota2.ru/img/items/voodoo_mask.jpg",
             "name": "Voodoo Mask",
             "order": 1,
             "recipe": [],
@@ -5452,7 +5452,7 @@
                 "move_speed": 20.0
             },
             "cost": 250,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/91/Wind_Lace_icon.png/revision/latest/scale-to-width-down/60?cb=20160530174050",
+            "image": "https://dota2.ru/img/items/wind_lace.jpg",
             "name": "Wind Lace",
             "order": 1,
             "recipe": [],
@@ -5483,7 +5483,7 @@
                 "move_speed": 30.0
             },
             "cost": 6825,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/90/Wind_Waker_icon.png/revision/latest/scale-to-width-down/60?cb=20201219004456",
+            "image": "https://dota2.ru/img/items/wind_waker.jpg",
             "name": "Wind Waker",
             "order": 3,
             "recipe": [
@@ -5525,7 +5525,7 @@
                 "projectile_speed": 300.0
             },
             "cost": 2775,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/68/Witch_Blade_icon.png/revision/latest/scale-to-width-down/40?cb=20201219004719",
+            "image": "https://dota2.ru/img/items/witch_blade.jpg",
             "name": "Witch Blade",
             "order": 3,
             "recipe": [
@@ -5552,7 +5552,7 @@
                 "strength": 4.0
             },
             "cost": 505,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/55/Wraith_Band_icon.png/revision/latest/scale-to-width-down/60?cb=20160530174103",
+            "image": "https://dota2.ru/img/items/wraith_band.jpg",
             "name": "Wraith Band",
             "order": 2,
             "recipe": [
@@ -5577,7 +5577,7 @@
                 "move_speed": 10.0
             },
             "cost": 2100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d1/Yasha_icon.png/revision/latest/scale-to-width-down/60?cb=20160530174117",
+            "image": "https://dota2.ru/img/items/yasha.jpg",
             "name": "Yasha",
             "order": 2,
             "recipe": [
@@ -5606,7 +5606,7 @@
                 "spell_lifesteal_amp": 25.0
             },
             "cost": 4000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/19/Yasha_and_Kaya_icon.png/revision/latest/scale-to-width-down/60?cb=20181127212540",
+            "image": "https://dota2.ru/img/items/yasha_and_kaya.jpg",
             "name": "Yasha and Kaya",
             "order": 3,
             "recipe": [
@@ -5632,14 +5632,14 @@
                 }
             ],
             "buffs": {},
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/82/Ancient_Guardian_icon.png/revision/latest/scale-to-width-down/60?cb=20231215171026",
+            "image": "https://dota2.ru/img/items/ancient_guardian.jpg",
             "name": "Ancient Guardian",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Ancient_Guardian"
         },
         "Apex": {
             "buffs": {},
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/91/Apex_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010600",
+            "image": "https://dota2.ru/img/items/apex.jpg",
             "name": "Apex",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Apex"
@@ -5665,7 +5665,7 @@
                 "armor": 2.0,
                 "intelligence": 6.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ad/Arcane_Ring_icon.png/revision/latest/scale-to-width-down/60?cb=20191126192843",
+            "image": "https://dota2.ru/img/items/arcane_ring.jpg",
             "name": "Arcane Ring",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Arcane_Ring"
@@ -5705,7 +5705,7 @@
                 "armor": 5.0,
                 "magic_resist": 20.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cc/Arcanist%27s_Armor_icon.png/revision/latest/scale-to-width-down/60?cb=20210829212525",
+            "image": "https://dota2.ru/img/items/arcanists_armor.jpg",
             "name": "Arcanist's Armor",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Arcanist%27s_Armor"
@@ -5730,7 +5730,7 @@
                 "health": 250.0,
                 "health_regen": 20.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/63/Ascetic%27s_Cap_icon.png/revision/latest/scale-to-width-down/60?cb=20210829212514",
+            "image": "https://dota2.ru/img/items/ascetics_cap.jpg",
             "name": "Ascetic's Cap",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Ascetic%27s_Cap"
@@ -5752,7 +5752,7 @@
                 "evasion": 25.0,
                 "move_speed": 30.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4d/Aviana%27s_Feather_icon.png/revision/latest/scale-to-width-down/60?cb=20231215171507",
+            "image": "https://dota2.ru/img/items/avianas_feather.jpg",
             "name": "Aviana's Feather",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Aviana%27s_Feather"
@@ -5778,7 +5778,7 @@
                 "intelligence": 13.0,
                 "strength": 13.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/54/Book_of_Shadows_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232308",
+            "image": "https://dota2.ru/img/items/book_of_shadows.jpg",
             "name": "Book of Shadows",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Book_of_Shadows"
@@ -5865,7 +5865,7 @@
                 "intelligence": 25.0,
                 "strength": 25.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/00/Book_of_the_Dead_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010816",
+            "image": "https://dota2.ru/img/items/book_of_the_dead.jpg",
             "name": "Book of the Dead",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Book_of_the_Dead"
@@ -5876,7 +5876,7 @@
                 "attack_range_ranged": 50.0,
                 "damage": 8.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3a/Broom_Handle_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010827",
+            "image": "https://dota2.ru/img/items/broom_handle.jpg",
             "name": "Broom Handle",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Broom_Handle"
@@ -5903,7 +5903,7 @@
                 "health_regen": 2.75,
                 "mana_regen": 2.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1e/Bullwhip_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232333",
+            "image": "https://dota2.ru/img/items/bullwhip.jpg",
             "name": "Bullwhip",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Bullwhip"
@@ -5927,7 +5927,7 @@
             "buffs": {
                 "mana": 300.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/dd/Ceremonial_Robe_icon.png/revision/latest/scale-to-width-down/60?cb=20210119223852",
+            "image": "https://dota2.ru/img/items/ceremonial_robe.jpg",
             "name": "Ceremonial Robe",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Ceremonial_Robe"
@@ -5952,7 +5952,7 @@
                 "armor": 4.0,
                 "magic_resist": 10.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8d/Cloak_of_Flames_icon.png/revision/latest/scale-to-width-down/60?cb=20201219005230",
+            "image": "https://dota2.ru/img/items/cloak_of_flames.jpg",
             "name": "Cloak of Flames",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Cloak_of_Flames"
@@ -5976,7 +5976,7 @@
             "buffs": {
                 "armor": 8.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e4/Craggy_Coat_icon.png/revision/latest/scale-to-width-down/60?cb=20191215230013",
+            "image": "https://dota2.ru/img/items/craggy_coat.jpg",
             "name": "Craggy Coat",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Craggy_Coat"
@@ -6000,7 +6000,7 @@
                 "mana": 300.0,
                 "move_speed": 25.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/55/Dandelion_Amulet_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051937",
+            "image": "https://dota2.ru/img/items/dandelion_amulet.jpg",
             "name": "Dandelion Amulet",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Dandelion_Amulet"
@@ -6025,7 +6025,7 @@
                 "intelligence": 7.0,
                 "strength": 7.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a4/Defiant_Shell_icon.png/revision/latest/scale-to-width-down/60?cb=20230421052133",
+            "image": "https://dota2.ru/img/items/defiant_shell.jpg",
             "name": "Defiant Shell",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Defiant_Shell"
@@ -6051,7 +6051,7 @@
                 "health_regen": 5.0,
                 "mana_regen": 2.5
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5f/Doubloon_%28Max_HP%29_icon.png/revision/latest/scale-to-width-down/60?cb=20231215160335",
+            "image": "https://dota2.ru/img/items/doubloon.jpg",
             "name": "Doubloon",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Doubloon"
@@ -6074,7 +6074,7 @@
                 "armor": 5.0,
                 "health_regen": 5.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c5/Dragon_Scale_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010927",
+            "image": "https://dota2.ru/img/items/dragon_scale.jpg",
             "name": "Dragon Scale",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Dragon_Scale"
@@ -6096,7 +6096,7 @@
             "buffs": {
                 "damage": 12.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f9/Duelist_Gloves_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051753",
+            "image": "https://dota2.ru/img/items/duelist_gloves.jpg",
             "name": "Duelist Gloves",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Duelist_Gloves"
@@ -6107,7 +6107,7 @@
                 "evasion": 16.0,
                 "move_speed": 7.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/05/Elven_Tunic_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232604",
+            "image": "https://dota2.ru/img/items/elven_tunic.jpg",
             "name": "Elven Tunic",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Elven_Tunic"
@@ -6130,7 +6130,7 @@
             "buffs": {
                 "attack_range_ranged": 75.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/Enchanted_Quiver_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010952",
+            "image": "https://dota2.ru/img/items/enchanted_quiver.jpg",
             "name": "Enchanted Quiver",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Enchanted_Quiver"
@@ -6140,7 +6140,7 @@
                 "cast_range": 125.0,
                 "mana_regen": 1.25
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/42/Eye_of_the_Vizier_icon.png/revision/latest/scale-to-width-down/60?cb=20220830145632",
+            "image": "https://dota2.ru/img/items/eye_of_the_vizier.jpg",
             "name": "Eye of the Vizier",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Eye_of_the_Vizier"
@@ -6150,7 +6150,7 @@
                 "mana": 150.0,
                 "move_speed": 15.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/57/Faded_Broach_icon.png/revision/latest/scale-to-width-down/60?cb=20230427163206",
+            "image": "https://dota2.ru/img/items/faded_broach.jpg",
             "name": "Faded Broach",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Faded_Broach"
@@ -6182,7 +6182,7 @@
                 "health_regen": 30.0,
                 "move_speed": 115.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/62/Force_Boots_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011043",
+            "image": "https://dota2.ru/img/items/force_boots.jpg",
             "name": "Force Boots",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Force_Boots"
@@ -6207,7 +6207,7 @@
                 "move_speed": 45.0,
                 "strength": 30.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7b/Giant%27s_Ring_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232731",
+            "image": "https://dota2.ru/img/items/giants_ring.jpg",
             "name": "Giant's Ring",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Giant%27s_Ring"
@@ -6229,7 +6229,7 @@
             "buffs": {
                 "move_speed": 20.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/94/Gossamer_Cape_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051841",
+            "image": "https://dota2.ru/img/items/gossamer_cape.jpg",
             "name": "Gossamer Cape",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Gossamer_Cape"
@@ -6252,7 +6252,7 @@
                 "attack_range_ranged": 75.0,
                 "attack_speed": 20.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/57/Grove_Bow_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011214",
+            "image": "https://dota2.ru/img/items/grove_bow.jpg",
             "name": "Grove Bow",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Grove_Bow"
@@ -6284,7 +6284,7 @@
                 "damage": 16.0,
                 "strength": 16.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fb/Havoc_Hammer_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011223",
+            "image": "https://dota2.ru/img/items/havoc_hammer.jpg",
             "name": "Havoc Hammer",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Havoc_Hammer"
@@ -6308,7 +6308,7 @@
             "buffs": {
                 "mana": 200.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/99/Lance_of_Pursuit_icon.png/revision/latest/scale-to-width-down/60?cb=20220830145344",
+            "image": "https://dota2.ru/img/items/lance_of_pursuit.jpg",
             "name": "Lance of Pursuit",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Lance_of_Pursuit"
@@ -6344,7 +6344,7 @@
             "buffs": {
                 "move_speed": 5.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0a/Light_Collector_icon.png/revision/latest/scale-to-width-down/60?cb=20231215154227",
+            "image": "https://dota2.ru/img/items/light_collector.jpg",
             "name": "Light Collector",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Light_Collector"
@@ -6367,7 +6367,7 @@
             "buffs": {
                 "health": 500.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f0/Magic_Lamp_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011340",
+            "image": "https://dota2.ru/img/items/magic_lamp.jpg",
             "name": "Magic Lamp",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Magic_Lamp"
@@ -6393,7 +6393,7 @@
                 "health_regen": 5.0,
                 "magic_resist": 25.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fb/Martyr%27s_Plate_icon.png/revision/latest/scale-to-width-down/60?cb=20230421052222",
+            "image": "https://dota2.ru/img/items/martyrs_plate.jpg",
             "name": "Martyr's Plate",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Martyr%27s_Plate"
@@ -6416,7 +6416,7 @@
                 "attack_speed": 30.0,
                 "damage": 45.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2e/Mind_Breaker_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011354",
+            "image": "https://dota2.ru/img/items/mind_breaker.jpg",
             "name": "Mind Breaker",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Mind_Breaker"
@@ -6436,7 +6436,7 @@
                 "intelligence": 10.0,
                 "strength": 10.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c5/Mirror_Shield_icon.png/revision/latest/scale-to-width-down/60?cb=20191127013627",
+            "image": "https://dota2.ru/img/items/mirror_shield.jpg",
             "name": "Mirror Shield",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Mirror_Shield"
@@ -6468,7 +6468,7 @@
             "buffs": {
                 "damage": 35.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b6/Nemesis_Curse_icon.png/revision/latest/scale-to-width-down/60?cb=20231215163205",
+            "image": "https://dota2.ru/img/items/nemesis_curse.jpg",
             "name": "Nemesis Curse",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Nemesis_Curse"
@@ -6496,7 +6496,7 @@
                 "agility": 20.0,
                 "move_speed": 20.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4d/Ninja_Gear_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011427",
+            "image": "https://dota2.ru/img/items/ninja_gear.jpg",
             "name": "Ninja Gear",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Ninja_Gear"
@@ -6524,7 +6524,7 @@
                 "magic_resist": 5.0,
                 "strength": 3.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ac/Occult_Bracelet_icon.png/revision/latest/scale-to-width-down/60?cb=20220830145442",
+            "image": "https://dota2.ru/img/items/occult_bracelet.jpg",
             "name": "Occult Bracelet",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Occult_Bracelet"
@@ -6553,7 +6553,7 @@
             "buffs": {
                 "strength": 10.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4a/Ogre_Seal_Totem_icon.png/revision/latest/scale-to-width-down/60?cb=20200717125926",
+            "image": "https://dota2.ru/img/items/ogre_seal_totem.jpg",
             "name": "Ogre Seal Totem",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Ogre_Seal_Totem"
@@ -6575,7 +6575,7 @@
                 }
             ],
             "buffs": {},
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/be/Orb_of_Destruction_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011440",
+            "image": "https://dota2.ru/img/items/orb_of_destruction.jpg",
             "name": "Orb of Destruction",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Orb_of_Destruction"
@@ -6598,7 +6598,7 @@
                 "spell_lifesteal_creeps": 1.6,
                 "spell_lifesteal_heroes": 8.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cf/Paladin_Sword_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011446",
+            "image": "https://dota2.ru/img/items/paladin_sword.jpg",
             "name": "Paladin Sword",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Paladin_Sword"
@@ -6608,7 +6608,7 @@
                 "damage": -30.0,
                 "mana": 200.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ac/Philosopher%27s_Stone_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011453",
+            "image": "https://dota2.ru/img/items/philosophers_stone.jpg",
             "name": "Philosopher's Stone",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Philosopher%27s_Stone"
@@ -6634,7 +6634,7 @@
                 "intelligence": 4.0,
                 "strength": 4.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/98/Pig_Pole_icon.png/revision/latest/scale-to-width-down/60?cb=20210829212555",
+            "image": "https://dota2.ru/img/items/pig_pole.jpg",
             "name": "Pig Pole",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Pig_Pole"
@@ -6674,7 +6674,7 @@
                 "attack_speed": 150.0,
                 "move_speed": 15.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8f/Pirate_Hat_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011508",
+            "image": "https://dota2.ru/img/items/pirate_hat.jpg",
             "name": "Pirate Hat",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Pirate_Hat"
@@ -6709,14 +6709,14 @@
             "buffs": {
                 "cast_range": 100.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Psychic_Headband_icon.png/revision/latest/scale-to-width-down/60?cb=20201218233741",
+            "image": "https://dota2.ru/img/items/psychic_headband.jpg",
             "name": "Psychic Headband",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Psychic_Headband"
         },
         "Pupil's Gift": {
             "buffs": {},
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f0/Pupil%27s_Gift_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011526",
+            "image": "https://dota2.ru/img/items/pupils_gift.jpg",
             "name": "Pupil's Gift",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Pupil%27s_Gift"
@@ -6744,7 +6744,7 @@
             "buffs": {
                 "armor": 12.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f5/Rattlecage_icon.png/revision/latest/scale-to-width-down/60?cb=20231215172921",
+            "image": "https://dota2.ru/img/items/rattlecage.jpg",
             "name": "Rattlecage",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Rattlecage"
@@ -6770,7 +6770,7 @@
                 "health": 50.0,
                 "mana": 50.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b6/Royal_Jelly_1_icon.png/revision/latest/scale-to-width-down/60?cb=20191128001949",
+            "image": "https://dota2.ru/img/items/royal_jelly.jpg",
             "name": "Royal Jelly",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Royal_Jelly"
@@ -6794,7 +6794,7 @@
             "buffs": {
                 "health_regen": 2.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5e/Safety_Bubble_icon.png/revision/latest/scale-to-width-down/60?cb=20231215153000",
+            "image": "https://dota2.ru/img/items/safety_bubble.jpg",
             "name": "Safety Bubble",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Safety_Bubble"
@@ -6821,7 +6821,7 @@
                 "health": 150.0,
                 "health_regen": 4.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ac/Seeds_of_Serenity_icon.png/revision/latest/scale-to-width-down/60?cb=20220830084403",
+            "image": "https://dota2.ru/img/items/seeds_of_serenity.jpg",
             "name": "Seeds of Serenity",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Seeds_of_Serenity"
@@ -6847,7 +6847,7 @@
                 "evasion": 350.0,
                 "mana_regen": 10.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c2/Seer_Stone_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011603",
+            "image": "https://dota2.ru/img/items/seer_stone.jpg",
             "name": "Seer Stone",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Seer_Stone"
@@ -6868,7 +6868,7 @@
                 }
             ],
             "buffs": {},
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/15/Spark_of_Courage_%28Damage%29_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051713",
+            "image": "https://dota2.ru/img/items/spark_of_courage.jpg",
             "name": "Spark of Courage",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Spark_of_Courage"
@@ -6896,7 +6896,7 @@
                 "intelligence": 6.0,
                 "strength": 6.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ed/Specialist%27s_Array_icon.png/revision/latest/scale-to-width-down/60?cb=20220830145727",
+            "image": "https://dota2.ru/img/items/specialists_array.jpg",
             "name": "Specialist's Array",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Specialist%27s_Array"
@@ -6924,7 +6924,7 @@
                 "mana_regen": 4.0,
                 "move_speed": 35.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/eb/Stormcrafter_icon.png/revision/latest/scale-to-width-down/60?cb=20201219003500",
+            "image": "https://dota2.ru/img/items/stormcrafter.jpg",
             "name": "Stormcrafter",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Stormcrafter"
@@ -6946,7 +6946,7 @@
             "buffs": {
                 "damage": 60.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/83/Stygian_Desolator_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010919",
+            "image": "https://dota2.ru/img/items/stygian_desolator.jpg",
             "name": "Stygian Desolator",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Stygian_Desolator"
@@ -6969,7 +6969,7 @@
                 }
             ],
             "buffs": {},
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fe/Telescope_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011630",
+            "image": "https://dota2.ru/img/items/telescope.jpg",
             "name": "Telescope",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Telescope"
@@ -6978,7 +6978,7 @@
             "buffs": {
                 "spell_damage_amp": 15.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5e/Timeless_Relic_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011951",
+            "image": "https://dota2.ru/img/items/timeless_relic.jpg",
             "name": "Timeless Relic",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Timeless_Relic"
@@ -7004,7 +7004,7 @@
                 "evasion": 17.0,
                 "magic_resist": 17.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/53/Trickster_Cloak_icon.png/revision/latest/scale-to-width-down/60?cb=20201219004014",
+            "image": "https://dota2.ru/img/items/trickster_cloak.jpg",
             "name": "Trickster Cloak",
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Trickster_Cloak"
@@ -7059,7 +7059,7 @@
             "buffs": {
                 "health": 90.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b5/Trusty_Shovel_icon.png/revision/latest/scale-to-width-down/60?cb=20191127012019",
+            "image": "https://dota2.ru/img/items/trusty_shovel.jpg",
             "name": "Trusty Shovel",
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Trusty_Shovel"
@@ -7080,7 +7080,7 @@
             "buffs": {
                 "magic_resist": 95.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/05/Unwavering_Condition_icon.png/revision/latest/scale-to-width-down/60?cb=20231215173034",
+            "image": "https://dota2.ru/img/items/unwavering_condition.jpg",
             "name": "Unwavering Condition",
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Unwavering_Condition"
@@ -7106,7 +7106,7 @@
                 }
             ],
             "buffs": {},
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b4/Vambrace_icon.png/revision/latest/scale-to-width-down/60?cb=20191129234109",
+            "image": "https://dota2.ru/img/items/vambrace.jpg",
             "name": "Vambrace",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Vambrace"
@@ -7116,7 +7116,7 @@
                 "spell_lifesteal_creeps": 2.0,
                 "spell_lifesteal_heroes": 10.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/32/Vampire_Fangs_icon.png/revision/latest/scale-to-width-down/60?cb=20191127012035",
+            "image": "https://dota2.ru/img/items/vampire_fangs.jpg",
             "name": "Vampire Fangs",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Vampire_Fangs"
@@ -7139,7 +7139,7 @@
                 "attack_speed": 35.0,
                 "slow_resist": 20.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9c/Vindicator%27s_Axe_icon.png/revision/latest/scale-to-width-down/60?cb=20230421052145",
+            "image": "https://dota2.ru/img/items/vindicators_axe.jpg",
             "name": "Vindicator's Axe",
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Vindicator%27s_Axe"
@@ -7163,7 +7163,7 @@
             "buffs": {
                 "mana": 150.0
             },
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/22/Whisper_of_the_Dread_icon.png/revision/latest/scale-to-width-down/60?cb=20231215155748",
+            "image": "https://dota2.ru/img/items/whisper_of_the_dread.jpg",
             "name": "Whisper of the Dread",
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Whisper_of_the_Dread"
