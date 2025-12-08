@@ -233,8 +233,9 @@ def main() -> None:
     logger.info(f"Loading items from {args.input}")
     data = parse_from_json(str(args.input))
 
-    for item in data.values():
-        build_item(g, item)
+    if data.dota_items:
+        for item in data.dota_items.values():
+            build_item(g, item)
 
     # Serialize
     logger.info(f"Writing RDF to {args.output}")

@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup, Tag
 
 from kg.scraper.dota.types import Ability, AbilityType, Buffs, DotaItem
 from kg.scraper.dota.utils import parse_ability_type, parse_buffs, raw_to_name_cost
-from kg.scraper.scrapers.base_scraper import BaseScraper
+from kg.scraper.scrapers.base_scraper import BaseScraper, ScrapeResult
 
 logger = logging.getLogger(__name__)
 
@@ -280,7 +280,7 @@ class FandomScraper(BaseScraper):
 
         return recipe_components
 
-    def scrape(self) -> Dict[str, DotaItem]:
+    def scrape(self) -> ScrapeResult:
         self.items.clear()
         response = requests.get("https://dota2.fandom.com/wiki/Items")
         soup = BeautifulSoup(response.text, "html.parser")
@@ -330,4 +330,7 @@ class FandomScraper(BaseScraper):
 
         logger.info(f"parsed: {len(self.items)}; processed: {len(res_items)}")
 
-        return self.items
+        return ScrapeResult(
+            dota_items=self.items,
+            neutral_items=None,
+        )

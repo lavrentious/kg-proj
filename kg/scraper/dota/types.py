@@ -172,12 +172,21 @@ class Ability:
 
 
 @dataclass
-class DotaItem:
+class GenericItem:
     name: str  # unique
-    cost: int
     image: str
     url: str
+    abilities: List[Ability] | None
+
+
+@dataclass
+class DotaItem(GenericItem):
+    cost: int
     recipe: List[str]
-    abilities: List[Ability] | None = None
     order: int | None = None  # abstract variable to assess item coolness
     buffs: Buffs | None = None
+
+
+@dataclass
+class NeutralItem(GenericItem):
+    tier: int  # 1-5

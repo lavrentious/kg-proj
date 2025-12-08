@@ -3,12 +3,15 @@ import logging
 import re
 from dataclasses import asdict, is_dataclass
 from difflib import get_close_matches
+from enum import Enum
 from typing import Any, Dict, List, Tuple
 
 from dacite import Config, from_dict
 
 from kg.scraper.dota.consts import BUFF_KEYWORDS
 from kg.scraper.dota.types import AbilityType, Buffs, DotaItem
+from kg.scraper.scrapers.base_scraper import ScrapeResult
+
 
 logger = logging.getLogger(__name__)
 
@@ -47,37 +50,34 @@ def set_orders(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
     return ans
 
 
-def parse_from_json(path: str) -> Dict[str, DotaItem]:
+def parse_from_json(path: str) -> ScrapeResult:
     with open(path) as f:
-        data = json.load(f)
+        raw = json.load(f)
+    config = config = Config(
+        cast=[dict, list],
+        strict=False,
+        type_hooks={AbilityType: lambda v: AbilityType(v)},
+    )
 
-    return {
-        key: from_dict(
-            data_class=DotaItem,
-            data=item_dict,
-            config=Config(
-                strict=False, type_hooks={AbilityType: lambda v: AbilityType(v)}
-            ),
-        )
-        for key, item_dict in data.items()
-    }
+    return from_dict(data=raw, data_class=ScrapeResult, config=config)
 
 
 def dataclass_to_clean_dict(obj: Any) -> Any:
-    if is_dataclass(obj):
-        obj = asdict(obj)  # type: ignore
+    if is_dataclass(obj) and not isinstance(obj, type):
+        obj = asdict(obj)
+    if isinstance(obj, Enum):
+        return obj.value
     if isinstance(obj, dict):
         return {k: dataclass_to_clean_dict(v) for k, v in obj.items() if v is not None}
-    elif isinstance(obj, list):
+    if isinstance(obj, list):
         return [dataclass_to_clean_dict(v) for v in obj if v is not None]
-    else:
-        return obj
+    return obj
 
 
-def save_to_json(path: str, data: Dict[str, DotaItem]) -> None:
+def save_to_json(path: str, data: ScrapeResult) -> None:
     with open(path, "w") as f:
         json.dump(
-            {k: dataclass_to_clean_dict(v) for k, v in data.items()},
+            dataclass_to_clean_dict(data),
             f,
             ensure_ascii=False,
             indent=4,
@@ -175,6 +175,7 @@ def set_distinct_recipes(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
                 image="https://dota2.ru/img/items/recipe.jpg",
                 recipe=[],
                 buffs=Buffs(),
+                abilities=None,
             )
         ans[name] = item
     return ans

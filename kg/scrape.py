@@ -11,7 +11,7 @@ from kg.scraper.dota.utils import (
     set_distinct_recipes,
     set_orders,
 )
-from kg.scraper.scrapers.base_scraper import BaseScraper
+from kg.scraper.scrapers.base_scraper import BaseScraper, ScrapeResult
 from kg.scraper.scrapers.dota2_ru_scraper import Dota2RuScraper
 from kg.scraper.scrapers.fandom_scraper import FandomScraper
 
@@ -40,26 +40,42 @@ def main(
     scraper = SCRAPERS[scraper_name]()
     logger.debug(f"using scraper {scraper.NAME}")
 
+    res: ScrapeResult
     if input_file:
         logger.debug(f"reading from input file: {input_file}")
         res = parse_from_json(input_file)
-        recipe_count = get_recipes_count(res)
-        logger.debug(
-            f"loaded {len(res) - recipe_count} items from {input_file} (+{recipe_count} recipes)."
-        )
+        if res.dota_items:
+            recipe_count = get_recipes_count(res.dota_items)
+            logger.debug(
+                f"loaded {len(res.dota_items) - recipe_count} items from {input_file} (+{recipe_count} recipes)."
+            )
+        if res.neutral_items:
+            logger.debug(
+                f"loaded {len(res.neutral_items)} neutral items from {input_file}."
+            )
+        if not res.dota_items and not res.neutral_items:
+            logger.warning("no items loaded from the input file")
     else:
         logger.info("scraping data from the site...")
         res = scraper.scrape()
-        logger.info(f"Scraped {len(res.values())} items.")
-    if assign_orders:
-        logger.info("assigning orders to items...")
-        res = set_orders(res)  # assign orders
-    if distinct_recipes:
-        logger.info("using distinct recipes for items...")
-        res = set_distinct_recipes(res)
-    else:
-        logger.info("using default recipes for items...")
-        res = remove_distinct_recipes(res)
+        if res.dota_items is None:
+            logger.warning("no dota items scraped")
+        else:
+            recipe_count = get_recipes_count(res.dota_items)
+            logger.info(
+                f"scraped {len(res.dota_items) - recipe_count} items (+{recipe_count} recipes)."
+            )
+
+    if res.dota_items:
+        if assign_orders:
+            logger.info("assigning orders to items...")
+            res.dota_items = set_orders(res.dota_items)  # assign orders
+        if distinct_recipes:
+            logger.info("using distinct recipes for items...")
+            res.dota_items = set_distinct_recipes(res.dota_items)
+        else:
+            logger.info("using default recipes for items...")
+            res.dota_items = remove_distinct_recipes(res.dota_items)
 
     save_to_json(output_file, res)
     logger.info(f"data saved to {output_file}.")

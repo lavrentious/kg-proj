@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup, Tag
 
 from kg.scraper.dota.types import Buffs, DotaItem
 from kg.scraper.dota.utils import parse_buffs
-from kg.scraper.scrapers.base_scraper import BaseScraper
+from kg.scraper.scrapers.base_scraper import BaseScraper, ScrapeResult
 
 logger = logging.getLogger(__name__)
 
@@ -79,13 +79,14 @@ class Dota2RuScraper(BaseScraper):
                 image=img_url,
                 recipe=recipe,
                 buffs=buffs,
+                abilities=None,
             )
 
         except Exception as e:
             logger.warning(f"ERROR processing item: {e}")
             return None
 
-    def scrape(self) -> Dict[str, DotaItem]:
+    def scrape(self) -> ScrapeResult:
         ans: Dict[str, DotaItem] = {}
 
         response = requests.get("https://dota2.ru/items/", headers=self.HEADERS)
@@ -93,7 +94,7 @@ class Dota2RuScraper(BaseScraper):
 
         shop_items_block = soup.find("div", class_="base-items__block-shop")
         if shop_items_block is None or not isinstance(shop_items_block, Tag):
-            return {}
+            return ScrapeResult(dota_items=None, neutral_items=None)
 
         items = shop_items_block.find_all(
             "li", class_="base-items__shop-item js-items-filter-item"
@@ -111,7 +112,7 @@ class Dota2RuScraper(BaseScraper):
                 if result:
                     ans[result.name] = result
 
-        return ans
+        return ScrapeResult(dota_items=ans, neutral_items=None)
 
     def _scrape_buffs(self, item: Tag) -> Buffs:
         attributes_div = item.select_one('div[class="attributes"]')
