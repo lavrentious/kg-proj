@@ -176,7 +176,7 @@
                 "strength": 10.0
             },
             "cost": 4200,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/07/Aghanim%27s_Scepter_icon.png/revision/latest/scale-to-width-down/40?cb=20160530163350",
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/07/Aghanim%27s_Scepter_icon.png/revision/latest/scale-to-width-down/60?cb=20160530163350",
             "name": "Aghanim's Scepter",
             "order": 2,
             "recipe": [
@@ -1615,7 +1615,7 @@
                 "strength": 10.0
             },
             "cost": 1900,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/db/Dragon_Lance_icon.png/revision/latest/scale-to-width-down/40?cb=20180711225156",
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/db/Dragon_Lance_icon.png/revision/latest/scale-to-width-down/60?cb=20180711225156",
             "name": "Dragon Lance",
             "order": 2,
             "recipe": [
@@ -2894,7 +2894,7 @@
                 "spell_lifesteal_amp": 20.0
             },
             "cost": 2100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Kaya_icon.png/revision/latest/scale-to-width-down/40?cb=20171030224243",
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Kaya_icon.png/revision/latest/scale-to-width-down/60?cb=20171030224243",
             "name": "Kaya",
             "order": 2,
             "recipe": [
@@ -3101,7 +3101,7 @@
                 "damage": 25.0
             },
             "cost": 2950,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Maelstrom_icon.png/revision/latest/scale-to-width-down/40?cb=20160530171221",
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Maelstrom_icon.png/revision/latest/scale-to-width-down/60?cb=20160530171221",
             "name": "Maelstrom",
             "order": 2,
             "recipe": [
@@ -4066,7 +4066,7 @@
                 "strength": 7.0
             },
             "cost": 2400,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8c/Phylactery_icon.png/revision/latest/scale-to-width-down/40?cb=20230420234419",
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8c/Phylactery_icon.png/revision/latest/scale-to-width-down/60?cb=20230420234419",
             "name": "Phylactery",
             "order": 2,
             "recipe": [
@@ -4725,7 +4725,7 @@
                 "damage": 20.0
             },
             "cost": 3000,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0f/Shadow_Blade_icon.png/revision/latest/scale-to-width-down/40?cb=20160530173313",
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0f/Shadow_Blade_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173313",
             "name": "Shadow Blade",
             "order": 2,
             "recipe": [
@@ -5222,7 +5222,7 @@
                 "move_speed": 65.0
             },
             "cost": 925,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/23/Tranquil_Boots_%28Active%29_icon.png/revision/latest/scale-to-width-down/40?cb=20160530173837",
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/23/Tranquil_Boots_%28Active%29_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173837",
             "name": "Tranquil Boots",
             "order": 2,
             "recipe": [
@@ -5273,7 +5273,7 @@
                 "strength": 2.0
             },
             "cost": 880,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/58/Urn_of_Shadows_icon.png/revision/latest/scale-to-width-down/60?cb=20160530173928",
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/58/Urn_of_Shadows_icon.png/revision/latest/scale-to-width-down/40?cb=20160530173928",
             "name": "Urn of Shadows",
             "order": 2,
             "recipe": [
@@ -5577,7 +5577,7 @@
                 "move_speed": 10.0
             },
             "cost": 2100,
-            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d1/Yasha_icon.png/revision/latest/scale-to-width-down/40?cb=20160530174117",
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d1/Yasha_icon.png/revision/latest/scale-to-width-down/60?cb=20160530174117",
             "name": "Yasha",
             "order": 2,
             "recipe": [
@@ -5614,6 +5614,1559 @@
                 "Yasha"
             ],
             "url": "https://dota2.fandom.com/wiki/Yasha_and_Kaya"
+        }
+    },
+    "neutral_items": {
+        "Ancient Guardian": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Grants additional +50 damage if the wearer is within 2000 range from an Ancient",
+                    "name": "Ancient Power",
+                    "stats": {
+                        "additional_stats": {
+                            "damage": "50",
+                            "range": "2000"
+                        }
+                    }
+                }
+            ],
+            "buffs": {},
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/82/Ancient_Guardian_icon.png/revision/latest/scale-to-width-down/60?cb=20231215171026",
+            "name": "Ancient Guardian",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Ancient_Guardian"
+        },
+        "Apex": {
+            "buffs": {},
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/91/Apex_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010600",
+            "name": "Apex",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Apex"
+        },
+        "Arcane Ring": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 60,
+                    "description": "Restores 65 mana to all nearby allies.",
+                    "mana_cost": 0,
+                    "name": "Replenish Mana",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "mana_restored": "65",
+                            "radius": "1200"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "armor": 2.0,
+                "intelligence": 6.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ad/Arcane_Ring_icon.png/revision/latest/scale-to-width-down/60?cb=20191126192843",
+            "name": "Arcane Ring",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Arcane_Ring"
+        },
+        "Arcanist's Armor": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 20,
+                    "description": "Force Field Aura Grants 40% Damage Reflection for 5 seconds.",
+                    "mana_cost": 0,
+                    "name": "Mega Shield",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "damage_return_range": "Global",
+                            "damage_returned": "40%",
+                            "duration": "5"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "AURA",
+                    "description": "Grants +5 armor and +20% Magic Resistance to all allies within 1200 radius.",
+                    "name": "Shield",
+                    "stats": {
+                        "additional_stats": {
+                            "armor_bonus": "5",
+                            "aura_linger_duration": "0.5",
+                            "magic_resistance_bonus": "20%",
+                            "radius": "1200"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "armor": 5.0,
+                "magic_resist": 20.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cc/Arcanist%27s_Armor_icon.png/revision/latest/scale-to-width-down/60?cb=20210829212525",
+            "name": "Arcanist's Armor",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Arcanist%27s_Armor"
+        },
+        "Ascetic's Cap": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 25,
+                    "description": "Whenever a debuff would be applied to the owner, grant 40% Status resistance and 40% Slow Resistance for 5 seconds.",
+                    "name": "Endurance",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "5",
+                            "slow_resistance_bonus": "40%",
+                            "status_resistance_bonus": "40%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "health": 250.0,
+                "health_regen": 20.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/63/Ascetic%27s_Cap_icon.png/revision/latest/scale-to-width-down/60?cb=20210829212514",
+            "name": "Ascetic's Cap",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Ascetic%27s_Cap"
+        },
+        "Aviana's Feather": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "When below 30% health, wearer gains flying movement (not flying vision).",
+                    "name": "Free Bird",
+                    "stats": {
+                        "additional_stats": {
+                            "hp_threshold": "30%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "evasion": 25.0,
+                "move_speed": 30.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4d/Aviana%27s_Feather_icon.png/revision/latest/scale-to-width-down/60?cb=20231215171507",
+            "name": "Aviana's Feather",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Aviana%27s_Feather"
+        },
+        "Book of Shadows": {
+            "abilities": [
+                {
+                    "ability_type": "UNIT TARGET",
+                    "cast_range": 700.0,
+                    "cooldown": 8,
+                    "description": "Target an enemy, ally or self. Causes the target to become untargetable from enemies to the caster, but also silenced, muted and disarmed for 4 seconds. Applies a basic dispel.",
+                    "mana_cost": 0,
+                    "name": "Shadows",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "4"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "agility": 13.0,
+                "intelligence": 13.0,
+                "strength": 13.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/54/Book_of_Shadows_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232308",
+            "name": "Book of Shadows",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Book_of_Shadows"
+        },
+        "Book of the Dead": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 80,
+                    "description": "Summons 4 level 3 Necronomicon Units that last 75 seconds. Units have 100% more health and 75% more damage.",
+                    "mana_cost": 0,
+                    "name": "Greater Demonic Summoning",
+                    "stats": {
+                        "additional_stats": {
+                            "bonus_health": "100%",
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "duration": "75",
+                            "number_of_archers": "2",
+                            "number_of_warriors": "2"
+                        },
+                        "attack_damage_bonus": 75.0
+                    }
+                },
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Mana burned per hit, a portion of which is dealt as damage.",
+                    "name": "Mana Break",
+                    "stats": {
+                        "additional_stats": {
+                            "burned_mana_as_damage": "50%",
+                            "mana_burned_per_hit": "50"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Deals damage to the unit that kills the Necronomicon Warrior.",
+                    "name": "Last Will",
+                    "stats": {
+                        "additional_stats": {
+                            "damage": "800"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Reveals invisible units.",
+                    "name": "True Sight",
+                    "stats": {
+                        "additional_stats": {
+                            "aura_linger_duration": "0.5",
+                            "radius": "1000"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "PASSIVE",
+                    "cast_range": 600.0,
+                    "cooldown": 15,
+                    "description": "Removes positive buffs from enemies and slow their movement speed.",
+                    "name": "Purge",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0.3 + 0.47",
+                            "move_speed_slow": "100%",
+                            "slow_duration": "4"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Increases movement of nearby units.",
+                    "name": "Archer Aura",
+                    "stats": {
+                        "additional_stats": {
+                            "aura_linger_duration": "0.5",
+                            "move_speed_bonus": "5%/7%/9%",
+                            "radius": "1200"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "intelligence": 25.0,
+                "strength": 25.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/00/Book_of_the_Dead_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010816",
+            "name": "Book of the Dead",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Book_of_the_Dead"
+        },
+        "Broom Handle": {
+            "buffs": {
+                "armor": 4.0,
+                "attack_range_ranged": 50.0,
+                "damage": 8.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3a/Broom_Handle_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010827",
+            "name": "Broom Handle",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Broom_Handle"
+        },
+        "Bullwhip": {
+            "abilities": [
+                {
+                    "ability_type": "UNIT TARGET",
+                    "cast_range": 850.0,
+                    "cooldown": 11,
+                    "description": "Grants 18% movement speed when cast on allies, and slows by 18% when cast on enemies. Lasts 4 seconds.",
+                    "mana_cost": 0,
+                    "name": "Whip",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "4",
+                            "effect_delay": "0.3",
+                            "move_speed_change": "18%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "health_regen": 2.75,
+                "mana_regen": 2.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1e/Bullwhip_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232333",
+            "name": "Bullwhip",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Bullwhip"
+        },
+        "Ceremonial Robe": {
+            "abilities": [
+                {
+                    "ability_type": "AURA",
+                    "description": "Lowers enemy Status Resistance by 10% and Magic Resistance by 10%.",
+                    "name": "Ceremonial Aura",
+                    "stats": {
+                        "additional_stats": {
+                            "aura_linger_duration": "0.5",
+                            "radius": "1200",
+                            "status_resistance_reduction": "10%"
+                        },
+                        "magic_resistance_reduction": 10.0
+                    }
+                }
+            ],
+            "buffs": {
+                "mana": 300.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/dd/Ceremonial_Robe_icon.png/revision/latest/scale-to-width-down/60?cb=20210119223852",
+            "name": "Ceremonial Robe",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Ceremonial_Robe"
+        },
+        "Cloak of Flames": {
+            "abilities": [
+                {
+                    "ability_type": "AURA",
+                    "description": "Burns enemy units for 45 damage per second. Illusions deal 30 damage per second.",
+                    "name": "Immolate",
+                    "stats": {
+                        "additional_stats": {
+                            "aura_linger_duration": "0.5",
+                            "damage_per_second_(hero)": "45",
+                            "damage_per_second_(illusion)": "30",
+                            "radius": "375"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "armor": 4.0,
+                "magic_resist": 10.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8d/Cloak_of_Flames_icon.png/revision/latest/scale-to-width-down/60?cb=20201219005230",
+            "name": "Cloak of Flames",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Cloak_of_Flames"
+        },
+        "Craggy Coat": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 12,
+                    "description": "Increases armor by an additional 12 at the cost of -30 movement speed.",
+                    "mana_cost": 0,
+                    "name": "Toughen Up",
+                    "stats": {
+                        "additional_stats": {
+                            "bonus_armor": "12",
+                            "movement_speed_reduction": "30"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "armor": 8.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e4/Craggy_Coat_icon.png/revision/latest/scale-to-width-down/60?cb=20191215230013",
+            "name": "Craggy Coat",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Craggy_Coat"
+        },
+        "Dandelion Amulet": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 12,
+                    "description": "Block 300 magic damage from damage instances over 75  damage",
+                    "name": "Magical Damage Block",
+                    "stats": {
+                        "additional_stats": {
+                            "barrier_capacity": "300",
+                            "damage_threshold": "75"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "mana": 300.0,
+                "move_speed": 25.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/55/Dandelion_Amulet_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051937",
+            "name": "Dandelion Amulet",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Dandelion_Amulet"
+        },
+        "Defiant Shell": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 5,
+                    "description": "When attacked, the hero counter-attacks a target within their attack range.",
+                    "name": "Reciprocity",
+                    "stats": {
+                        "additional_stats": {
+                            "returned_damage": "100%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "agility": 7.0,
+                "armor": 7.0,
+                "intelligence": 7.0,
+                "strength": 7.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a4/Defiant_Shell_icon.png/revision/latest/scale-to-width-down/60?cb=20230421052133",
+            "name": "Defiant Shell",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Defiant_Shell"
+        },
+        "Doubloon": {
+            "abilities": [
+                {
+                    "ability_type": "TOGGLE",
+                    "cooldown": 5,
+                    "description": "Toggle to convert 20% of your Max Health to Max Mana, or 20% of your Max Mana to Max Health. Mana and Health Regeneration from Doubloon is increased by 50%, based on which side is selected.",
+                    "name": "Flip",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "max_health": "20%",
+                            "max_mana": "20%",
+                            "regen_increase.": "50%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "health_regen": 5.0,
+                "mana_regen": 2.5
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5f/Doubloon_%28Max_HP%29_icon.png/revision/latest/scale-to-width-down/60?cb=20231215160335",
+            "name": "Doubloon",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Doubloon"
+        },
+        "Dragon Scale": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Causes attacks to burn the enemy, dealing 22 damage per second for 3 seconds. Affects buildings.",
+                    "name": "Afterburn",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "3"
+                        },
+                        "damage_per_second": 22.0
+                    }
+                }
+            ],
+            "buffs": {
+                "armor": 5.0,
+                "health_regen": 5.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c5/Dragon_Scale_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010927",
+            "name": "Dragon Scale",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Dragon_Scale"
+        },
+        "Duelist Gloves": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Grants 20 attack speed as long as there are enemy heroes within 1200 units.",
+                    "name": "Boldness",
+                    "stats": {
+                        "additional_stats": {
+                            "attack_speed_bonus": "20",
+                            "enemy_hero_search_radius": "1200"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "damage": 12.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f9/Duelist_Gloves_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051753",
+            "name": "Duelist Gloves",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Duelist_Gloves"
+        },
+        "Elven Tunic": {
+            "buffs": {
+                "attack_speed": 26.0,
+                "evasion": 16.0,
+                "move_speed": 7.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/05/Elven_Tunic_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232604",
+            "name": "Elven Tunic",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Elven_Tunic"
+        },
+        "Enchanted Quiver": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 4,
+                    "description": "Empowers your next attack with 250 bonus magical damage and True Strike. Ranged Attackers have +350 bonus range for the attack.",
+                    "name": "Certain Strike",
+                    "stats": {
+                        "additional_stats": {
+                            "attack_range_bonus": "350",
+                            "damage": "250"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "attack_range_ranged": 75.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/Enchanted_Quiver_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010952",
+            "name": "Enchanted Quiver",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Enchanted_Quiver"
+        },
+        "Eye of the Vizier": {
+            "buffs": {
+                "cast_range": 125.0,
+                "mana_regen": 1.25
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/42/Eye_of_the_Vizier_icon.png/revision/latest/scale-to-width-down/60?cb=20220830145632",
+            "name": "Eye of the Vizier",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Eye_of_the_Vizier"
+        },
+        "Faded Broach": {
+            "buffs": {
+                "mana": 150.0,
+                "move_speed": 15.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/57/Faded_Broach_icon.png/revision/latest/scale-to-width-down/60?cb=20230427163206",
+            "name": "Faded Broach",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Faded_Broach"
+        },
+        "Force Boots": {
+            "abilities": [
+                {
+                    "ability_type": "UNIT TARGET",
+                    "cast_range": 750.0,
+                    "cooldown": 8,
+                    "description": "Dispels the user and pushes them 750 units in the direction they are facing.",
+                    "mana_cost": 75,
+                    "name": "Force",
+                    "stats": {
+                        "additional_stats": {
+                            "push_distance": "750",
+                            "push_duration": "0.5"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Completely removes the speed limit for the wearer.",
+                    "name": "Speed Unlock",
+                    "stats": {}
+                }
+            ],
+            "buffs": {
+                "health_regen": 30.0,
+                "move_speed": 115.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/62/Force_Boots_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011043",
+            "name": "Force Boots",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Force_Boots"
+        },
+        "Giant's Ring": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Can path over any terrain and deals 100% of your strength per second to units you are standing ontop of.",
+                    "name": "Giant's Foot",
+                    "stats": {
+                        "additional_stats": {
+                            "aura_linger_duration": "0.5",
+                            "damage_radius": "100",
+                            "model_size_increase": "60%",
+                            "strength_as_damage_per_second": "100%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "move_speed": 45.0,
+                "strength": 30.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7b/Giant%27s_Ring_icon.png/revision/latest/scale-to-width-down/60?cb=20201218232731",
+            "name": "Giant's Ring",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Giant%27s_Ring"
+        },
+        "Gossamer Cape": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 4,
+                    "description": "Automatically dodge the next attack from a hero.",
+                    "name": "Sixth Sense",
+                    "stats": {
+                        "additional_stats": {
+                            "evasion": "100%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "move_speed": 20.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/94/Gossamer_Cape_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051841",
+            "name": "Gossamer Cape",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Gossamer_Cape"
+        },
+        "Grove Bow": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Reduces magic resistance of the attacked enemy by 15%.",
+                    "name": "Magic Amp",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "6"
+                        },
+                        "magic_resistance_reduction": 15.0
+                    }
+                }
+            ],
+            "buffs": {
+                "attack_range_ranged": 75.0,
+                "attack_speed": 20.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/57/Grove_Bow_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011214",
+            "name": "Grove Bow",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Grove_Bow"
+        },
+        "Havoc Hammer": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 10,
+                    "description": "Pulls enemies in a 400 range around you, slowing them by 50% for 3 seconds and dealing 175 + 1.5 your str as magical damage.",
+                    "mana_cost": 0,
+                    "name": "Havoc",
+                    "stats": {
+                        "additional_stats": {
+                            "attack_speed_slow": "50",
+                            "base_damage": "175",
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "move_speed_slow": "50%",
+                            "pull_distance": "100",
+                            "pull_duration": "0.2",
+                            "radius": "400",
+                            "slow_duration": "3",
+                            "strength_as_damage_bonus_multiplier": "1.5"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "damage": 16.0,
+                "strength": 16.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fb/Havoc_Hammer_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011223",
+            "name": "Havoc Hammer",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Havoc_Hammer"
+        },
+        "Lance of Pursuit": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Attacking from behind slows enemies by 16% (8% if Ranged) and deals +20 more Damage. Slows lasts for 2 seconds.",
+                    "name": "Hound",
+                    "stats": {
+                        "additional_stats": {
+                            "debuff_duration": "2",
+                            "melee_move_speed_slow": "16%",
+                            "ranged_move_speed_slow": "8%"
+                        },
+                        "attack_damage_bonus": 20.0
+                    }
+                }
+            ],
+            "buffs": {
+                "mana": 200.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/99/Lance_of_Pursuit_icon.png/revision/latest/scale-to-width-down/60?cb=20220830145344",
+            "name": "Lance of Pursuit",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Lance_of_Pursuit"
+        },
+        "Light Collector": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "description": "Produces a flash of light that destroys trees in a 325 radius around the wearer.",
+                    "mana_cost": 0,
+                    "name": "Lightbreak",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "radius": "325"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Provides wearer with +12 Health Regen during the day and +6 Mana Regen during the night. When within 200 distance of any trees, health and mana regeneration are decreased by 75%",
+                    "name": "Unclouded",
+                    "stats": {
+                        "additional_stats": {
+                            "day_buff": "12",
+                            "night_buff": "6",
+                            "tree_radius": "200",
+                            "tree_reduction": "75%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "move_speed": 5.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0a/Light_Collector_icon.png/revision/latest/scale-to-width-down/60?cb=20231215154227",
+            "name": "Light Collector",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Light_Collector"
+        },
+        "Magic Lamp": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 60,
+                    "description": "When the wearer's health falls below 20% they will receive a hard dispel and be healed for 1250 health.",
+                    "name": "Rejuvenate",
+                    "stats": {
+                        "additional_stats": {
+                            "heal": "1250",
+                            "health_threshold": "20%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "health": 500.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f0/Magic_Lamp_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011340",
+            "name": "Magic Lamp",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Magic_Lamp"
+        },
+        "Martyr's Plate": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 40,
+                    "description": "Redirects 25% of all magic damage dealt to your allied heroes within 900 radius towards you for 10 seconds.",
+                    "name": "Martyrdom",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "damage_redirected": "25%",
+                            "duration": "10",
+                            "radius": "900"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "health_regen": 5.0,
+                "magic_resist": 25.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fb/Martyr%27s_Plate_icon.png/revision/latest/scale-to-width-down/60?cb=20230421052222",
+            "name": "Martyr's Plate",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Martyr%27s_Plate"
+        },
+        "Mind Breaker": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 12,
+                    "description": "The next attack silences the hit enemy for 2 seconds.",
+                    "name": "Silence Strike",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "2"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "attack_speed": 30.0,
+                "damage": 45.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2e/Mind_Breaker_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011354",
+            "name": "Mind Breaker",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Mind_Breaker"
+        },
+        "Mirror Shield": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 12,
+                    "description": "Block and reflect most targeted spells back to their caster once every 12 seconds.",
+                    "name": "Echo Shield",
+                    "stats": {}
+                }
+            ],
+            "buffs": {
+                "agility": 10.0,
+                "intelligence": 10.0,
+                "strength": 10.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c5/Mirror_Shield_icon.png/revision/latest/scale-to-width-down/60?cb=20191127013627",
+            "name": "Mirror Shield",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Mirror_Shield"
+        },
+        "Nemesis Curse": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "The wearer takes 8% more damage from all sources.",
+                    "name": "Glass Cannon",
+                    "stats": {
+                        "additional_stats": {
+                            "self_damage_amp": "8%"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "When attacking a hero, apply a debuff increasing the damage received by that hero by 12% for 5s seconds. Only one target can be affected by Glassify at the same time.",
+                    "name": "Glassify",
+                    "stats": {
+                        "additional_stats": {
+                            "debuff_duration": "5s",
+                            "enemy_damage_amp": "12%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "damage": 35.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b6/Nemesis_Curse_icon.png/revision/latest/scale-to-width-down/60?cb=20231215163205",
+            "name": "Nemesis Curse",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Nemesis_Curse"
+        },
+        "Ninja Gear": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 60,
+                    "description": "Casts Smoke of Deceit on yourself only.",
+                    "mana_cost": 0,
+                    "name": "Solitary Disguise",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "dispel_radius": "1025",
+                            "duration": "35",
+                            "fade_time": "0",
+                            "move_speed_bonus": "20%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "agility": 20.0,
+                "move_speed": 20.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4d/Ninja_Gear_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011427",
+            "name": "Ninja Gear",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Ninja_Gear"
+        },
+        "Occult Bracelet": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 0,
+                    "description": "Each time the wearer is attacked they gain a stack of 0.4 mana regen, up to 5 stacks.\nStacks last for 5 seconds.",
+                    "mana_cost": 0,
+                    "name": "Rites of Eloshar",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "5",
+                            "mana_regen_bonus_per_stack": "0.4",
+                            "max_stacks": "5"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "agility": 3.0,
+                "intelligence": 3.0,
+                "magic_resist": 5.0,
+                "strength": 3.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ac/Occult_Bracelet_icon.png/revision/latest/scale-to-width-down/60?cb=20220830145442",
+            "name": "Occult Bracelet",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Occult_Bracelet"
+        },
+        "Ogre Seal Totem": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 40,
+                    "description": "Flop forward like an ogre seal 2 times, dealing 150 damage and slowing enemies in a 275 radius by 100% for 1.5 second on each bounce. 400 bounce distance.",
+                    "mana_cost": 25,
+                    "name": "Ogre Seal Flop",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0.3 + 0",
+                            "damage": "150",
+                            "distance_per_flop": "400",
+                            "flop_effect_radius": "275",
+                            "move_speed_slow": "100%",
+                            "number_of_flops": "2",
+                            "slow_duration": "1.5"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "strength": 10.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4a/Ogre_Seal_Totem_icon.png/revision/latest/scale-to-width-down/60?cb=20200717125926",
+            "name": "Ogre Seal Totem",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Ogre_Seal_Totem"
+        },
+        "Orb of Destruction": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Attacks reduce the target's armor and movement speed. Slow amount varies based on whether the wearer is melee or ranged.",
+                    "name": "Impeding Corruption",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "4",
+                            "melee_move_speed_slow": "20%",
+                            "ranged_move_speed_slow": "10%"
+                        },
+                        "armor_reduction": 3.0
+                    }
+                }
+            ],
+            "buffs": {},
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/be/Orb_of_Destruction_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011440",
+            "name": "Orb of Destruction",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Orb_of_Destruction"
+        },
+        "Paladin Sword": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Amplifies the wearer's Regeneration, Healing, Lifesteal and Spell Lifesteal by 14%.",
+                    "name": "Greater Healing",
+                    "stats": {
+                        "heal_amp": 14.0
+                    }
+                }
+            ],
+            "buffs": {
+                "damage": 16.0,
+                "health_replenish_amp": 14.0,
+                "spell_lifesteal_amp": 14.0,
+                "spell_lifesteal_creeps": 1.6,
+                "spell_lifesteal_heroes": 8.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cf/Paladin_Sword_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011446",
+            "name": "Paladin Sword",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Paladin_Sword"
+        },
+        "Philosopher's Stone": {
+            "buffs": {
+                "damage": -30.0,
+                "mana": 200.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ac/Philosopher%27s_Stone_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011453",
+            "name": "Philosopher's Stone",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Philosopher%27s_Stone"
+        },
+        "Pig Pole": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 25,
+                    "description": "Turns your hero into a critter for 4 seconds and gives them +15% Movement Speed.",
+                    "mana_cost": 50,
+                    "name": "Pig, Out!",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "4",
+                            "move_speed_bonus": "15%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "agility": 4.0,
+                "intelligence": 4.0,
+                "strength": 4.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/98/Pig_Pole_icon.png/revision/latest/scale-to-width-down/60?cb=20210829212555",
+            "name": "Pig Pole",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Pig_Pole"
+        },
+        "Pirate Hat": {
+            "abilities": [
+                {
+                    "ability_type": "POINT TARGET",
+                    "cooldown": 40,
+                    "description": "Channel for 1 second. Always finds a Bounty Rune!",
+                    "mana_cost": 0,
+                    "name": "Dig",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0.1 + 0",
+                            "channel_time": "1"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "NO TARGET",
+                    "description": "Grants bonus Gold.",
+                    "name": "Bounty",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "initial_spawn_team_gold": "40",
+                            "next_spawn_base_team_gold": "40",
+                            "next_spawn_team_gold_bonus_per_interval": "6",
+                            "team_gold_bonus_interval": "240",
+                            "turbo_mode_multiplier": "2"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "attack_speed": 150.0,
+                "move_speed": 15.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8f/Pirate_Hat_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011508",
+            "name": "Pirate Hat",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Pirate_Hat"
+        },
+        "Psychic Headband": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Grants 15% intelligence bonus.",
+                    "name": "Psychic Headband",
+                    "stats": {
+                        "additional_stats": {
+                            "intelligence_bonus": "15%"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "UNIT TARGET",
+                    "cast_range": 600.0,
+                    "cooldown": 20,
+                    "description": "Pushes the target enemy unit away from you 400 distance.",
+                    "mana_cost": 0,
+                    "name": "Psychic Push",
+                    "stats": {
+                        "additional_stats": {
+                            "push_distance": "400",
+                            "push_duration": "0.3"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "cast_range": 100.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Psychic_Headband_icon.png/revision/latest/scale-to-width-down/60?cb=20201218233741",
+            "name": "Psychic Headband",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Psychic_Headband"
+        },
+        "Pupil's Gift": {
+            "buffs": {},
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f0/Pupil%27s_Gift_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011526",
+            "name": "Pupil's Gift",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Pupil%27s_Gift"
+        },
+        "Rattlecage": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 0,
+                    "description": "After taking 180 damage from any source, the wearer fires a projectile at up to 2 random nearby enemies, within a 600 radius, prioritizing heroes, that deal 125 physical damage and slow the targets' movement and attack speed by 100% for 0.2s.",
+                    "mana_cost": 0,
+                    "name": "Reverberate",
+                    "stats": {
+                        "additional_stats": {
+                            "count_enemies": "2",
+                            "damage": "125",
+                            "damage_threshold": "180",
+                            "movement_and_attack_speed_slow": "100%",
+                            "radius": "600",
+                            "slow_duration": "0.2s"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "armor": 12.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f5/Rattlecage_icon.png/revision/latest/scale-to-width-down/60?cb=20231215172921",
+            "name": "Rattlecage",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Rattlecage"
+        },
+        "Royal Jelly": {
+            "abilities": [
+                {
+                    "ability_type": "UNIT TARGET",
+                    "cooldown": 0,
+                    "description": "Grants a target allied unit a permanent buff that provides +2.5 Health Regen and +1.25 Mana Regen.",
+                    "mana_cost": 0,
+                    "name": "Consume",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "8",
+                            "mana_regen_bonus": "1.25"
+                        },
+                        "health_regen_bonus": 2.5
+                    }
+                }
+            ],
+            "buffs": {
+                "health": 50.0,
+                "mana": 50.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b6/Royal_Jelly_1_icon.png/revision/latest/scale-to-width-down/60?cb=20191128001949",
+            "name": "Royal Jelly",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Royal_Jelly"
+        },
+        "Safety Bubble": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 0,
+                    "description": "Grants a 100 HP barrier. The barrier fully restores after not receiving any damage for 8 seconds",
+                    "mana_cost": 0,
+                    "name": "Bubble Up",
+                    "stats": {
+                        "additional_stats": {
+                            "hp_barrier": "100",
+                            "restore_timer": "8"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "health_regen": 2.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5e/Safety_Bubble_icon.png/revision/latest/scale-to-width-down/60?cb=20231215153000",
+            "name": "Safety Bubble",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Safety_Bubble"
+        },
+        "Seeds of Serenity": {
+            "abilities": [
+                {
+                    "ability_type": "POINT TARGET",
+                    "cooldown": 35,
+                    "description": "Target the ground with a 400 radius. Provides +10 health regeneration to all allied units while they're in the area of effect.",
+                    "mana_cost": 0,
+                    "name": "Verdurous Dale",
+                    "stats": {
+                        "additional_stats": {
+                            "aura_linger_duration": "0.5",
+                            "duration": "8",
+                            "radius": "400"
+                        },
+                        "health_regen_bonus": 10.0
+                    }
+                }
+            ],
+            "buffs": {
+                "health": 150.0,
+                "health_regen": 4.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ac/Seeds_of_Serenity_icon.png/revision/latest/scale-to-width-down/60?cb=20220830084403",
+            "name": "Seeds of Serenity",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Seeds_of_Serenity"
+        },
+        "Seer Stone": {
+            "abilities": [
+                {
+                    "ability_type": "POINT TARGET",
+                    "cooldown": 60,
+                    "description": "Reveal a target 800 area of the map for 6 seconds.",
+                    "mana_cost": 0,
+                    "name": "Reveal",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "6",
+                            "radius": "800"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "cast_range": 350.0,
+                "evasion": 350.0,
+                "mana_regen": 10.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c2/Seer_Stone_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011603",
+            "name": "Seer Stone",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Seer_Stone"
+        },
+        "Spark of Courage": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Provides 16 damage when the owner is above 50% health, and 7 armor when they are below that threshold.",
+                    "name": "Courage",
+                    "stats": {
+                        "additional_stats": {
+                            "armor_bonus": "7",
+                            "max_health_threshold": "50%"
+                        },
+                        "attack_damage_bonus": 16.0
+                    }
+                }
+            ],
+            "buffs": {},
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/15/Spark_of_Courage_%28Damage%29_icon.png/revision/latest/scale-to-width-down/60?cb=20230421051713",
+            "name": "Spark of Courage",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Spark_of_Courage"
+        },
+        "Specialist's Array": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 8,
+                    "description": "Ranged Only. The next attack fires projectiles at 2 additional targets within attack range. Does not trigger attack modifiers.",
+                    "mana_cost": 0,
+                    "name": "Crackshot",
+                    "stats": {
+                        "additional_stats": {
+                            "bonus_attack_targets": "2",
+                            "instant_attack_damage_bonus": "20",
+                            "search_range_buffer": "225"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "agility": 6.0,
+                "damage": 12.0,
+                "intelligence": 6.0,
+                "strength": 6.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ed/Specialist%27s_Array_icon.png/revision/latest/scale-to-width-down/60?cb=20220830145727",
+            "name": "Specialist's Array",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Specialist%27s_Array"
+        },
+        "Stormcrafter": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 3,
+                    "description": "Zaps 2 enemies within 700 range, dealing 200 damage and a 40% slow for 0.4 seconds. Strikes every 3 seconds.",
+                    "name": "Bottled Lightning",
+                    "stats": {
+                        "additional_stats": {
+                            "damage": "200",
+                            "max_targets": "2",
+                            "move_speed_slow": "40%",
+                            "search_radius": "700",
+                            "slow_duration": "0.4",
+                            "strike_recharge_time": "3"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "mana_regen": 4.0,
+                "move_speed": 35.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/eb/Stormcrafter_icon.png/revision/latest/scale-to-width-down/60?cb=20201219003500",
+            "name": "Stormcrafter",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Stormcrafter"
+        },
+        "Stygian Desolator": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Your attacks reduce the target's armor by 10 for 7 seconds.",
+                    "name": "Greater Corruption",
+                    "stats": {
+                        "additional_stats": {
+                            "duration": "7"
+                        },
+                        "armor_reduction": 10.0
+                    }
+                }
+            ],
+            "buffs": {
+                "damage": 60.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/83/Stygian_Desolator_icon.png/revision/latest/scale-to-width-down/60?cb=20191127010919",
+            "name": "Stygian Desolator",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Stygian_Desolator"
+        },
+        "Telescope": {
+            "abilities": [
+                {
+                    "ability_type": "AURA",
+                    "description": "Lowers Scan cooldown by 50%. Increases attack and cast range of allies in a 1200 unit radius.",
+                    "name": "Prescient Aura",
+                    "stats": {
+                        "additional_stats": {
+                            "aura_linger_duration": "0.5",
+                            "cast_range_bonus": "125",
+                            "radius": "1200",
+                            "ranged_attack_range_bonus": "125",
+                            "scan_cooldown_reduction": "50%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {},
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fe/Telescope_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011630",
+            "name": "Telescope",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Telescope"
+        },
+        "Timeless Relic": {
+            "buffs": {
+                "spell_damage_amp": 15.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5e/Timeless_Relic_icon.png/revision/latest/scale-to-width-down/60?cb=20191127011951",
+            "name": "Timeless Relic",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Timeless_Relic"
+        },
+        "Trickster Cloak": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 25,
+                    "description": "Causes you to become invisible for 6 seconds.",
+                    "mana_cost": 0,
+                    "name": "Cloak",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "duration": "6",
+                            "fade_time": "0.2"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "evasion": 17.0,
+                "magic_resist": 17.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/53/Trickster_Cloak_icon.png/revision/latest/scale-to-width-down/60?cb=20201219004014",
+            "name": "Trickster Cloak",
+            "tier": 4,
+            "url": "https://dota2.fandom.com/wiki/Trickster_Cloak"
+        },
+        "Trusty Shovel": {
+            "abilities": [
+                {
+                    "ability_type": "POINT TARGET",
+                    "cooldown": 40,
+                    "description": "Channel for 1 second. Can find a Bounty Rune, a Flask, an Enchanted Mango, or a friendly Kobold.",
+                    "mana_cost": 0,
+                    "name": "Dig",
+                    "stats": {
+                        "additional_stats": {
+                            "bounty_rune_drop_chance": "16%",
+                            "cast_animation": "Cast Animation : 0.1 + 0",
+                            "channel_time": "1",
+                            "enchanted_mango_drop_chance": "28%",
+                            "healing_salve_drop_chance": "28%",
+                            "kobold_drop_chance": "28%"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "NO TARGET",
+                    "description": "Grants bonus Gold.",
+                    "name": "Bounty",
+                    "stats": {
+                        "additional_stats": {
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "initial_spawn_team_gold": "40",
+                            "next_spawn_base_team_gold": "40",
+                            "next_spawn_team_gold_bonus_per_interval": "6",
+                            "team_gold_bonus_interval": "240",
+                            "turbo_mode_multiplier": "2"
+                        }
+                    }
+                },
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Kobolds are adept at finding gold, increasing nearby allied heroes' GPM.",
+                    "name": "Prospecting Aura",
+                    "stats": {
+                        "additional_stats": {
+                            "aura_linger_duration": "0.5",
+                            "gold_per_minute_bonus": "20/25/30/40",
+                            "radius": "1200"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "health": 90.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b5/Trusty_Shovel_icon.png/revision/latest/scale-to-width-down/60?cb=20191127012019",
+            "name": "Trusty Shovel",
+            "tier": 1,
+            "url": "https://dota2.fandom.com/wiki/Trusty_Shovel"
+        },
+        "Unwavering Condition": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Wearer's Max Health is set to 1800 and can't be altered by other effects or attributes",
+                    "name": "Unwavering",
+                    "stats": {
+                        "additional_stats": {
+                            "health": "1800"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "magic_resist": 95.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/05/Unwavering_Condition_icon.png/revision/latest/scale-to-width-down/60?cb=20231215173034",
+            "name": "Unwavering Condition",
+            "tier": 5,
+            "url": "https://dota2.fandom.com/wiki/Unwavering_Condition"
+        },
+        "Vambrace": {
+            "abilities": [
+                {
+                    "ability_type": "NO TARGET",
+                    "cooldown": 0,
+                    "description": "There is no description for this ability.",
+                    "mana_cost": 0,
+                    "name": "Switch Attribute",
+                    "stats": {
+                        "additional_stats": {
+                            "agility_attack_speed_bonus": "10",
+                            "cast_animation": "Cast Animation : 0 + 0",
+                            "intelligence_spell_damage_bonus": "6%",
+                            "other_attributes_bonus": "2",
+                            "selected_attribute_bonus": "8",
+                            "strength_magic_resistance_bonus": "8%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {},
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b4/Vambrace_icon.png/revision/latest/scale-to-width-down/60?cb=20191129234109",
+            "name": "Vambrace",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Vambrace"
+        },
+        "Vampire Fangs": {
+            "buffs": {
+                "spell_lifesteal_creeps": 2.0,
+                "spell_lifesteal_heroes": 10.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/32/Vampire_Fangs_icon.png/revision/latest/scale-to-width-down/60?cb=20191127012035",
+            "name": "Vampire Fangs",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Vampire_Fangs"
+        },
+        "Vindicator's Axe": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "description": "Provides 30 damage if equipped hero is Silenced and 20 armor if equipped hero is Stunned.",
+                    "name": "Vengeance",
+                    "stats": {
+                        "additional_stats": {
+                            "silenced_attack_damage_bonus": "30",
+                            "stunned_armor_bonus": "20"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "attack_speed": 35.0,
+                "slow_resist": 20.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9c/Vindicator%27s_Axe_icon.png/revision/latest/scale-to-width-down/60?cb=20230421052145",
+            "name": "Vindicator's Axe",
+            "tier": 3,
+            "url": "https://dota2.fandom.com/wiki/Vindicator%27s_Axe"
+        },
+        "Whisper of the Dread": {
+            "abilities": [
+                {
+                    "ability_type": "PASSIVE",
+                    "cooldown": 0,
+                    "description": "Grants +10% spell damage but decreases the wearer's daytime vision by 15%.",
+                    "mana_cost": 0,
+                    "name": "Tunnel Vision",
+                    "stats": {
+                        "additional_stats": {
+                            "daytime_vision_reduction": "15%",
+                            "spell_amp": "10%"
+                        }
+                    }
+                }
+            ],
+            "buffs": {
+                "mana": 150.0
+            },
+            "image": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/22/Whisper_of_the_Dread_icon.png/revision/latest/scale-to-width-down/60?cb=20231215155748",
+            "name": "Whisper of the Dread",
+            "tier": 2,
+            "url": "https://dota2.fandom.com/wiki/Whisper_of_the_Dread"
         }
     }
 }

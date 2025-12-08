@@ -4,7 +4,7 @@ import re
 from dataclasses import asdict, is_dataclass
 from difflib import get_close_matches
 from enum import Enum
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 from dacite import Config, from_dict
 
@@ -16,20 +16,24 @@ from kg.scraper.scrapers.base_scraper import ScrapeResult
 logger = logging.getLogger(__name__)
 
 
-def raw_to_name_cost(raw: str) -> Tuple[str, int] | None:
+def raw_to_name_cost(raw: str) -> Tuple[str, Optional[int]] | None:
     if not isinstance(raw, str):
         return None
 
-    m = re.search(r"^(.+) \((\d+)\)$", raw)
-    if m is None:
-        logger.error(f"no match at {raw}")
-        return None
-
-    name, cost = m.groups()
-    if not name or not cost:
-        logger.error(f"no name or cost at {raw}")
-        return None
-    return name, int(cost)
+    m = re.match(r"^(.+?) \((\d+)\)$", raw)
+    if m:
+        name, cost = m.groups()
+        try:
+            return name, int(cost)
+        except ValueError:
+            logger.error(f"invalid cost in {raw}")
+            return None
+    else:
+        name = raw.strip()
+        if not name:
+            logger.error(f"empty name in {raw}")
+            return None
+        return name, None
 
 
 def set_orders(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:

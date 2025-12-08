@@ -174,9 +174,10 @@ class Ability:
 @dataclass
 class GenericItem:
     name: str  # unique
-    image: str
-    url: str
+    image: str  # image url
+    url: str  # wiki url
     abilities: List[Ability] | None
+    buffs: Buffs | None
 
 
 @dataclass
@@ -184,7 +185,6 @@ class DotaItem(GenericItem):
     cost: int
     recipe: List[str]
     order: int | None = None  # abstract variable to assess item coolness
-    buffs: Buffs | None = None
 
 
 @dataclass

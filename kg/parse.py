@@ -1,11 +1,20 @@
 import argparse
 import logging
 from pathlib import Path
+from typing import List
 
-from rdflib import OWL, RDF, RDFS, XSD, Graph, Literal, Namespace
+from rdflib import OWL, RDF, RDFS, XSD, Graph, Literal, Namespace, URIRef
 
 from kg.logger import getLogger, setLevel
-from kg.scraper.dota.types import AbilityStats, AbilityType, Buffs, DotaItem
+from kg.scraper.dota.types import (
+    Ability,
+    AbilityStats,
+    AbilityType,
+    Buffs,
+    DotaItem,
+    GenericItem,
+    NeutralItem,
+)
 from kg.scraper.dota.utils import parse_from_json
 from kg.utils import normalize_name, snake_case_to_camel_case
 
@@ -28,16 +37,110 @@ KG = Namespace(BASE)
 logger = getLogger(__name__)
 
 
-def build_item(graph: Graph, item: DotaItem) -> None:
-    name = item.name.replace(" ", "_").replace("'", "")
-    item_uri = KG[name]
+def build_generic_item(graph: Graph, item: GenericItem, item_uri: URIRef) -> None:
+    name = normalize_name(item.name)
 
     # Create item individual
-    graph.add((item_uri, RDF.type, KG.DotaItem))
-    graph.add((item_uri, KG.cost, Literal(item.cost, datatype=XSD.integer)))
+    if isinstance(item, NeutralItem):
+        graph.add((item_uri, RDF.type, KG.NeutralItem))
+    elif isinstance(item, DotaItem):
+        graph.add((item_uri, RDF.type, KG.DotaItem))
+    else:
+        graph.add((item_uri, RDF.type, KG.Item))
     graph.add((item_uri, KG.name, Literal(item.name)))
     graph.add((item_uri, KG.imageUrl, Literal(item.image)))
     graph.add((item_uri, KG.wikiUrl, Literal(item.url)))
+
+    # abilities
+    if item.abilities:
+        build_abilities(graph, item.abilities, item_uri, name)
+
+    # buffs
+    if item.buffs:
+        build_buffs(graph, item.buffs, item_uri, name)
+
+
+def build_buffs(graph: Graph, buffs: Buffs, item_uri: URIRef, name: str) -> None:
+    for k, val in buffs.asdict().items():
+        if not val:
+            continue
+        logger.debug(f"adding buff {k}={val} to item {name}")
+        buff = snake_case_to_camel_case(k)
+        prop = KG[buff]
+        graph.add((item_uri, prop, Literal(val, datatype=XSD.decimal)))
+
+
+def build_abilities(
+    graph: Graph, abilities: List[Ability], item_uri: URIRef, name: str
+) -> None:
+    for ability in abilities:
+        logger.debug(f"adding ability {ability} to item {name}")
+        ability_name = name + "_" + ability.name.replace(" ", "_").replace("'", "")
+        ability_uri = KG[ability_name]
+
+        ability_type = KG.Ability
+        if ability.ability_type == AbilityType.PASSIVE:
+            ability_type = KG.PassiveAbility
+        elif ability.ability_type == AbilityType.NO_TARGET:
+            ability_type = KG.NoTargetActiveAbility
+        elif ability.ability_type == AbilityType.POINT_TARGET:
+            ability_type = KG.PointTargetActiveAbility
+        elif ability.ability_type == AbilityType.UNIT_TARGET:
+            ability_type = KG.UnitTargetActiveAbility
+        elif ability.ability_type == AbilityType.AURA:
+            ability_type = KG.AuraAbility
+        elif ability.ability_type == AbilityType.TOGGLE:
+            ability_type = KG.ToggleAbility
+
+        graph.add((ability_uri, RDF.type, ability_type))
+        graph.add((ability_uri, KG.name, Literal(ability.name)))
+        graph.add((ability_uri, KG.description, Literal(ability.description)))
+
+        if ability.cooldown is not None:
+            graph.add(
+                (
+                    ability_uri,
+                    KG.cooldown,
+                    Literal(ability.cooldown, datatype=XSD.integer),
+                )
+            )
+        if ability.mana_cost is not None:
+            graph.add(
+                (
+                    ability_uri,
+                    KG.manaCost,
+                    Literal(ability.mana_cost, datatype=XSD.integer),
+                )
+            )
+
+        if ability.stats:
+            for stat_name, stat_value in ability.stats.asdict().items():
+                if stat_name == "additional_stats":
+                    continue
+                logger.debug(
+                    f"adding ability stat {stat_name}={stat_value} for ability {ability.name}"
+                )
+                stat_prop = KG[snake_case_to_camel_case(stat_name)]
+                graph.add(
+                    (
+                        ability_uri,
+                        stat_prop,
+                        Literal(stat_value, datatype=XSD.decimal),
+                    )
+                )
+
+        # Link ability to item
+        graph.add((item_uri, KG.hasAbility, ability_uri))
+
+
+def build_dota_item(graph: Graph, item: DotaItem) -> None:
+    name = item.name.replace(" ", "_").replace("'", "")
+    item_uri = KG[name]
+
+    build_generic_item(graph, item, item_uri)
+
+    # cost
+    graph.add((item_uri, KG.cost, Literal(item.cost, datatype=XSD.integer)))
 
     # Build schema
     if item.recipe:
@@ -68,73 +171,25 @@ def build_item(graph: Graph, item: DotaItem) -> None:
 
     # Buffs
     if item.buffs:
-        for k, val in item.buffs.asdict().items():
-            if val:
-                logger.debug(f"adding buff {k}={val} to item {item.name}")
-                buff = snake_case_to_camel_case(k)
-                prop = KG[buff]
-                graph.add((item_uri, prop, Literal(val, datatype=XSD.decimal)))
+        build_buffs(graph, item.buffs, item_uri, name)
 
     # Abilities
     if item.abilities:
-        for ability in item.abilities:
-            logger.debug(f"adding ability {ability} to item {item.name}")
-            ability_name = name + "_" + ability.name.replace(" ", "_").replace("'", "")
-            ability_uri = KG[ability_name]
+        build_abilities(graph, item.abilities, item_uri, name)
 
-            ability_type = KG.Ability
-            if ability.ability_type == AbilityType.PASSIVE:
-                ability_type = KG.PassiveAbility
-            elif ability.ability_type == AbilityType.NO_TARGET:
-                ability_type = KG.NoTargetActiveAbility
-            elif ability.ability_type == AbilityType.POINT_TARGET:
-                ability_type = KG.PointTargetActiveAbility
-            elif ability.ability_type == AbilityType.UNIT_TARGET:
-                ability_type = KG.UnitTargetActiveAbility
-            elif ability.ability_type == AbilityType.AURA:
-                ability_type = KG.AuraAbility
-            elif ability.ability_type == AbilityType.TOGGLE:
-                ability_type = KG.ToggleAbility
 
-            graph.add((ability_uri, RDF.type, ability_type))
-            graph.add((ability_uri, KG.name, Literal(ability.name)))
-            graph.add((ability_uri, KG.description, Literal(ability.description)))
+def build_neutral_item(graph: Graph, item: NeutralItem) -> None:
+    name = normalize_name(item.name)
+    item_uri = KG[name]
 
-            if ability.cooldown is not None:
-                graph.add(
-                    (
-                        ability_uri,
-                        KG.cooldown,
-                        Literal(ability.cooldown, datatype=XSD.integer),
-                    )
-                )
-            if ability.mana_cost is not None:
-                graph.add(
-                    (
-                        ability_uri,
-                        KG.manaCost,
-                        Literal(ability.mana_cost, datatype=XSD.integer),
-                    )
-                )
+    build_generic_item(graph, item, item_uri)
 
-            if ability.stats:
-                for stat_name, stat_value in ability.stats.asdict().items():
-                    if stat_name == "additional_stats":
-                        continue
-                    logger.debug(
-                        f"adding ability stat {stat_name}={stat_value} for ability {ability.name}"
-                    )
-                    stat_prop = KG[snake_case_to_camel_case(stat_name)]
-                    graph.add(
-                        (
-                            ability_uri,
-                            stat_prop,
-                            Literal(stat_value, datatype=XSD.decimal),
-                        )
-                    )
+    # tier
+    graph.add((item_uri, KG.tier, Literal(item.tier, datatype=XSD.integer)))
 
-            # Link ability to item
-            graph.add((item_uri, KG.hasAbility, ability_uri))
+    # Abilities
+    if item.abilities:
+        build_abilities(graph, item.abilities, item_uri, name)
 
 
 def build_ontology(graph: Graph) -> None:
@@ -193,9 +248,15 @@ def build_ontology(graph: Graph) -> None:
         graph.add((KG[stat_name], RDFS.range, XSD.integer))
 
     # Other datatype properties
+    # dota item cost
     graph.add((KG.cost, RDF.type, OWL.DatatypeProperty))
     graph.add((KG.cost, RDFS.domain, KG.DotaItem))
     graph.add((KG.cost, RDFS.range, XSD.integer))
+
+    # neutral item tier
+    graph.add((KG.tier, RDF.type, OWL.DatatypeProperty))
+    graph.add((KG.tier, RDFS.domain, KG.DotaItem))
+    graph.add((KG.tier, RDFS.range, XSD.integer))
 
 
 def main() -> None:
@@ -234,8 +295,12 @@ def main() -> None:
     data = parse_from_json(str(args.input))
 
     if data.dota_items:
-        for item in data.dota_items.values():
-            build_item(g, item)
+        for dota_item in data.dota_items.values():
+            build_dota_item(g, dota_item)
+
+    if data.neutral_items:
+        for neutral_item in data.neutral_items.values():
+            build_neutral_item(g, neutral_item)
 
     # Serialize
     logger.info(f"Writing RDF to {args.output}")

@@ -1,11 +1,19 @@
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Dict, List
+import re
+from typing import Dict, List, Set
 
 import requests
 from bs4 import BeautifulSoup, Tag
 
-from kg.scraper.dota.types import Ability, AbilityType, Buffs, DotaItem
+from kg.scraper.dota.types import (
+    Ability,
+    AbilityType,
+    Buffs,
+    DotaItem,
+    GenericItem,
+    NeutralItem,
+)
 from kg.scraper.dota.utils import parse_ability_type, parse_buffs, raw_to_name_cost
 from kg.scraper.scrapers.base_scraper import BaseScraper, ScrapeResult
 
@@ -19,7 +27,7 @@ class FandomScraper(BaseScraper):
     def __init__(self) -> None:
         pass
 
-    def _build_dota_item(self, item: Tag) -> DotaItem | None:
+    def _build_generic_item(self, item: Tag) -> GenericItem | None:
         title = item.get("title")
         if not isinstance(title, str):
             logger.error(f"no title for {item.text}")
@@ -28,10 +36,7 @@ class FandomScraper(BaseScraper):
         if not data:
             logger.error(f"no data for {item.text}")
             return None
-        name, cost = data
-        if name in self.items:
-            logger.debug(f"Already cached {name}")
-            return self.items[name]
+        name = data[0]
 
         img = item.find("img")
         img_url = None
@@ -54,38 +59,116 @@ class FandomScraper(BaseScraper):
             return None
         item_url = "https://dota2.fandom.com" + href
 
+        return GenericItem(
+            name=name, image=img_url, url=item_url, abilities=None, buffs=None
+        )
+
+    def _build_dota_item(self, item: Tag) -> DotaItem | None:
+        generic_item = self._build_generic_item(item)
+        if not generic_item:
+            return None
+
+        title = item.get("title")
+        if not isinstance(title, str):
+            logger.error(f"no title for {item.text}")
+            return None
+        data = raw_to_name_cost(title)
+        if not data:
+            logger.error(f"no data for {item.text}")
+            return None
+        cost = data[1]
+        if cost is None:
+            logger.warning(f"no cost for {generic_item.name}, defaulting to 0")
+            cost = 0
+
         # item page scraper soup
-        response = requests.get(item_url)
+        response = requests.get(generic_item.url)
         soup = BeautifulSoup(response.text, "html.parser")
 
-        recipe = self._scrape_item_recipe(soup, name)
+        recipe = self._scrape_item_recipe(soup, generic_item.name)
         if recipe is None:
-            logger.error(f"could not parse recipe for {name}")
+            logger.error(f"could not parse recipe for {generic_item.name}")
             return None
 
         # scrape buffs
-        buffs = self._scrape_buffs(soup, name)
+        buffs = self._scrape_buffs(soup, generic_item.name)
 
         # scrape abilities
-        abilities = self._scrape_abilities(soup, name)
+        abilities = self._scrape_abilities(soup, generic_item.name)
         if abilities:
-            logger.debug(f"scraped {len(abilities)} abilities for {name}")
+            logger.debug(f"scraped {len(abilities)} abilities for {generic_item.name}")
 
-        logger.debug(
-            f"Name: {name}, Cost: {cost}, Image: {img_url}, URL: {item_url}, Recipe: {recipe}"
-        )
+        logger.debug(generic_item)
         obj = DotaItem(
-            name=name,
+            name=generic_item.name,
             cost=cost,
-            image=img_url,
-            url=item_url,
+            image=generic_item.image,
+            url=generic_item.url,
             recipe=recipe,
             buffs=buffs if buffs else Buffs(),
             abilities=abilities if abilities else None,
             order=None,
         )
-        self.items[name] = obj
+        self.items[generic_item.name] = obj
         return obj
+
+    def _get_neutral_item_tier(self, soup: BeautifulSoup) -> int | None:
+        def _get_tier(text: str) -> int | None:
+            m = re.search(r"tier\s*(\d+)", text, re.IGNORECASE)
+            if m and m.group(1):
+                return int(m.group(1))
+            return None
+
+        th: Tag | None = None
+        ths = soup.find_all("th")
+        for t in ths:
+            text = t.get_text(strip=True).lower()
+            tier = _get_tier(text)
+            if tier is not None:
+                return tier
+
+        # fallback
+        if not th:
+            a = soup.find("a", href=lambda x: x and "Neutral_Items#Tier" in x)
+            print(a)
+            if a and isinstance(a, Tag):
+                span = a.find("span")
+                if span:
+                    return _get_tier(span.get_text(strip=True))
+                return _get_tier(a.get_text(strip=True))
+            return None
+        return _get_tier(th.get_text(strip=True))
+
+    def _build_neutral_item(self, item: Tag) -> NeutralItem | None:
+        generic_item = self._build_generic_item(item)
+        if not generic_item:
+            return None
+
+        # item page scraper soup
+        response = requests.get(generic_item.url)
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        # scrape tier
+        tier = self._get_neutral_item_tier(soup)
+        if tier is None:
+            logger.error(f"could not parse tier for {generic_item.name}")
+            return None
+
+        # scrape buffs
+        buffs = self._scrape_buffs(soup, generic_item.name)
+
+        # scrape abilities
+        abilities = self._scrape_abilities(soup, generic_item.name)
+
+        logger.debug(generic_item)
+        return NeutralItem(
+            tier=tier if tier else 0,
+            name=generic_item.name,
+            image=generic_item.image,
+            url=generic_item.url,
+            buffs=buffs if buffs else Buffs(),
+            abilities=abilities if abilities else None,
+        )
 
     def _scrape_abilities(self, soup: BeautifulSoup, name: str) -> List[Ability]:
         logger.debug(f"scraping abilities for {name}")
@@ -280,13 +363,10 @@ class FandomScraper(BaseScraper):
 
         return recipe_components
 
-    def scrape(self) -> ScrapeResult:
-        self.items.clear()
-        response = requests.get("https://dota2.fandom.com/wiki/Items")
-        soup = BeautifulSoup(response.text, "html.parser")
-
-        target_sections = {"Basics Items", "Upgraded Items"}
-        res_items: List[Tag] = []
+    def _scrape_item_tags(
+        self, soup: BeautifulSoup, target_sections: Set[str]
+    ) -> List[Tag]:
+        ans: List[Tag] = []
 
         for h2 in soup.find_all("h2"):
             if not isinstance(h2, Tag):
@@ -311,10 +391,21 @@ class FandomScraper(BaseScraper):
                             continue
                         a = item.find("a")
                         if a and isinstance(a, Tag):
-                            res_items.append(a)
+                            ans.append(a)
 
                 sibling = sibling.find_next_sibling()
 
+        return ans
+
+    def scrape_dota_items(self) -> Dict[str, DotaItem]:
+        logger.info("scraping dota items from fandom...")
+
+        self.items.clear()
+
+        response = requests.get("https://dota2.fandom.com/wiki/Items")
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        res_items = self._scrape_item_tags(soup, {"Basics Items", "Upgraded Items"})
         with ThreadPoolExecutor(max_workers=12) as executor:
             future_to_tag = {
                 executor.submit(self._build_dota_item, item): item for item in res_items
@@ -327,10 +418,36 @@ class FandomScraper(BaseScraper):
                         self.items[result.name] = result
                 except Exception as exc:
                     logger.error(f"item {item} generated an exception: {exc}")
+        logger.info(f"dota items: parsed={len(self.items)}; processed={len(res_items)}")
 
-        logger.info(f"parsed: {len(self.items)}; processed: {len(res_items)}")
+        return self.items
 
-        return ScrapeResult(
-            dota_items=self.items,
-            neutral_items=None,
-        )
+    def scrape_neutral_items(self) -> Dict[str, NeutralItem]:
+        logger.info("scraping neutral items from fandom...")
+
+        response = requests.get("https://dota2.fandom.com/wiki/Neutral_Items")
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        res_items = self._scrape_item_tags(soup, {"Active List"})
+        ans: Dict[str, NeutralItem] = {}
+        with ThreadPoolExecutor(max_workers=12) as executor:
+            future_to_tag = {
+                executor.submit(self._build_neutral_item, item): item
+                for item in res_items
+            }
+            for future in as_completed(future_to_tag):
+                item = future_to_tag[future]
+                try:
+                    result = future.result()
+                    if result:
+                        ans[result.name] = result
+                except Exception as exc:
+                    logger.error(f"item {item} generated an exception: {exc}")
+        logger.info(f"dota items: parsed={len(self.items)}; processed={len(res_items)}")
+
+        return ans
+
+    def scrape(self) -> ScrapeResult:
+        dota_items = self.scrape_dota_items()
+        neutral_items = self.scrape_neutral_items()
+        return ScrapeResult(dota_items=dota_items, neutral_items=neutral_items)
