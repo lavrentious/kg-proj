@@ -242,6 +242,10 @@ class DotaOntoBuilder:
         self.graph.add((self.KG.hasItem, RDFS.domain, self.KG.BuildSchemaSlot))
         self.graph.add((self.KG.hasItem, RDFS.range, self.KG.DotaItem))
 
+        self.graph.add((self.KG.quantity, RDF.type, OWL.ObjectProperty))
+        self.graph.add((self.KG.quantity, RDFS.domain, self.KG.BuildSchemaSlot))
+        self.graph.add((self.KG.quantity, RDFS.range, XSD.integer))
+
         # Datatype properties: buffs
         for k in Buffs.__annotations__:
             buff_name = snake_case_to_camel_case(k)
