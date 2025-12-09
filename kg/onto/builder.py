@@ -19,7 +19,8 @@ logger = logging.getLogger(__name__)
 
 
 class DotaOntoBuilder:
-    BASE = "http://www.semanticweb.org/lavrent/ontologies/2025/9/kg-dota#"
+    ONTO_NAME = "kg-dota"
+    ONTO_BASE = f"http://www.semanticweb.org/lavrent/ontologies/2025/9/{ONTO_NAME}#"
     ONTO_CLASSES = [
         "Ability",
         "PassiveAbility",
@@ -35,7 +36,7 @@ class DotaOntoBuilder:
     ]
 
     def __init__(self) -> None:
-        self.KG = Namespace(self.BASE)
+        self.KG = Namespace(self.ONTO_BASE)
 
         self.graph = Graph()
         self.graph.bind("kg-dota", self.KG)
@@ -283,6 +284,12 @@ class DotaOntoBuilder:
         if data.neutral_items:
             for neutral_item in data.neutral_items.values():
                 self.build_neutral_item(neutral_item)
+
+    def load_from_file(self, path: str) -> None:
+        """
+        loads ontology from .rdf
+        """
+        self.graph.parse(path, format="xml")
 
     def save_to_file(self, output_path: str) -> None:
         self.graph.serialize(destination=output_path, format="xml")
