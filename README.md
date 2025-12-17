@@ -25,7 +25,7 @@
 
 Следует воспользоваться скриптом `scrape.py`, который парсит данные и собирает их в `.json`:
 ```bash
-poetry run python -m kg.scrape --output items.json --scraper fandom --apply-known
+poetry run python -m kg.scrape --output items.json --scraper fandom --derive-item-roles --derive-ability-effects
 ```
 
 # 2. Заполнение онтологии
@@ -33,7 +33,7 @@ poetry run python -m kg.scrape --output items.json --scraper fandom --apply-know
 
 > NB: ожидается, что данные самодостаточны и корректны, в т.ч. что если предмет содержит рецепт, то он имеет уникальное название и сам содержится в массиве.
 > 
-> Скрипт `scraper.py` по умолчанию (без дополнительных флагов) генерирует корректные данные
+> Скрипт `scraper.py` по умолчанию (см. флаги выше) генерирует корректные данные
 
 Следует воспользоваться скриптом `parse.py`, который создаст RDF на основе json
 ```bash

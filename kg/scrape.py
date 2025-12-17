@@ -29,7 +29,8 @@ def main(
     scraper_name: str,
     assign_orders: bool = True,
     distinct_recipes: bool = False,
-    apply_known: bool = False,
+    derive_item_roles: bool = False,
+    derive_ability_effects: bool = False,
     verbose: bool = False,
 ) -> None:
     # configure logger
@@ -39,7 +40,7 @@ def main(
     if scraper_name not in SCRAPERS:
         raise ValueError(f"Unknown scraper: {scraper_name}")
     if scraper_name == "fandom":
-        logger.warning("Fandom scraper may be outdated/broken")
+        logger.warning("Fandom scraper has outdated info as of 17.12.2025 (patch 7.40)")
     scraper = SCRAPERS[scraper_name]()
     logger.debug(f"using scraper {scraper.NAME}")
 
@@ -73,6 +74,7 @@ def main(
         if assign_orders:
             logger.info("assigning orders to items...")
             res.dota_items = set_orders(res.dota_items)  # assign orders
+
         if distinct_recipes:
             logger.info("using distinct recipes for items...")
             res.dota_items = set_distinct_recipes(res.dota_items)
@@ -80,19 +82,21 @@ def main(
             logger.info("using default recipes for items...")
             res.dota_items = remove_distinct_recipes(res.dota_items)
 
-    if apply_known:
-        if res.dota_items:
-            logger.info(
-                "applying known to dota items: item roles and ability effects..."
-            )
+        if derive_item_roles:
+            logger.debug("deriving item roles for dota items...")
             apply_item_roles(res.dota_items, skip_recipes=True)
+
+        if derive_ability_effects:
+            logger.debug("deriving ability effects for dota items...")
             apply_abilities_effects(res.dota_items)
 
-        if res.neutral_items:
-            logger.info(
-                "applying known to neutralitems: item roles and ability effects..."
-            )
+    if res.neutral_items:
+        if derive_item_roles:
+            logger.info("deriving item roles for neutral items...")
             apply_item_roles(res.neutral_items)
+
+        if derive_ability_effects:
+            logger.info("deriving ability effects for neutral items...")
             apply_abilities_effects(res.neutral_items)
 
     save_to_json(output_file, res)
@@ -141,10 +145,17 @@ def parse_arguments() -> argparse.Namespace:
     )
 
     parser.add_argument(
-        "--apply-known",
+        "--derive-item-roles",
         action="store_true",
-        default=True,
-        help="Whether to apply item roles and ability effects (derive)",
+        default=False,
+        help="Whether to derive item roles (default: False).",
+    )
+
+    parser.add_argument(
+        "--derive-ability-effects",
+        action="store_true",
+        default=False,
+        help="Whether to derive ability effects (default: False).",
     )
 
     parser.add_argument(
@@ -167,6 +178,7 @@ if __name__ == "__main__":
         args.scraper,
         args.no_assign_orders,
         args.no_distinct_recipes,
-        args.apply_known,
+        args.derive_item_roles,
+        args.derive_ability_effects,
         args.verbose,
     )
