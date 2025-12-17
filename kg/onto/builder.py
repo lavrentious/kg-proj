@@ -33,6 +33,10 @@ class DotaOntoBuilder:
         "Item",
         "NeutralItem",
         "DotaItem",
+        "BuildSchema",
+        "BuildSchemaSlot",
+        "ItemRole",
+        "AbilityEffect",
     ]
 
     def __init__(self) -> None:
@@ -66,7 +70,9 @@ class DotaOntoBuilder:
         # roles
         if item.roles:
             for role in item.roles:
-                self.graph.add((item_uri, self.KG.role, Literal(role.value)))
+                role_uri = self.KG[f"Role_{role.name}"]
+                self.graph.add((role_uri, RDF.type, self.KG.ItemRole))
+                self.graph.add((item_uri, self.KG.hasRole, role_uri))
 
     def build_buffs(self, buffs: Buffs, item_uri: URIRef, name: str) -> None:
         for k, val in buffs.asdict().items():
@@ -140,9 +146,9 @@ class DotaOntoBuilder:
 
             if ability.effects:
                 for effect in ability.effects:
-                    self.graph.add(
-                        (ability_uri, self.KG.hasEffect, Literal(effect.value))
-                    )
+                    effect_uri = self.KG[f"AbilityEffect_{effect.name}"]
+                    self.graph.add((effect_uri, RDF.type, self.KG.AbilityEffect))
+                    self.graph.add((ability_uri, self.KG.hasEffect, effect_uri))
 
             # Link ability to item
             self.graph.add((item_uri, self.KG.hasAbility, ability_uri))
@@ -184,7 +190,7 @@ class DotaOntoBuilder:
                         self.graph.add(
                             (
                                 slot_ref,
-                                self.KG.quantity,
+                                self.KG.hasQuantity,
                                 Literal(qty, datatype=XSD.integer),
                             )
                         )
@@ -254,13 +260,13 @@ class DotaOntoBuilder:
         self.graph.add((self.KG.hasItem, RDFS.domain, self.KG.BuildSchemaSlot))
         self.graph.add((self.KG.hasItem, RDFS.range, self.KG.DotaItem))
 
-        self.graph.add((self.KG.quantity, RDF.type, OWL.ObjectProperty))
-        self.graph.add((self.KG.quantity, RDFS.domain, self.KG.BuildSchemaSlot))
-        self.graph.add((self.KG.quantity, RDFS.range, XSD.integer))
+        self.graph.add((self.KG.hasQuantity, RDF.type, OWL.DatatypeProperty))
+        self.graph.add((self.KG.hasQuantity, RDFS.domain, self.KG.BuildSchemaSlot))
+        self.graph.add((self.KG.hasQuantity, RDFS.range, XSD.integer))
 
-        self.graph.add((self.KG.role, RDF.type, OWL.ObjectProperty))
-        self.graph.add((self.KG.role, RDFS.domain, self.KG.Item))
-        self.graph.add((self.KG.role, RDFS.range, XSD.string))
+        self.graph.add((self.KG.hasRole, RDF.type, OWL.ObjectProperty))
+        self.graph.add((self.KG.hasRole, RDFS.domain, self.KG.Item))
+        self.graph.add((self.KG.hasRole, RDFS.range, self.KG.ItemRole))
 
         self.graph.add((self.KG.hasEffect, RDF.type, OWL.ObjectProperty))
         self.graph.add((self.KG.hasEffect, RDFS.domain, self.KG.Ability))
