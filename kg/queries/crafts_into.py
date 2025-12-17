@@ -50,7 +50,7 @@ def get_full_recipe_with_subitems(
                 if not isinstance(slot_item_uri, URIRef):
                     logger.warning(f"Invalid slot item URI: {slot_item_uri}")
                     continue
-                qty_objs = list(graph.objects(slot_uri, KG.quantity))
+                qty_objs = list(graph.objects(slot_uri, KG.hasQuantity))
                 qty = (
                     int(qty_objs[0])
                     if qty_objs and isinstance(qty_objs[0], Literal)
