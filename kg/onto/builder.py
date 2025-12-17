@@ -63,6 +63,11 @@ class DotaOntoBuilder:
         if item.buffs:
             self.build_buffs(item.buffs, item_uri, name)
 
+        # roles
+        if item.roles:
+            for role in item.roles:
+                self.graph.add((item_uri, self.KG.role, Literal(role.value)))
+
     def build_buffs(self, buffs: Buffs, item_uri: URIRef, name: str) -> None:
         for k, val in buffs.asdict().items():
             if not val:
@@ -131,6 +136,12 @@ class DotaOntoBuilder:
                             stat_prop,
                             Literal(stat_value, datatype=XSD.decimal),
                         )
+                    )
+
+            if ability.effects:
+                for effect in ability.effects:
+                    self.graph.add(
+                        (ability_uri, self.KG.hasEffect, Literal(effect.value))
                     )
 
             # Link ability to item
@@ -246,6 +257,14 @@ class DotaOntoBuilder:
         self.graph.add((self.KG.quantity, RDF.type, OWL.ObjectProperty))
         self.graph.add((self.KG.quantity, RDFS.domain, self.KG.BuildSchemaSlot))
         self.graph.add((self.KG.quantity, RDFS.range, XSD.integer))
+
+        self.graph.add((self.KG.role, RDF.type, OWL.ObjectProperty))
+        self.graph.add((self.KG.role, RDFS.domain, self.KG.Item))
+        self.graph.add((self.KG.role, RDFS.range, XSD.string))
+
+        self.graph.add((self.KG.hasEffect, RDF.type, OWL.ObjectProperty))
+        self.graph.add((self.KG.hasEffect, RDFS.domain, self.KG.Ability))
+        self.graph.add((self.KG.hasEffect, RDFS.range, XSD.string))
 
         # Datatype properties: buffs
         for k in Buffs.__annotations__:

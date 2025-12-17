@@ -4,12 +4,20 @@ import re
 from dataclasses import asdict, is_dataclass
 from difflib import get_close_matches
 from enum import Enum
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Mapping, Optional, Tuple
 
 from dacite import Config, from_dict
 
 from kg.scraper.dota.consts import BUFF_KEYWORDS
-from kg.scraper.dota.types import AbilityType, Buffs, DotaItem
+from kg.scraper.dota.known import derive_ability_effects, derive_item_roles
+from kg.scraper.dota.types import (
+    AbilityEffect,
+    AbilityType,
+    Buffs,
+    DotaItem,
+    GenericItem,
+    ItemRole,
+)
 from kg.scraper.scrapers.base_scraper import ScrapeResult
 
 logger = logging.getLogger(__name__)
@@ -59,7 +67,11 @@ def parse_from_json(path: str) -> ScrapeResult:
     config = config = Config(
         cast=[dict, list],
         strict=False,
-        type_hooks={AbilityType: lambda v: AbilityType(v)},
+        type_hooks={
+            AbilityType: lambda v: AbilityType(v),
+            ItemRole: lambda v: ItemRole(v),
+            AbilityEffect: lambda v: AbilityEffect(v),
+        },
     )
 
     return from_dict(data=raw, data_class=ScrapeResult, config=config)
@@ -179,6 +191,7 @@ def set_distinct_recipes(items: Dict[str, DotaItem]) -> Dict[str, DotaItem]:
                 recipe=[],
                 buffs=Buffs(),
                 abilities=None,
+                roles=None,
             )
         ans[name] = item
     return ans
@@ -201,3 +214,22 @@ def get_recipes_count(items: Dict[str, DotaItem]) -> int:
         if "recipe" in name.lower():
             count += 1
     return count
+
+
+def apply_item_roles(
+    items: Mapping[str, GenericItem], skip_recipes: bool | None = None
+) -> None:
+    for item in items.values():
+        roles = derive_item_roles(item)
+        if roles is None or (skip_recipes and "recipe" in item.name.lower()):
+            continue
+        item.roles = list(roles)
+
+
+def apply_abilities_effects(items: Mapping[str, GenericItem]) -> None:
+    for item in items.values():
+        for ability in item.abilities or []:
+            effects = derive_ability_effects(ability)
+            if effects is None:
+                continue
+            ability.effects = list(effects)

@@ -130,15 +130,41 @@ class AbilityStats:
         return {k: v for k, v in self.__dict__.items() if v is not None}
 
 
+class AbilityEffect(Enum):
+    STUN = "stun"
+    ROOT = "root"
+    SILENCE = "silence"
+    HEAL = "heal"
+    DAMAGE = "damage"
+    SLOW = "slow"
+    BASIC_DISPEL = "basic_dispel"
+    STRONG_DISPEL = "strong_dispel"
+    BUFF = "buff"
+    DEBUFF = "debuff"
+    MANA_RESTORE = "mana_restore"
+
+
+class ItemRole(Enum):
+    DEFENSE = "defense"
+    OFFENSE = "offense"
+    SAVE = "save"
+    UTILITY = "utility"
+    CONTROL = "control"
+    MANA = "mana"
+    MOBILITY = "mobility"
+
+
 @dataclass
 class Ability:
     name: str
     description: Optional[str]
+
     ability_type: AbilityType
     mana_cost: Optional[int] = None
     cooldown: Optional[float] = None
     cast_range: Optional[float] = None
 
+    effects: List[AbilityEffect] | None = None
     stats: AbilityStats | None = None
 
     def __str__(self) -> str:
@@ -178,6 +204,7 @@ class GenericItem:
     url: str  # wiki url
     abilities: List[Ability] | None
     buffs: Buffs | None
+    roles: List[ItemRole] | None
 
 
 @dataclass

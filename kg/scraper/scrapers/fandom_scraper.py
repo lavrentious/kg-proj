@@ -53,7 +53,7 @@ class FandomScraper(BaseScraper):
         # if not img_url:
         #     logger.error(f"no img url for {name}")
         #     return None
-        img_url = f'https://dota2.ru/img/items/{normalize_name(name).lower()}.jpg'
+        img_url = f"https://dota2.ru/img/items/{normalize_name(name).lower()}.jpg"
 
         href = item.get("href")
         if href is None or not isinstance(href, str):
@@ -62,7 +62,12 @@ class FandomScraper(BaseScraper):
         item_url = "https://dota2.fandom.com" + href
 
         return GenericItem(
-            name=name, image=img_url, url=item_url, abilities=None, buffs=None
+            name=name,
+            image=img_url,
+            url=item_url,
+            abilities=None,
+            buffs=None,
+            roles=None,
         )
 
     def _build_dota_item(self, item: Tag) -> DotaItem | None:
@@ -110,6 +115,7 @@ class FandomScraper(BaseScraper):
             buffs=buffs if buffs else Buffs(),
             abilities=abilities if abilities else None,
             order=None,
+            roles=None,
         )
         self.items[generic_item.name] = obj
         return obj
@@ -170,6 +176,7 @@ class FandomScraper(BaseScraper):
             url=generic_item.url,
             buffs=buffs if buffs else Buffs(),
             abilities=abilities if abilities else None,
+            roles=None,
         )
 
     def _scrape_abilities(self, soup: BeautifulSoup, name: str) -> List[Ability]:

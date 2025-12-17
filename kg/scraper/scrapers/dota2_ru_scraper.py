@@ -80,6 +80,7 @@ class Dota2RuScraper(BaseScraper):
                 recipe=recipe,
                 buffs=buffs,
                 abilities=None,
+                roles=None,
             )
 
         except Exception as e:

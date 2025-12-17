@@ -1,10 +1,11 @@
+import argparse
 import logging
 from collections import defaultdict
-from typing import Dict, Optional, List
-
-import argparse
 from difflib import get_close_matches
+from typing import Dict, Optional
+
 from rdflib import RDF, Literal, URIRef
+
 from kg.logger import getLogger, setLevel
 from kg.onto.builder import DotaOntoBuilder
 from kg.utils import normalize_name

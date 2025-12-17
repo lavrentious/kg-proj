@@ -25,7 +25,7 @@
 
 Следует воспользоваться скриптом `scrape.py`, который парсит данные и собирает их в `.json`:
 ```bash
-poetry run python -m kg.scrape --output items.json --scraper fandom
+poetry run python -m kg.scrape --output items.json --scraper fandom --apply-known
 ```
 
 # 2. Заполнение онтологии

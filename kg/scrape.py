@@ -4,6 +4,8 @@ from typing import Dict
 
 from kg.logger import getLogger, setLevel
 from kg.scraper.dota.utils import (
+    apply_abilities_effects,
+    apply_item_roles,
     get_recipes_count,
     parse_from_json,
     remove_distinct_recipes,
@@ -27,6 +29,7 @@ def main(
     scraper_name: str,
     assign_orders: bool = True,
     distinct_recipes: bool = False,
+    apply_known: bool = False,
     verbose: bool = False,
 ) -> None:
     # configure logger
@@ -77,6 +80,21 @@ def main(
             logger.info("using default recipes for items...")
             res.dota_items = remove_distinct_recipes(res.dota_items)
 
+    if apply_known:
+        if res.dota_items:
+            logger.info(
+                "applying known to dota items: item roles and ability effects..."
+            )
+            apply_item_roles(res.dota_items, skip_recipes=True)
+            apply_abilities_effects(res.dota_items)
+
+        if res.neutral_items:
+            logger.info(
+                "applying known to neutralitems: item roles and ability effects..."
+            )
+            apply_item_roles(res.neutral_items)
+            apply_abilities_effects(res.neutral_items)
+
     save_to_json(output_file, res)
     logger.info(f"data saved to {output_file}.")
 
@@ -123,6 +141,13 @@ def parse_arguments() -> argparse.Namespace:
     )
 
     parser.add_argument(
+        "--apply-known",
+        action="store_true",
+        default=True,
+        help="Whether to apply item roles and ability effects (derive)",
+    )
+
+    parser.add_argument(
         "--no-distinct-recipes",
         action="store_false",
         default=True,
@@ -142,5 +167,6 @@ if __name__ == "__main__":
         args.scraper,
         args.no_assign_orders,
         args.no_distinct_recipes,
+        args.apply_known,
         args.verbose,
     )
