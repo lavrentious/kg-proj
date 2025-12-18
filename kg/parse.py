@@ -15,8 +15,8 @@ def main() -> None:
     )
     parser.add_argument(
         "input",
-        type=Path,
-        help="Path to input JSON file",
+        nargs="?",
+        help="Path to input JSON file. If not given, just builds the base of the ontology.",
     )
     parser.add_argument(
         "--output",
@@ -37,11 +37,16 @@ def main() -> None:
     setLevel(logging.DEBUG if args.verbose else logging.INFO)
 
     # Load and process data
-    logger.info(f"Loading items from {args.input}")
-    data = parse_from_json(str(args.input))
+    in_path = str(args.input) if args.input else None
 
     onto_builder = DotaOntoBuilder()
-    onto_builder.build(data)
+    logger.info("building schema...")
+    onto_builder.build_schema()
+
+    if in_path:
+        logger.info(f"Loading items from {args.input}")
+        data = parse_from_json(str(args.input))
+        onto_builder.build(data)
 
     # Serialize
     logger.info(f"Writing RDF to {args.output}")

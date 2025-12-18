@@ -38,6 +38,7 @@ class DotaOntoBuilder:
         "ItemRole",
         "AbilityEffect",
     ]
+    _schema_built = False
 
     def __init__(self) -> None:
         self.KG = Namespace(self.ONTO_BASE)
@@ -220,7 +221,7 @@ class DotaOntoBuilder:
         if item.abilities:
             self.build_abilities(item.abilities, item_uri, name)
 
-    def _build_schema(self) -> None:
+    def build_schema(self) -> None:
         # Classes
         for c in self.ONTO_CLASSES:
             self.graph.add((self.KG[c], RDF.type, OWL.Class))
@@ -298,8 +299,13 @@ class DotaOntoBuilder:
         self.graph.add((self.KG.tier, RDFS.domain, self.KG.NeutralItem))
         self.graph.add((self.KG.tier, RDFS.range, XSD.integer))
 
+        self._schema_built = True
+
     def build(self, data: ScrapeResult) -> None:
-        self._build_schema()
+        if not self._schema_built:
+            logger.info("schema not yet built, building...")
+            self.build_schema()
+            logger.info("schema built")
 
         # build individuals
         if data.dota_items:
