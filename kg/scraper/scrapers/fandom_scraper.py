@@ -5,6 +5,7 @@ from typing import Dict, List, Set
 
 import requests
 from bs4 import BeautifulSoup, Tag
+from tqdm import tqdm
 
 from kg.scraper.dota.types import (
     Ability,
@@ -419,7 +420,11 @@ class FandomScraper(BaseScraper):
             future_to_tag = {
                 executor.submit(self._build_dota_item, item): item for item in res_items
             }
-            for future in as_completed(future_to_tag):
+            for future in tqdm(
+                as_completed(future_to_tag),
+                total=len(future_to_tag),
+                desc="Processing Dota Items",
+            ):
                 item = future_to_tag[future]
                 try:
                     result = future.result()
@@ -444,7 +449,11 @@ class FandomScraper(BaseScraper):
                 executor.submit(self._build_neutral_item, item): item
                 for item in res_items
             }
-            for future in as_completed(future_to_tag):
+            for future in tqdm(
+                as_completed(future_to_tag),
+                total=len(future_to_tag),
+                desc="Processing Neutral Items",
+            ):
                 item = future_to_tag[future]
                 try:
                     result = future.result()
@@ -452,7 +461,7 @@ class FandomScraper(BaseScraper):
                         ans[result.name] = result
                 except Exception as exc:
                     logger.error(f"item {item} generated an exception: {exc}")
-        logger.info(f"dota items: parsed={len(self.items)}; processed={len(res_items)}")
+        logger.info(f"neutral items: parsed={len(ans)}; processed={len(res_items)}")
 
         return ans
 

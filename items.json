@@ -22,8 +22,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants melee heroes a 25% chance on hit to stun the target for 1.2 seconds and deal 120 bonus physical damage. Bash chance for ranged heroes is 10%.",
                     "effects": [
-                        "stun",
                         "buff",
+                        "stun",
                         "damage"
                     ],
                     "name": "Bash",
@@ -54,8 +54,8 @@
                 "Abyssal Blade Recipe"
             ],
             "roles": [
-                "offense",
-                "control"
+                "control",
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Abyssal_Blade"
         },
@@ -74,10 +74,10 @@
                     "description": "When you take damage and your health falls below 70%, a strong dispel is applied and you gain a  second buff that provides +75% Status Resistance and causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage. Cooldown increases every time it triggers.",
                     "effects": [
                         "strong_dispel",
-                        "damage",
+                        "basic_dispel",
                         "buff",
                         "heal",
-                        "basic_dispel"
+                        "damage"
                     ],
                     "mana_cost": 0,
                     "name": "Combo Breaker",
@@ -105,11 +105,11 @@
                 "Aeon Disk Recipe"
             ],
             "roles": [
-                "utility",
-                "offense",
                 "mana",
+                "save",
                 "defense",
-                "save"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Aeon_Disk"
         },
@@ -151,8 +151,8 @@
                 "Aether Lens Recipe"
             ],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Aether_Lens"
         },
@@ -224,9 +224,9 @@
                 "Blade of Alacrity"
             ],
             "roles": [
+                "mana",
                 "defense",
-                "utility",
-                "mana"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Aghanim%27s_Scepter"
         },
@@ -283,8 +283,8 @@
                 "Arcane Blink Recipe"
             ],
             "roles": [
-                "mobility",
-                "offense"
+                "offense",
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Arcane_Blink"
         },
@@ -319,8 +319,8 @@
                     "ability_type": "AURA",
                     "description": "Grants 1 mana regeneration to allies.",
                     "effects": [
-                        "mana_restore",
-                        "buff"
+                        "buff",
+                        "mana_restore"
                     ],
                     "name": "Basilius Aura",
                     "stats": {
@@ -346,8 +346,8 @@
                 "Arcane Boots Recipe"
             ],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Arcane_Boots"
         },
@@ -368,8 +368,8 @@
                     "effects": [
                         "buff",
                         "heal",
-                        "slow",
-                        "damage"
+                        "damage",
+                        "slow"
                     ],
                     "mana_cost": 0,
                     "name": "Unholy Strength",
@@ -402,9 +402,9 @@
                 "Armlet of Mordiggian Recipe"
             ],
             "roles": [
+                "control",
                 "defense",
-                "offense",
-                "control"
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Armlet_of_Mordiggian"
         },
@@ -422,8 +422,8 @@
                     "ability_type": "AURA",
                     "description": "Grants 30 attack speed and 5 armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by 5.",
                     "effects": [
-                        "debuff",
-                        "buff"
+                        "buff",
+                        "debuff"
                     ],
                     "name": "Assault Aura",
                     "stats": {
@@ -494,8 +494,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Increases attack damage against non-hero units by 10 for melee heroes, and 5 for ranged.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Quell",
                     "stats": {
@@ -540,9 +540,9 @@
                 "Battle Fury Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Battle_Fury"
         },
@@ -575,9 +575,9 @@
                     "cooldown": 95,
                     "description": "Applies a Basic Dispel. Grants 60% Magic resistance and immunity to pure and reflected damage. For the duration of the effect, any negative effect from enemy spells has no effect.",
                     "effects": [
+                        "buff",
                         "basic_dispel",
-                        "damage",
-                        "buff"
+                        "damage"
                     ],
                     "mana_cost": 50,
                     "name": "Avatar",
@@ -604,8 +604,8 @@
                 "Black King Bar Recipe"
             ],
             "roles": [
-                "save",
-                "offense"
+                "offense",
+                "save"
             ],
             "url": "https://dota2.fandom.com/wiki/Black_King_Bar"
         },
@@ -757,8 +757,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "mobility",
-                "offense"
+                "offense",
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Blink_Dagger"
         },
@@ -810,9 +810,9 @@
             "order": 1,
             "recipe": [],
             "roles": [
+                "control",
                 "defense",
-                "offense",
-                "control"
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Blood_Grenade"
         },
@@ -852,9 +852,9 @@
                 "Void Stone"
             ],
             "roles": [
+                "mana",
                 "defense",
-                "utility",
-                "mana"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Bloodstone"
         },
@@ -885,8 +885,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants each attack a 40% chance to pierce through evasion and deal 50 bonus magical damage.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Pierce",
                     "stats": {
@@ -915,10 +915,10 @@
                 "Bloodthorn Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
+                "control",
                 "offense",
-                "control"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Bloodthorn"
         },
@@ -957,8 +957,8 @@
                     "ability_type": "AURA",
                     "description": "Grants 20 movement speed to allies.",
                     "effects": [
-                        "slow",
-                        "buff"
+                        "buff",
+                        "slow"
                     ],
                     "name": "Swiftness Aura",
                     "stats": {
@@ -986,8 +986,8 @@
                 "Boots of Bearing Recipe"
             ],
             "roles": [
-                "mobility",
-                "control"
+                "control",
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Boots_of_Bearing"
         },
@@ -1062,8 +1062,8 @@
                     "cooldown": 1,
                     "description": "Consumes a charge to restore 110 health and 60 mana over 3 seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost. The Bottle automatically refills at the fountain. Hold Control to use on an allied hero.",
                     "effects": [
-                        "heal",
-                        "mana_restore"
+                        "mana_restore",
+                        "heal"
                     ],
                     "name": "Regenerate",
                     "stats": {
@@ -1094,8 +1094,8 @@
                     "ability_type": "NO TARGET",
                     "description": "Increases base damage by 80% and Spell Amp by 15%.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Amplify Damage",
                     "stats": {
@@ -1111,8 +1111,8 @@
                     "ability_type": "NO TARGET",
                     "description": "Reduces cooldowns by 25% and mana costs by 30%.",
                     "effects": [
-                        "debuff",
-                        "mana_restore"
+                        "mana_restore",
+                        "debuff"
                     ],
                     "name": "Arcane",
                     "stats": {
@@ -1146,8 +1146,8 @@
                     "ability_type": "NO TARGET",
                     "description": "Increases movement speed to maximum.",
                     "effects": [
-                        "slow",
-                        "buff"
+                        "buff",
+                        "slow"
                     ],
                     "name": "Haste",
                     "stats": {
@@ -1178,8 +1178,8 @@
                     "ability_type": "NO TARGET",
                     "description": "Becomes invisible for 45 seconds. This invisibility is broken by attacking or by using an ability or item. Grants 25% damage reduction while invisible +5% for each Invisibility rune that has spawned.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Invisibility",
                     "stats": {
@@ -1196,8 +1196,8 @@
                     "ability_type": "NO TARGET",
                     "description": "Regenerates health and mana to maximum. If taking damage from an enemy hero, the regeneration rate is lowered to 1% HP/MP per second.",
                     "effects": [
-                        "heal",
                         "mana_restore",
+                        "heal",
                         "damage"
                     ],
                     "name": "Regeneration",
@@ -1217,8 +1217,8 @@
                     "ability_type": "NO TARGET",
                     "description": "Grants an All Damage Barrier for 75s equal to 50% of your max HP.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Shield",
                     "stats": {
@@ -1233,8 +1233,8 @@
                     "ability_type": "NO TARGET",
                     "description": "Instantly restores 40 Health and 80 Mana.",
                     "effects": [
-                        "heal",
-                        "mana_restore"
+                        "mana_restore",
+                        "heal"
                     ],
                     "name": "Water",
                     "stats": {
@@ -1271,11 +1271,11 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
+                "offense",
                 "mobility",
-                "control"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Bottle"
         },
@@ -1424,8 +1424,8 @@
                     "cooldown": 0,
                     "description": "Grants 6 mana regeneration to the target for 25 seconds. If the unit is attacked by an enemy hero or Roshan, the effect is lost.",
                     "effects": [
-                        "mana_restore",
-                        "buff"
+                        "buff",
+                        "mana_restore"
                     ],
                     "name": "Replenish",
                     "stats": {
@@ -1444,8 +1444,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Clarity"
         },
@@ -1489,9 +1489,9 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Cornucopia"
         },
@@ -1522,8 +1522,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants a 60% chance to block 75 damage from incoming attacks on melee heroes, and 50 damage on ranged.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Damage Block",
                     "stats": {
@@ -1585,8 +1585,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants each attack a 30% chance to deal 160% damage.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Critical Strike",
                     "stats": {
@@ -1628,8 +1628,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants each attack a 30% chance to deal 225% damage.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Critical Strike",
                     "stats": {
@@ -1815,8 +1815,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Each attack burns 40 mana from the target, and deals 1 physical damage per burned mana. Burns 8 mana per attack from melee illusions and 8 mana per attack from ranged illusions.",
                     "effects": [
-                        "damage",
-                        "mana_restore"
+                        "mana_restore",
+                        "damage"
                     ],
                     "name": "Manabreak",
                     "stats": {
@@ -1841,10 +1841,10 @@
                 "Diffusal Blade Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
+                "control",
                 "offense",
-                "control"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Diffusal_Blade"
         },
@@ -1864,10 +1864,10 @@
                     "cooldown": 15,
                     "description": "Slows the target for 5 seconds if they are an enemy or grants bonus movespeed, applies Basic Dispel and makes them unslowable for 5 seconds if they are an ally. Caster is always granted the ally benefit on cast. Both movement speed reduction and increase start at 100% and gradually decrease to 0% over the course of the buff duration.",
                     "effects": [
-                        "basic_dispel",
                         "debuff",
-                        "slow",
-                        "buff"
+                        "buff",
+                        "basic_dispel",
+                        "slow"
                     ],
                     "mana_cost": 75,
                     "name": "Suppress",
@@ -1885,8 +1885,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Each attack burns 40 mana from the target, and deals 1 physical damage per burned mana. Burns 8 mana per attack from melee illusions and 8 mana per attack from ranged illusions.",
                     "effects": [
-                        "damage",
-                        "mana_restore"
+                        "mana_restore",
+                        "damage"
                     ],
                     "name": "Manabreak",
                     "stats": {
@@ -1911,12 +1911,12 @@
                 "Disperser Recipe"
             ],
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
-                "mobility",
                 "save",
-                "control"
+                "offense",
+                "mobility",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Disperser"
         },
@@ -1935,8 +1935,8 @@
                     "cooldown": 6,
                     "description": "Toggle to gain either 25% bonus spell amplification or 250 bonus attack damage.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "mana_cost": 0,
                     "name": "Transmute",
@@ -2032,8 +2032,8 @@
                     "ability_type": "AURA",
                     "description": "Grants 20 movement speed to allies.",
                     "effects": [
-                        "slow",
-                        "buff"
+                        "buff",
+                        "slow"
                     ],
                     "name": "Swiftness Aura",
                     "stats": {
@@ -2060,8 +2060,8 @@
                 "Drum of Endurance Recipe"
             ],
             "roles": [
-                "mobility",
-                "control"
+                "control",
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Drum_of_Endurance"
         },
@@ -2104,8 +2104,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "offense",
-                "control"
+                "control",
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Dust_of_Appearance"
         },
@@ -2158,10 +2158,10 @@
                 "Void Stone"
             ],
             "roles": [
-                "utility",
                 "mana",
+                "control",
                 "offense",
-                "control"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Echo_Sabre"
         },
@@ -2195,8 +2195,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Enchanted_Mango"
         },
@@ -2210,8 +2210,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Energy_Booster"
         },
@@ -2221,8 +2221,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Restores Mana equal to 20% of incoming enemy spell damage before reduction.",
                     "effects": [
-                        "damage",
-                        "mana_restore"
+                        "mana_restore",
+                        "damage"
                     ],
                     "name": "Shroud",
                     "stats": {
@@ -2235,8 +2235,8 @@
                     "ability_type": "PASSIVE",
                     "description": "For every 300 magical damage equipped hero receives, it gains a stack up to a maximum of 6. Each stack increases Eternal Shroud's base magic resistance by 4% and lasts for 6s. Stack duration is independent from each other.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Eternal Endurance",
                     "stats": {
@@ -2265,10 +2265,10 @@
                 "Eternal Shroud Recipe"
             ],
             "roles": [
-                "defense",
-                "utility",
                 "mana",
-                "offense"
+                "defense",
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Eternal_Shroud"
         },
@@ -2323,10 +2323,10 @@
                 "Ethereal Blade Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
+                "control",
                 "offense",
-                "control"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Ethereal_Blade"
         },
@@ -2375,9 +2375,9 @@
                 "Eul's Scepter of Divinity Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Eul%27s_Scepter_of_Divinity"
         },
@@ -2429,11 +2429,11 @@
                 "Eye of Skadi Recipe"
             ],
             "roles": [
-                "utility",
+                "control",
                 "mana",
-                "mobility",
                 "defense",
-                "control"
+                "mobility",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Eye_of_Skadi"
         },
@@ -2494,10 +2494,10 @@
                 "Falcon Blade Recipe"
             ],
             "roles": [
-                "defense",
-                "utility",
                 "mana",
-                "offense"
+                "defense",
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Falcon_Blade"
         },
@@ -2698,8 +2698,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 650 radius, dealing 160 magical damage to each. Lightning proc pierces evasion.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Chain Lightning",
                     "stats": {
@@ -2730,9 +2730,9 @@
                 "Gleipnir Recipe"
             ],
             "roles": [
+                "control",
                 "defense",
-                "offense",
-                "control"
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Gleipnir"
         },
@@ -2752,9 +2752,9 @@
                     "cooldown": 14,
                     "description": "After a 0.5 second delay, grants invisibility, 40 movement speed and a magic damage barrier that absorbs up to 300 damage to you or a target allied unit for 5 seconds. Can be cast while channelling.",
                     "effects": [
+                        "buff",
                         "damage",
-                        "slow",
-                        "buff"
+                        "slow"
                     ],
                     "mana_cost": 90,
                     "name": "Glimmer",
@@ -2782,9 +2782,9 @@
                 "Glimmer Cape Recipe"
             ],
             "roles": [
-                "mobility",
+                "control",
                 "offense",
-                "control"
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Glimmer_Cape"
         },
@@ -2817,8 +2817,8 @@
                     "cooldown": 40,
                     "description": "Restores 350 health and 200 mana to nearby allies, and removes most negative effects from the caster.",
                     "effects": [
-                        "heal",
-                        "mana_restore"
+                        "mana_restore",
+                        "heal"
                     ],
                     "mana_cost": 0,
                     "name": "Mend",
@@ -2836,8 +2836,8 @@
                     "ability_type": "AURA",
                     "description": "Provides 2.5 health regeneration, 1.5 mana regeneration and 3 armor to allied units. If an allied hero's health falls below 25%, they receive 12 health regeneration, 5 mana regeneration, and 8 armor.",
                     "effects": [
-                        "heal",
-                        "mana_restore"
+                        "mana_restore",
+                        "heal"
                     ],
                     "name": "Guardian Aura",
                     "stats": {
@@ -2871,9 +2871,9 @@
                 "Guardian Greaves Recipe"
             ],
             "roles": [
+                "mana",
                 "defense",
-                "utility",
-                "mana"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Guardian_Greaves"
         },
@@ -2981,10 +2981,10 @@
                 "Harpoon Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
+                "control",
                 "offense",
-                "control"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Harpoon"
         },
@@ -3002,8 +3002,8 @@
                     "ability_type": "AURA",
                     "description": "Grants 2 health regeneration to allies.",
                     "effects": [
-                        "heal",
-                        "buff"
+                        "buff",
+                        "heal"
                     ],
                     "name": "Regeneration Aura",
                     "stats": {
@@ -3047,8 +3047,8 @@
                     "cooldown": 0,
                     "description": "Grants 30 health regeneration to the target for 13 seconds. If the unit is attacked by an enemy hero or Roshan, the effect is lost. Heals for half the amount when cast on an ally.",
                     "effects": [
-                        "heal",
-                        "buff"
+                        "buff",
+                        "heal"
                     ],
                     "mana_cost": 0,
                     "name": "Salve",
@@ -3170,11 +3170,11 @@
                     "cooldown": 45,
                     "description": "Takes control of one neutral target unit and sets its movement speed to 380 and max health to a minimum of 1000. Also provides the unit with +25 base attack damage, +12 health regen, +4 mana regen and +4 armor. Dominated units with a max health of greater than 1000 retain their original max health. Grants the caster the gold bounty of the dominated creep. Dominated unit's bounty is set to 100 gold.",
                     "effects": [
-                        "damage",
-                        "slow",
                         "mana_restore",
+                        "slow",
                         "buff",
-                        "heal"
+                        "heal",
+                        "damage"
                     ],
                     "mana_cost": 0,
                     "name": "Dominate",
@@ -3207,12 +3207,12 @@
                 "Helm of the Dominator Recipe"
             ],
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
-                "mobility",
                 "defense",
-                "control"
+                "offense",
+                "mobility",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Helm_of_the_Dominator"
         },
@@ -3232,11 +3232,11 @@
                     "cooldown": 45,
                     "description": "Takes control of one neutral target unit and sets its movement speed to 380 and max health to a minimum of 1800. Also provides the unit with +70 base attack damage, +12 health regen, +4 mana regen and +7 armor. Dominated units with a max health of greater than 1800 retain their original max health. Grants the caster the gold bounty of the dominated creep. Dominated unit's bounty is set to 250 gold.",
                     "effects": [
-                        "damage",
-                        "slow",
                         "mana_restore",
+                        "slow",
                         "buff",
-                        "heal"
+                        "heal",
+                        "damage"
                     ],
                     "mana_cost": 0,
                     "name": "Dominate",
@@ -3272,12 +3272,12 @@
                 "Helm of the Overlord Recipe"
             ],
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
-                "mobility",
                 "defense",
-                "control"
+                "offense",
+                "mobility",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Helm_of_the_Overlord"
         },
@@ -3297,8 +3297,8 @@
                     "cooldown": 8,
                     "description": "Target an allied unit to instantly restore 17 health and mana per charge stored. Max 20 charges. Automatically gains a charge every 8 seconds and whenever a visible enemy within 1200 range uses an ability.",
                     "effects": [
-                        "heal",
-                        "mana_restore"
+                        "mana_restore",
+                        "heal"
                     ],
                     "mana_cost": 13,
                     "name": "Energy Charge",
@@ -3339,8 +3339,8 @@
                 "Holy Locket Recipe"
             ],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Holy_Locket"
         },
@@ -3460,9 +3460,9 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Infused_Raindrops"
         },
@@ -3504,8 +3504,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants each attack a 25% chance to pierce through evasion and deal 60 bonus magical damage.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Pierce",
                     "stats": {
@@ -3585,8 +3585,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants each attack a 30% chance to deal 160% damage.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Critical Strike",
                     "stats": {
@@ -3601,9 +3601,9 @@
                     "cooldown": 6,
                     "description": "The next Unit Target spell you cast on an enemy deals 150 + 75% of your attack damage as bonus damage to the target, and slows them by 50% for 1.5s.",
                     "effects": [
+                        "buff",
                         "damage",
-                        "slow",
-                        "buff"
+                        "slow"
                     ],
                     "name": "Empower Spell",
                     "stats": {
@@ -3634,11 +3634,11 @@
                 "Khanda Recipe"
             ],
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
                 "defense",
-                "control"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Khanda"
         },
@@ -3692,8 +3692,8 @@
                 "Linken's Sphere Recipe"
             ],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Linken%27s_Sphere"
         },
@@ -3741,10 +3741,10 @@
                 "Lotus Orb Recipe"
             ],
             "roles": [
-                "defense",
-                "utility",
                 "mana",
-                "offense"
+                "defense",
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Lotus_Orb"
         },
@@ -3762,8 +3762,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 650 radius, dealing 120 magical damage to each. Lightning proc pierces evasion.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Chain Lightning",
                     "stats": {
@@ -3830,9 +3830,9 @@
                 "Mage Slayer Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Mage_Slayer"
         },
@@ -3851,8 +3851,8 @@
                     "cooldown": 17,
                     "description": "Instantly restores 15 health and mana per charge stored. Max 10 charges. Gains a charge whenever a visible enemy within 1200 range uses an ability.",
                     "effects": [
-                        "heal",
-                        "mana_restore"
+                        "mana_restore",
+                        "heal"
                     ],
                     "name": "Energy Charge",
                     "stats": {
@@ -3873,8 +3873,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Magic_Stick"
         },
@@ -3885,8 +3885,8 @@
                     "cooldown": 15,
                     "description": "Instantly restores 15 health and mana per charge stored. Max 20 charges. Gains a charge whenever a visible enemy within 1200 range uses an ability.",
                     "effects": [
-                        "heal",
-                        "mana_restore"
+                        "mana_restore",
+                        "heal"
                     ],
                     "mana_cost": 0,
                     "name": "Energy Charge",
@@ -3917,8 +3917,8 @@
                 "Magic Wand Recipe"
             ],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Magic_Wand"
         },
@@ -4003,8 +4003,8 @@
                     "cooldown": 16,
                     "description": "Gives 110 attack speed and 30 movement speed, but reduces your armor by 8 and silences you. Lasts 6 seconds.",
                     "effects": [
-                        "debuff",
                         "slow",
+                        "debuff",
                         "silence"
                     ],
                     "mana_cost": 25,
@@ -4047,9 +4047,9 @@
                 "Broadsword"
             ],
             "roles": [
-                "mobility",
+                "control",
                 "offense",
-                "control"
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Mask_of_Madness"
         },
@@ -4077,8 +4077,8 @@
                     "ability_type": "AURA",
                     "description": "Grants 2.5 health regeneration to allied units in a 1200 radius.",
                     "effects": [
-                        "heal",
-                        "buff"
+                        "buff",
+                        "heal"
                     ],
                     "name": "Mekansm Aura",
                     "stats": {
@@ -4124,8 +4124,8 @@
                     "description": "After a successful channel, summons a meteor that strikes a 400 AoE, stunning enemies for 0.5 seconds and dealing impact damage. Continues to deal damage over time to enemy units and buildings for 6 seconds. Non-building units are also slowed for 20% for the duration of the burn.",
                     "effects": [
                         "stun",
-                        "slow",
-                        "damage"
+                        "damage",
+                        "slow"
                     ],
                     "mana_cost": 100,
                     "name": "Meteor Hammer",
@@ -4162,8 +4162,8 @@
                 "Meteor Hammer Recipe"
             ],
             "roles": [
-                "offense",
-                "control"
+                "control",
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Meteor_Hammer"
         },
@@ -4216,8 +4216,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants a 25% chance on attack to release a bolt of electricity that leaps between 12 targets within a 650 radius, dealing 180 magical damage to each. Lightning proc pierces evasion.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Chain Lightning",
                     "stats": {
@@ -4264,8 +4264,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants each attack a 80% chance to pierce through evasion and deal 70 bonus magical damage.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Pierce",
                     "stats": {
@@ -4413,8 +4413,8 @@
                 "Null Talisman Recipe"
             ],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Null_Talisman"
         },
@@ -4481,8 +4481,8 @@
                 "Sage's Mask"
             ],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Oblivion_Staff"
         },
@@ -4562,9 +4562,9 @@
                 "Soul Booster"
             ],
             "roles": [
+                "mana",
                 "defense",
-                "utility",
-                "mana"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Octarine_Core"
         },
@@ -4590,8 +4590,8 @@
                     "effects": [
                         "debuff",
                         "heal",
-                        "slow",
-                        "damage"
+                        "damage",
+                        "slow"
                     ],
                     "name": "Corrosion",
                     "stats": {
@@ -4619,9 +4619,9 @@
                 "Gloves of Haste"
             ],
             "roles": [
+                "control",
                 "defense",
-                "offense",
-                "control"
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Orb_of_Corrosion"
         },
@@ -4652,8 +4652,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "offense",
-                "control"
+                "control",
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Orb_of_Venom"
         },
@@ -4665,9 +4665,9 @@
                     "cooldown": 18,
                     "description": "Silences the target unit for 5 seconds. At the end of the silence, 30% of the damage received while silenced is inflicted as bonus magical damage.",
                     "effects": [
+                        "buff",
                         "damage",
-                        "silence",
-                        "buff"
+                        "silence"
                     ],
                     "mana_cost": 125,
                     "name": "Soul Burn",
@@ -4697,10 +4697,10 @@
                 "Orchid Malevolence Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
+                "control",
                 "offense",
-                "control"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Orchid_Malevolence"
         },
@@ -4744,9 +4744,9 @@
                 "Overwhelming Blink Recipe"
             ],
             "roles": [
-                "mobility",
+                "control",
                 "offense",
-                "control"
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Overwhelming_Blink"
         },
@@ -4807,11 +4807,11 @@
                 "Parasma Recipe"
             ],
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
                 "defense",
-                "control"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Parasma"
         },
@@ -4831,8 +4831,8 @@
                     "cooldown": 16,
                     "description": "When cast on an ally, grants them a barrier that absorbs 300 physical damage. Duration: 8s.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "mana_cost": 75,
                     "name": "Protect",
@@ -4860,10 +4860,10 @@
                 "Pavise Recipe"
             ],
             "roles": [
-                "defense",
-                "utility",
                 "mana",
-                "offense"
+                "defense",
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Pavise"
         },
@@ -4889,8 +4889,8 @@
                 "Void Stone"
             ],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Perseverance"
         },
@@ -4931,10 +4931,10 @@
                 "Blades of Attack"
             ],
             "roles": [
-                "defense",
                 "mobility",
-                "offense",
-                "control"
+                "control",
+                "defense",
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Phase_Boots"
         },
@@ -4945,9 +4945,9 @@
                     "cooldown": 6,
                     "description": "The next single target spell you cast on an enemy deals a separate 150 bonus damage to the target and slows them by 50% for 1.5 seconds. Cooldown: 6s",
                     "effects": [
+                        "buff",
                         "damage",
-                        "slow",
-                        "buff"
+                        "slow"
                     ],
                     "name": "Empower Spell",
                     "stats": {
@@ -4976,11 +4976,11 @@
                 "Phylactery Recipe"
             ],
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
                 "defense",
-                "control"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Phylactery"
         },
@@ -5081,9 +5081,9 @@
             "order": 1,
             "recipe": [],
             "roles": [
+                "mana",
                 "defense",
-                "utility",
-                "mana"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Point_Booster"
         },
@@ -5138,8 +5138,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Increases attack damage against non-hero units by 8 for melee heroes, and 4 for ranged.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Quell",
                     "stats": {
@@ -5242,9 +5242,9 @@
                 "Refresher Orb Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Refresher_Orb"
         },
@@ -5262,8 +5262,8 @@
                     "ability_type": "TOGGLE",
                     "description": "When enabled, attacks cost 50 mana and deal magical damage.",
                     "effects": [
-                        "damage",
-                        "mana_restore"
+                        "mana_restore",
+                        "damage"
                     ],
                     "name": "Phantom Province",
                     "stats": {
@@ -5289,9 +5289,9 @@
                 "Revenant's Brooch Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Revenant%27s_Brooch"
         },
@@ -5309,8 +5309,8 @@
                     "ability_type": "AURA",
                     "description": "Grants 1 mana regeneration to allies.",
                     "effects": [
-                        "mana_restore",
-                        "buff"
+                        "buff",
+                        "mana_restore"
                     ],
                     "name": "Basilius Aura",
                     "stats": {
@@ -5334,8 +5334,8 @@
                 "Ring of Basilius Recipe"
             ],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Ring_of_Basilius"
         },
@@ -5450,8 +5450,8 @@
                 "Rod of Atos Recipe"
             ],
             "roles": [
-                "defense",
-                "control"
+                "control",
+                "defense"
             ],
             "url": "https://dota2.fandom.com/wiki/Rod_of_Atos"
         },
@@ -5487,8 +5487,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Sage%27s_Mask"
         },
@@ -5634,10 +5634,10 @@
                 "Scythe of Vyse Recipe"
             ],
             "roles": [
-                "utility",
-                "mobility",
                 "mana",
-                "control"
+                "control",
+                "mobility",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Scythe_of_Vyse"
         },
@@ -5746,8 +5746,8 @@
                     "cooldown": 25,
                     "description": "Makes you invisible for 17 seconds, or until you attack or cast a spell. While Shadow Walk is active, you move 20% faster and can move through units. If attacking to end the invisibility, you gain 175 bonus physical damage on that attack.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "mana_cost": 75,
                     "name": "Shadow Walk",
@@ -5809,8 +5809,8 @@
                     "ability_type": "AURA",
                     "description": "Reduces the attack speed of all enemies by 45 and all heals, regeneration and lifesteal by 25%.",
                     "effects": [
-                        "debuff",
-                        "heal"
+                        "heal",
+                        "debuff"
                     ],
                     "name": "Freezing Aura",
                     "stats": {
@@ -5840,9 +5840,9 @@
                 "Shiva's Guard Recipe"
             ],
             "roles": [
+                "control",
                 "defense",
-                "offense",
-                "control"
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Shiva%27s_Guard"
         },
@@ -5861,8 +5861,8 @@
                     "cooldown": 20,
                     "description": "Makes you invisible for 17 seconds, or until you attack or cast a spell.  While invisible, you move 25% faster and can move through units. Attacking to end the invisibility will deal 300 bonus physical damage and disable their passive abilities for 5 seconds.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "mana_cost": 75,
                     "name": "Shadow Walk",
@@ -5910,8 +5910,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants melee heroes a 25% chance on hit to stun the target for 1.2 seconds and deal 100 bonus physical damage. Bash chance for ranged heroes is 10%.",
                     "effects": [
-                        "stun",
                         "buff",
+                        "stun",
                         "damage"
                     ],
                     "name": "Bash",
@@ -5939,8 +5939,8 @@
                 "Skull Basher Recipe"
             ],
             "roles": [
-                "offense",
-                "control"
+                "control",
+                "offense"
             ],
             "url": "https://dota2.fandom.com/wiki/Skull_Basher"
         },
@@ -5973,8 +5973,8 @@
                     "cooldown": 1,
                     "description": "Turns the caster and all allied player-controlled units in a 1200 radius invisible, and grants 15% bonus movement speed for 45 seconds. While the caster is still disguised, any allies that come within 15% range of them will also get the buff applied to them. Each smoke can only be applied once to allies. Attacking, or moving within 1025 range of an enemy hero or tower, will break the invisibility. Disguise grants invisibility that is immune to True Sight.",
                     "effects": [
-                        "slow",
-                        "buff"
+                        "buff",
+                        "slow"
                     ],
                     "mana_cost": 0,
                     "name": "Disguise",
@@ -5998,8 +5998,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "mobility",
-                "control"
+                "control",
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Smoke_of_Deceit"
         },
@@ -6011,9 +6011,9 @@
                     "cooldown": 16,
                     "description": "When cast on an ally, grants them 7 armor, 70 attack speed, and 15% movement speed and a 400 Physical Damage Barrier. Does not grant bonus armor, movement or attack speed if used on self.",
                     "effects": [
+                        "buff",
                         "damage",
-                        "slow",
-                        "buff"
+                        "slow"
                     ],
                     "mana_cost": 100,
                     "name": "Shine",
@@ -6048,12 +6048,12 @@
                 "Solar Crest Recipe"
             ],
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
-                "mobility",
                 "defense",
-                "control"
+                "offense",
+                "mobility",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Solar_Crest"
         },
@@ -6080,9 +6080,9 @@
                 "Point Booster"
             ],
             "roles": [
+                "mana",
                 "defense",
-                "utility",
-                "mana"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Soul_Booster"
         },
@@ -6093,8 +6093,8 @@
                     "cooldown": 25,
                     "description": "Consume 170 health to temporarily gain 170 mana. Lasts 10 seconds. If the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
                     "effects": [
-                        "heal",
-                        "mana_restore"
+                        "mana_restore",
+                        "heal"
                     ],
                     "mana_cost": 0,
                     "name": "Sacrifice",
@@ -6122,9 +6122,9 @@
                 "Soul Ring Recipe"
             ],
             "roles": [
+                "mana",
                 "defense",
-                "utility",
-                "mana"
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Soul_Ring"
         },
@@ -6144,9 +6144,9 @@
                     "cooldown": 0,
                     "description": "When used against enemies, it reduces health by 4% of current health per second, and reduces HP regeneration and healing by 45%. Deals 35 damage per second. When used on allies, it provides 40 health regeneration per second. Lasts 8 seconds. Gains charges every time an enemy hero dies within 1400 units. Only the closest Spirit Vessel to the dying hero will gain a charge.",
                     "effects": [
-                        "debuff",
                         "heal",
-                        "damage"
+                        "damage",
+                        "debuff"
                     ],
                     "mana_cost": 7,
                     "name": "Soul Release",
@@ -6182,10 +6182,10 @@
                 "Spirit Vessel Recipe"
             ],
             "roles": [
-                "defense",
-                "utility",
                 "mana",
-                "offense"
+                "defense",
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Spirit_Vessel"
         },
@@ -6243,9 +6243,9 @@
                 "Swift Blink Recipe"
             ],
             "roles": [
-                "mobility",
+                "control",
                 "offense",
-                "control"
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Swift_Blink"
         },
@@ -6313,8 +6313,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Tiara_of_Selemene"
         },
@@ -6361,8 +6361,8 @@
                     "cooldown": 13,
                     "description": "Whenever you attack a hero or are attacked by any unit, the bonus 14 HP regen is lost and the movement speed bonus is reduced to 40 for 13 seconds.",
                     "effects": [
-                        "slow",
-                        "buff"
+                        "buff",
+                        "slow"
                     ],
                     "name": "Break",
                     "stats": {
@@ -6387,8 +6387,8 @@
                 "Ring of Regen"
             ],
             "roles": [
-                "mobility",
-                "control"
+                "control",
+                "mobility"
             ],
             "url": "https://dota2.fandom.com/wiki/Tranquil_Boots"
         },
@@ -6450,10 +6450,10 @@
                 "Urn of Shadows Recipe"
             ],
             "roles": [
-                "defense",
-                "utility",
                 "mana",
-                "offense"
+                "defense",
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Urn_of_Shadows"
         },
@@ -6471,8 +6471,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants a 60% chance to block 50 damage from incoming attacks on melee heroes, and 25 damage on ranged.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Damage Block",
                     "stats": {
@@ -6573,9 +6573,9 @@
                     "ability_type": "AURA",
                     "description": "Grants 20% lifesteal, 18% bonus damage, 1 mana regeneration, and 2 armor to nearby allies. Lifesteal from creeps is reduced by 40%.",
                     "effects": [
-                        "damage",
+                        "buff",
                         "mana_restore",
-                        "buff"
+                        "damage"
                     ],
                     "name": "Vladmir's Aura",
                     "stats": {
@@ -6606,10 +6606,10 @@
                 "Blades of Attack"
             ],
             "roles": [
-                "defense",
-                "utility",
                 "mana",
-                "offense"
+                "defense",
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Vladmir%27s_Offering"
         },
@@ -6623,8 +6623,8 @@
             "order": 1,
             "recipe": [],
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Void_Stone"
         },
@@ -6711,9 +6711,9 @@
                 "Wind Waker Recipe"
             ],
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Wind_Waker"
         },
@@ -6762,11 +6762,11 @@
                 "Witch Blade Recipe"
             ],
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
                 "defense",
-                "control"
+                "offense",
+                "utility"
             ],
             "url": "https://dota2.fandom.com/wiki/Witch_Blade"
         },
@@ -6867,8 +6867,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Grants additional +50 damage if the wearer is within 2000 range from an Ancient",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Ancient Power",
                     "stats": {
@@ -6925,9 +6925,9 @@
             "image": "https://dota2.ru/img/items/arcane_ring.jpg",
             "name": "Arcane Ring",
             "roles": [
+                "mana",
                 "defense",
-                "utility",
-                "mana"
+                "utility"
             ],
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Arcane_Ring"
@@ -6939,8 +6939,8 @@
                     "cooldown": 20,
                     "description": "Force Field Aura Grants 40% Damage Reflection for 5 seconds.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "mana_cost": 0,
                     "name": "Mega Shield",
@@ -7009,8 +7009,8 @@
             "image": "https://dota2.ru/img/items/ascetics_cap.jpg",
             "name": "Ascetic's Cap",
             "roles": [
-                "defense",
-                "control"
+                "control",
+                "defense"
             ],
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Ascetic%27s_Cap"
@@ -7071,8 +7071,8 @@
             "image": "https://dota2.ru/img/items/book_of_shadows.jpg",
             "name": "Book of Shadows",
             "roles": [
-                "save",
-                "control"
+                "control",
+                "save"
             ],
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Book_of_Shadows"
@@ -7104,8 +7104,8 @@
                     "ability_type": "PASSIVE",
                     "description": "Mana burned per hit, a portion of which is dealt as damage.",
                     "effects": [
-                        "damage",
-                        "mana_restore"
+                        "mana_restore",
+                        "damage"
                     ],
                     "name": "Mana Break",
                     "stats": {
@@ -7180,11 +7180,11 @@
             "image": "https://dota2.ru/img/items/book_of_the_dead.jpg",
             "name": "Book of the Dead",
             "roles": [
-                "utility",
-                "offense",
+                "control",
                 "mana",
+                "offense",
                 "mobility",
-                "control"
+                "utility"
             ],
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Book_of_the_Dead"
@@ -7212,8 +7212,8 @@
                     "cooldown": 11,
                     "description": "Grants 18% movement speed when cast on allies, and slows by 18% when cast on enemies. Lasts 4 seconds.",
                     "effects": [
-                        "slow",
-                        "buff"
+                        "buff",
+                        "slow"
                     ],
                     "mana_cost": 0,
                     "name": "Whip",
@@ -7233,10 +7233,10 @@
             "image": "https://dota2.ru/img/items/bullwhip.jpg",
             "name": "Bullwhip",
             "roles": [
-                "utility",
-                "mobility",
                 "mana",
-                "control"
+                "control",
+                "mobility",
+                "utility"
             ],
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Bullwhip"
@@ -7264,8 +7264,8 @@
             "image": "https://dota2.ru/img/items/ceremonial_robe.jpg",
             "name": "Ceremonial Robe",
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Ceremonial_Robe"
@@ -7309,8 +7309,8 @@
                     "cooldown": 12,
                     "description": "Increases armor by an additional 12 at the cost of -30 movement speed.",
                     "effects": [
-                        "slow",
-                        "buff"
+                        "buff",
+                        "slow"
                     ],
                     "mana_cost": 0,
                     "name": "Toughen Up",
@@ -7328,9 +7328,9 @@
             "image": "https://dota2.ru/img/items/craggy_coat.jpg",
             "name": "Craggy Coat",
             "roles": [
+                "control",
                 "defense",
-                "mobility",
-                "control"
+                "mobility"
             ],
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Craggy_Coat"
@@ -7360,9 +7360,9 @@
             "image": "https://dota2.ru/img/items/dandelion_amulet.jpg",
             "name": "Dandelion Amulet",
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Dandelion_Amulet"
@@ -7403,8 +7403,8 @@
                     "cooldown": 5,
                     "description": "Toggle to convert 20% of your Max Health to Max Mana, or 20% of your Max Mana to Max Health. Mana and Health Regeneration from Doubloon is increased by 50%, based on which side is selected.",
                     "effects": [
-                        "heal",
-                        "mana_restore"
+                        "mana_restore",
+                        "heal"
                     ],
                     "name": "Flip",
                     "stats": {
@@ -7424,8 +7424,8 @@
             "image": "https://dota2.ru/img/items/doubloon.jpg",
             "name": "Doubloon",
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Doubloon"
@@ -7509,8 +7509,8 @@
                     "cooldown": 4,
                     "description": "Empowers your next attack with 250 bonus magical damage and True Strike. Ranged Attackers have +350 bonus range for the attack.",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "name": "Certain Strike",
                     "stats": {
@@ -7540,8 +7540,8 @@
             "image": "https://dota2.ru/img/items/eye_of_the_vizier.jpg",
             "name": "Eye of the Vizier",
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Eye_of_the_Vizier"
@@ -7554,8 +7554,8 @@
             "image": "https://dota2.ru/img/items/faded_broach.jpg",
             "name": "Faded Broach",
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Faded_Broach"
@@ -7719,8 +7719,8 @@
             "image": "https://dota2.ru/img/items/havoc_hammer.jpg",
             "name": "Havoc Hammer",
             "roles": [
-                "offense",
-                "control"
+                "control",
+                "offense"
             ],
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Havoc_Hammer"
@@ -7751,10 +7751,10 @@
             "image": "https://dota2.ru/img/items/lance_of_pursuit.jpg",
             "name": "Lance of Pursuit",
             "roles": [
-                "utility",
                 "mana",
+                "control",
                 "offense",
-                "control"
+                "utility"
             ],
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Lance_of_Pursuit"
@@ -7778,9 +7778,9 @@
                     "ability_type": "PASSIVE",
                     "description": "Provides wearer with +12 Health Regen during the day and +6 Mana Regen during the night. When within 200 distance of any trees, health and mana regeneration are decreased by 75%",
                     "effects": [
-                        "debuff",
+                        "mana_restore",
                         "heal",
-                        "mana_restore"
+                        "debuff"
                     ],
                     "name": "Unclouded",
                     "stats": {
@@ -7799,8 +7799,8 @@
             "image": "https://dota2.ru/img/items/light_collector.jpg",
             "name": "Light Collector",
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Light_Collector"
@@ -7892,8 +7892,8 @@
             "image": "https://dota2.ru/img/items/mind_breaker.jpg",
             "name": "Mind Breaker",
             "roles": [
-                "offense",
-                "control"
+                "control",
+                "offense"
             ],
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Mind_Breaker"
@@ -8024,8 +8024,8 @@
             "image": "https://dota2.ru/img/items/occult_bracelet.jpg",
             "name": "Occult Bracelet",
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Occult_Bracelet"
@@ -8061,8 +8061,8 @@
             "image": "https://dota2.ru/img/items/ogre_seal_totem.jpg",
             "name": "Ogre Seal Totem",
             "roles": [
-                "offense",
-                "control"
+                "control",
+                "offense"
             ],
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Ogre_Seal_Totem"
@@ -8090,8 +8090,8 @@
             "image": "https://dota2.ru/img/items/orb_of_destruction.jpg",
             "name": "Orb of Destruction",
             "roles": [
-                "mobility",
-                "control"
+                "control",
+                "mobility"
             ],
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Orb_of_Destruction"
@@ -8133,9 +8133,9 @@
             "image": "https://dota2.ru/img/items/philosophers_stone.jpg",
             "name": "Philosopher's Stone",
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Philosopher%27s_Stone"
@@ -8167,8 +8167,8 @@
             "image": "https://dota2.ru/img/items/pig_pole.jpg",
             "name": "Pig Pole",
             "roles": [
-                "mobility",
-                "control"
+                "control",
+                "mobility"
             ],
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Pig_Pole"
@@ -8302,9 +8302,9 @@
             "image": "https://dota2.ru/img/items/rattlecage.jpg",
             "name": "Rattlecage",
             "roles": [
+                "control",
                 "defense",
-                "offense",
-                "control"
+                "offense"
             ],
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Rattlecage"
@@ -8316,9 +8316,9 @@
                     "cooldown": 0,
                     "description": "Grants a target allied unit a permanent buff that provides +2.5 Health Regen and +1.25 Mana Regen.",
                     "effects": [
-                        "heal",
+                        "buff",
                         "mana_restore",
-                        "buff"
+                        "heal"
                     ],
                     "mana_cost": 0,
                     "name": "Consume",
@@ -8338,9 +8338,9 @@
             "image": "https://dota2.ru/img/items/royal_jelly.jpg",
             "name": "Royal Jelly",
             "roles": [
+                "mana",
                 "defense",
-                "utility",
-                "mana"
+                "utility"
             ],
             "tier": 1,
             "url": "https://dota2.fandom.com/wiki/Royal_Jelly"
@@ -8352,8 +8352,8 @@
                     "cooldown": 0,
                     "description": "Grants a 100 HP barrier. The barrier fully restores after not receiving any damage for 8 seconds",
                     "effects": [
-                        "damage",
-                        "buff"
+                        "buff",
+                        "damage"
                     ],
                     "mana_cost": 0,
                     "name": "Bubble Up",
@@ -8434,8 +8434,8 @@
             "image": "https://dota2.ru/img/items/seer_stone.jpg",
             "name": "Seer Stone",
             "roles": [
-                "utility",
-                "mana"
+                "mana",
+                "utility"
             ],
             "tier": 5,
             "url": "https://dota2.fandom.com/wiki/Seer_Stone"
@@ -8530,10 +8530,10 @@
             "image": "https://dota2.ru/img/items/stormcrafter.jpg",
             "name": "Stormcrafter",
             "roles": [
-                "utility",
                 "mana",
+                "control",
                 "offense",
-                "control"
+                "utility"
             ],
             "tier": 4,
             "url": "https://dota2.fandom.com/wiki/Stormcrafter"
@@ -8775,8 +8775,8 @@
                     "description": "Provides 30 damage if equipped hero is Silenced and 20 armor if equipped hero is Stunned.",
                     "effects": [
                         "stun",
-                        "silence",
-                        "damage"
+                        "damage",
+                        "silence"
                     ],
                     "name": "Vengeance",
                     "stats": {
@@ -8794,8 +8794,8 @@
             "image": "https://dota2.ru/img/items/vindicators_axe.jpg",
             "name": "Vindicator's Axe",
             "roles": [
-                "offense",
-                "control"
+                "control",
+                "offense"
             ],
             "tier": 3,
             "url": "https://dota2.fandom.com/wiki/Vindicator%27s_Axe"
@@ -8807,9 +8807,9 @@
                     "cooldown": 0,
                     "description": "Grants +10% spell damage but decreases the wearer's daytime vision by 15%.",
                     "effects": [
-                        "debuff",
+                        "buff",
                         "damage",
-                        "buff"
+                        "debuff"
                     ],
                     "mana_cost": 0,
                     "name": "Tunnel Vision",
@@ -8827,9 +8827,9 @@
             "image": "https://dota2.ru/img/items/whisper_of_the_dread.jpg",
             "name": "Whisper of the Dread",
             "roles": [
-                "utility",
                 "mana",
-                "offense"
+                "offense",
+                "utility"
             ],
             "tier": 2,
             "url": "https://dota2.fandom.com/wiki/Whisper_of_the_Dread"

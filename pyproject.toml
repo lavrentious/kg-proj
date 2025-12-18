@@ -19,7 +19,8 @@ dependencies = [
     "scikit-learn (>=1.8.0,<2.0.0)",
     "matplotlib (>=3.10.8,<4.0.0)",
     "seaborn (>=0.13.2,<0.14.0)",
-    "umap-learn (>=0.5.9.post2,<0.6.0)"
+    "umap-learn (>=0.5.9.post2,<0.6.0)",
+    "tqdm (>=4.67.1,<5.0.0)"
 ]
 packages = [
     { include = "kg", from = "src" }
@@ -37,6 +38,7 @@ mypy = "^1.15.0"
 black = "^25.1.0"
 types-requests = "^2.32.0.20250602"
 ipykernel = "^7.1.0"
+types-tqdm = "^4.67.0.20250809"
 
 [tool.mypy]
 explicit_package_bases = true
