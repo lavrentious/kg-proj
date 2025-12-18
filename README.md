@@ -49,3 +49,11 @@ poetry run python -m kg.parse --output onto-dota.rdf --schema-only
 ```bash
 poetry run python -m kg.parse --output kg-dota.rdf items.json
 ```
+
+# 4. Дополнительно
+
+* [Примеры SPARQL запросов к графу](https://docs.google.com/document/d/1SER5Q3_LvjH5mSjrVImMsqCGIF4enqaRCUnVh5MxfMA/edit?usp=sharing)
+
+* [CLI-запросы к графу (Python)](./kg/queries/README.md)
+
+* [Эмбеддинги](./kg/embedding/main.ipynb)
