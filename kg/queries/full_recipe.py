@@ -7,7 +7,7 @@ from typing import Dict, Optional
 from rdflib import RDF, Literal, URIRef
 
 from kg.logger import getLogger, setLevel
-from kg.onto.builder import DotaOntoBuilder
+from kg.onto.builder import DotaKgBuilder
 from kg.utils import normalize_name
 
 logger = getLogger(__name__)
@@ -18,7 +18,7 @@ def get_name_from_uri(uri: URIRef) -> str:
 
 
 def get_full_recipe(
-    builder: DotaOntoBuilder, item_uri: URIRef, visited: Optional[set[URIRef]] = None
+    builder: DotaKgBuilder, item_uri: URIRef, visited: Optional[set[URIRef]] = None
 ) -> Dict[str, int]:
     """
     Recursively fetches the full recipe for a Dota item from the ontology.
@@ -81,7 +81,7 @@ def get_full_recipe(
     return dict(recipe)
 
 
-def find_item_uri(builder: DotaOntoBuilder, name: str) -> Optional[URIRef]:
+def find_item_uri(builder: DotaKgBuilder, name: str) -> Optional[URIRef]:
     KG = builder.KG
     normalized_input = normalize_name(name).lower()
 
@@ -126,7 +126,7 @@ def main() -> None:
     else:
         setLevel(logging.INFO)
 
-    builder = DotaOntoBuilder()
+    builder = DotaKgBuilder()
     builder.load_from_file("kg-dota.rdf")
 
     item_uri = find_item_uri(builder, args.item_name)

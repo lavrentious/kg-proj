@@ -3,7 +3,7 @@ import logging
 from pathlib import Path
 
 from kg.logger import getLogger, setLevel
-from kg.onto.builder import DotaOntoBuilder
+from kg.onto.builder import DotaKgBuilder
 from kg.scraper.dota.utils import parse_from_json
 
 logger = getLogger(__name__)
@@ -11,12 +11,12 @@ logger = getLogger(__name__)
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generate KG-Dota RDF ontology from item JSON."
+        description="Generate KG-Dota RDF ontology and knowledge graph from item JSON."
     )
     parser.add_argument(
         "input",
         nargs="?",
-        help="Path to input JSON file. If not given, just builds the base of the ontology.",
+        help="Path to input JSON file. If not given, just builds the base of the ontology (same as `--schema-only`).",
     )
     parser.add_argument(
         "--output",
@@ -31,6 +31,12 @@ def main() -> None:
         help="Enable verbose logging",
         default=False,
     )
+    parser.add_argument(
+        "--schema-only",
+        action="store_true",
+        help="Only build the schema.",
+        default=False,
+    )
     args = parser.parse_args()
 
     # Configure logger
@@ -39,11 +45,11 @@ def main() -> None:
     # Load and process data
     in_path = str(args.input) if args.input else None
 
-    onto_builder = DotaOntoBuilder()
+    onto_builder = DotaKgBuilder()
     logger.info("building schema...")
     onto_builder.build_schema()
 
-    if in_path:
+    if in_path and not args.schema_only:
         logger.info(f"Loading items from {args.input}")
         data = parse_from_json(str(args.input))
         onto_builder.build(data)

@@ -7,7 +7,7 @@ from typing import Dict, Optional, Set, Tuple
 from rdflib import RDF, Literal, URIRef
 
 from kg.logger import getLogger, setLevel
-from kg.onto.builder import DotaOntoBuilder
+from kg.onto.builder import DotaKgBuilder
 from kg.utils import normalize_name
 
 logger = getLogger(__name__)
@@ -18,7 +18,7 @@ def get_name_from_uri(uri: URIRef) -> str:
 
 
 def get_full_recipe_with_subitems(
-    builder: DotaOntoBuilder, item_uri: URIRef, visited: Optional[Set[URIRef]] = None
+    builder: DotaKgBuilder, item_uri: URIRef, visited: Optional[Set[URIRef]] = None
 ) -> Tuple[Dict[str, int], Set[str]]:
     """
     Returns:
@@ -81,7 +81,7 @@ def get_full_recipe_with_subitems(
 
 
 def get_full_recipe_cached(
-    builder: DotaOntoBuilder,
+    builder: DotaKgBuilder,
     item_uri: URIRef,
     cache: Dict[URIRef, Tuple[Dict[str, int], Set[str]]],
 ) -> Tuple[Dict[str, int], Set[str]]:
@@ -93,7 +93,7 @@ def get_full_recipe_cached(
 
 
 def build_all_recipes_with_subitems(
-    builder: DotaOntoBuilder,
+    builder: DotaKgBuilder,
 ) -> Dict[str, Tuple[Dict[str, int], Set[str]]]:
     """
     Precompute full recipes + sub_items for all DotaItems.
@@ -110,7 +110,7 @@ def build_all_recipes_with_subitems(
     return all_recipes
 
 
-def find_item_uri(builder: DotaOntoBuilder, name: str) -> Optional[URIRef]:
+def find_item_uri(builder: DotaKgBuilder, name: str) -> Optional[URIRef]:
     KG = builder.KG
     normalized_input = normalize_name(name).lower()
 
@@ -172,7 +172,7 @@ def main() -> None:
     else:
         setLevel(logging.INFO)
 
-    builder = DotaOntoBuilder()
+    builder = DotaKgBuilder()
     builder.load_from_file(args.ontology)
 
     item_uri = find_item_uri(builder, args.item_name)

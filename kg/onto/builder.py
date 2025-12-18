@@ -18,7 +18,7 @@ from kg.utils import normalize_name, snake_case_to_camel_case
 logger = logging.getLogger(__name__)
 
 
-class DotaOntoBuilder:
+class DotaKgBuilder:
     ONTO_NAME = "kg-dota"
     ONTO_BASE = f"http://www.semanticweb.org/lavrent/ontologies/2025/9/{ONTO_NAME}#"
     ONTO_CLASSES = [
@@ -271,7 +271,7 @@ class DotaOntoBuilder:
 
         self.graph.add((self.KG.hasEffect, RDF.type, OWL.ObjectProperty))
         self.graph.add((self.KG.hasEffect, RDFS.domain, self.KG.Ability))
-        self.graph.add((self.KG.hasEffect, RDFS.range, XSD.string))
+        self.graph.add((self.KG.hasEffect, RDFS.range, self.KG.AbilityEffect))
 
         # Datatype properties: buffs
         for k in Buffs.__annotations__:

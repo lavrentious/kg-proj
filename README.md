@@ -33,7 +33,7 @@ poetry run python -m kg.scrape --output items.json --scraper fandom --derive-ite
 
 Следует воспользоваться скриптом `parse.py`, который создаст RDF:
 ```bash
-poetry run python -m kg.parse --output kg-dota.rdf
+poetry run python -m kg.parse --output kg-dota.rdf --schema-only
 ```
 
 Это создаст файл онтологии с базовой структурой - классами, object properties, data properties.
